@@ -30,7 +30,7 @@ export default function Home() {
         <meta name="description" content="Hananeh Sefidabi Portfolio"/>
       </Head>
 
-      <nav className={"flex m-5 font-normal font-NuetralFace lg:text-xl text-base mt-10"}>
+      <nav className={"flex m-5 font-normal font-NuetralFace lg:text-lg text-base mt-10"}>
         <div className={"w-full"}>
           <p className={"tracking-widest"}>Hananєh</p>
           <p className={"tracking-theWidest"}>Sєfidabi</p>
@@ -77,6 +77,7 @@ export default function Home() {
             <div
               className={"uppercase absolute font-medium text-center flex flex-col justify-center align-center"}
               style={{ height: "100%", color: "#FFFFFF" }}
+              onMouseLeave={flipOval}
               onClick={downloadPortfolio}
             >
               <p>Check out a selection of my works here!</p>
@@ -106,7 +107,7 @@ export default function Home() {
       </main>
 
       <footer className={"flex p-4 justify-between align-center"}>
-        <div className={"flex justify-center items-center"}>
+        <div className={"footer-icons flex justify-center items-center"}>
           <a href={"https://www.linkedin.com/in/hananehsefidabi/"} target={"_blank"}>
             <LinkedInSvg className={"mr-8 cursor-pointer"}/>
           </a>
