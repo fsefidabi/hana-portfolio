@@ -1,0 +1,13 @@
+{
+  "plugins":
+  [
+    [
+      "@babel/plugin-proposal-pipeline-operator",
+      {
+        "proposal" : "hack",
+        "topicToken": "%"
+      }
+    ]
+  ],
+  "presets": ["@babel/preset-env", ["@babel/preset-react",{"runtime": "automatic"}]]
+}
