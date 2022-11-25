@@ -46,8 +46,6 @@ body {
   overflow: hidden;
   font-family: ClashGroteskRegular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: url("/assets/svgs/bg-points.svg") repeat center;
-  background-blend-mode: difference;
   background-color: #000;
 }
 
@@ -60,6 +58,17 @@ a {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.main-background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/assets/svgs/bg-points.svg") repeat center;
+  background-blend-mode: difference;
+  opacity: 0.7;
 }
 
 .oval-shadow {

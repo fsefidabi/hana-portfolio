@@ -25,6 +25,7 @@ export default function Home() {
 
   return (
     <div className={styles.container} ref={root}>
+      <div className={"main-background"}></div>
       <Head>
         <title>Hananeh Sefidabi</title>
         <meta name="description" content="Hananeh Sefidabi Portfolio"/>
@@ -106,10 +107,10 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={"flex p-4 justify-between align-center"}>
+      <footer className={"flex p-4 justify-between items-end"}>
         <div className={"footer-icons flex items-end"}>
           <a href={"https://www.linkedin.com/in/hananehsefidabi/"} target={"_blank"}
-             style={{ transform: "scale(0.8)" }}>
+             style={{ transform: "scale(0.8)", marginLeft: "-5px" }}>
             <LinkedInSvg className={"mr-8 cursor-pointer"}/>
           </a>
           <a href={"https://www.behance.net/hananehsefidabi"} target={"_blank"} style={{ transform: "scale(0.8)" }}>
