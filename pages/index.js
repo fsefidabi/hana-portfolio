@@ -4,8 +4,8 @@ import ReactCardFlip from "react-card-flip"
 import OvalSvg from "../public/assets/svgs/oval.svg"
 import SquareSvg from "../public/assets/svgs/square.svg"
 import GridSvg from "../public/assets/svgs/grid.svg"
-import LinkedInSvg from "../public/assets/svgs/linkedin-icon.svg"
-import BehanceSvg from "../public/assets/svgs/behance-icon.svg"
+import LinkedInSvg from "../public/assets/svgs/linkedin.svg"
+import BehanceSvg from "../public/assets/svgs/behance.svg"
 import portfolioPdf from "../public/Hananeh_Sefidabi_Portfolio_2022.pdf"
 import styles from "../styles/Home.module.css"
 
@@ -30,12 +30,12 @@ export default function Home() {
         <meta name="description" content="Hananeh Sefidabi Portfolio"/>
       </Head>
 
-      <nav className={"flex m-5 font-normal font-NuetralFace lg:text-lg text-base mt-10"}>
+      <nav className={"flex m-4 mt-8 font-normal font-NuetralFace lg:text-lg text-base"}>
         <div className={"w-full"}>
           <p className={"tracking-widest"}>Hananєh</p>
           <p className={"tracking-theWidest"}>Sєfidabi</p>
         </div>
-        <ul className={"flex uppercase items-center"}>
+        <ul className={"flex uppercase text-sm"}>
           <li className={"ml-5"}>About</li>
           <li className={"ml-5"}>CV</li>
           <li className={"ml-5"}>Contact</li>
@@ -107,15 +107,16 @@ export default function Home() {
       </main>
 
       <footer className={"flex p-4 justify-between align-center"}>
-        <div className={"footer-icons flex justify-center items-center"}>
-          <a href={"https://www.linkedin.com/in/hananehsefidabi/"} target={"_blank"}>
+        <div className={"footer-icons flex items-end"}>
+          <a href={"https://www.linkedin.com/in/hananehsefidabi/"} target={"_blank"}
+             style={{ transform: "scale(0.8)" }}>
             <LinkedInSvg className={"mr-8 cursor-pointer"}/>
           </a>
-          <a href={"https://www.behance.net/hananehsefidabi"} target={"_blank"}>
-            <BehanceSvg/>
+          <a href={"https://www.behance.net/hananehsefidabi"} target={"_blank"} style={{ transform: "scale(0.8)" }}>
+            <BehanceSvg className={"cursor-pointer"}/>
           </a>
         </div>
-        <p className={"font-ClashGrotesk text-base"}>© 2022 — Designed by Me — Developed by Farzaneh Sefidabi</p>
+        <p className={"font-ClashGrotesk text-sm"}>© 2022 — Designed by Me — Developed by Farzaneh Sefidabi</p>
       </footer>
     </div>
   )
