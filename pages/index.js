@@ -1,12 +1,12 @@
 import { useState, useRef } from "react"
 import Head from "next/head"
+import Router from "next/router"
 import ReactCardFlip from "react-card-flip"
 import OvalSvg from "../public/assets/svgs/oval.svg"
 import SquareSvg from "../public/assets/svgs/square.svg"
 import GridSvg from "../public/assets/svgs/grid.svg"
 import LinkedInSvg from "../public/assets/svgs/linkedin.svg"
 import BehanceSvg from "../public/assets/svgs/behance.svg"
-import portfolioPdf from "../public/Hananeh_Sefidabi_Portfolio_2022.pdf"
 import styles from "../styles/Home.module.css"
 
 export default function Home() {
@@ -19,8 +19,8 @@ export default function Home() {
     setIsFlipped(!isFlipped)
   }
 
-  function downloadPortfolio() {
-    window.open(portfolioPdf)
+  function redirectToPortfolio() {
+    Router.push("/portfolio")
   }
 
   return (
@@ -79,7 +79,7 @@ export default function Home() {
               className={"uppercase absolute font-medium text-center flex flex-col justify-center align-center"}
               style={{ height: "100%", color: "#FFFFFF" }}
               onMouseLeave={flipOval}
-              onClick={downloadPortfolio}
+              onClick={redirectToPortfolio}
             >
               <p>Check out a selection of my works here!</p>
             </div>
