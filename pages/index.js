@@ -63,8 +63,8 @@ export default function Home() {
         <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
           <div className={"relative flex justify-center text-3xl z-10 rounded-5xl"} style={{ width: 298, height: 467 }}>
             <div
-              className={"uppercase absolute font-medium text-center flex flex-col justify-center align-center"}
-              style={{ height: "100%", color: "#ef643f" }}
+              className={"uppercase absolute font-medium text-center text-tertiary flex flex-col justify-center align-center"}
+              style={{ height: "100%" }}
               onMouseOver={flipOval}
             >
               <p>Check out a selection of my works here!</p>

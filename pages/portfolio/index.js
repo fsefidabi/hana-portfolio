@@ -310,10 +310,10 @@ export default function Portfolio() {
         </HTMLFlipBook>
       </div>
       <div id={"action-container"} className={"mt-5"}>
-        <button onClick={handleNextPageButton} className={"bg-white text-black rounded ont-NuetralFace mr-4 py-1 px-3 hover:bg-red-100"}>Next Page</button>
-        <button onClick={handlePrevPageButton} className={"bg-white text-black rounded ont-NuetralFace mr-4 py-1 px-3 hover:bg-red-100"}>Back Page</button>
-        <button onClick={handleFirstPageButton} className={"bg-white text-black rounded ont-NuetralFace mr-4 py-1 px-3 hover:bg-red-100"}>First Page</button>
-        <button onClick={handleLastPageButton} className={"bg-white text-black rounded ont-NuetralFace mr-4 py-1 px-3 hover:bg-red-100"}>Last Page</button>
+        <button onClick={handleNextPageButton} className={"bg-secondary text-primary rounded ont-NuetralFace mr-4 py-1 px-3 hover:bg-red-100"}>Next Page</button>
+        <button onClick={handlePrevPageButton} className={"bg-secondary text-primary rounded ont-NuetralFace mr-4 py-1 px-3 hover:bg-red-100"}>Back Page</button>
+        <button onClick={handleFirstPageButton} className={"bg-secondary text-primary rounded ont-NuetralFace mr-4 py-1 px-3 hover:bg-red-100"}>First Page</button>
+        <button onClick={handleLastPageButton} className={"bg-secondary text-primary rounded ont-NuetralFace mr-4 py-1 px-3 hover:bg-red-100"}>Last Page</button>
       </div>
     </div>
   )

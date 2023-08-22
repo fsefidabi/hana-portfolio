@@ -41,12 +41,12 @@
 
 html,
 body {
+  @apply bg-primary;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   font-family: ClashGroteskRegular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #000;
 }
 
 a {
@@ -81,11 +81,8 @@ a {
   background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-html {
-  color-scheme: dark;
-}
 body {
-  color: white;
+  @apply text-secondary;
 }
 
 @media screen and (max-width: 1480px) and (min-width: 1350px) {

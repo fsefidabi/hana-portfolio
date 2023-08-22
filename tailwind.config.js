@@ -8,6 +8,11 @@ module.exports = {
     extend: {
       letterSpacing: {
         theWidest: "0.2em"
+      },
+      colors: {
+        primary: "#000",
+        secondary: "#FFF",
+        tertiary: "#ef643f"
       }
     },
     fontFamily: {
