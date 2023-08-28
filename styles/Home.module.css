@@ -1,24 +1,9 @@
-.container {
-    height: 100vh;
-    max-height: 100vh;
-    padding: 0 1rem;
-}
-
 .main {
     height: calc(100vh - 170px);
-    padding: 4rem 0;
+    padding: 4rem 1rem;
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.footer {
-    display: flex;
-    flex: 1;
-    padding: 2rem 0;
-    border-top: 1px solid #eaeaea;
-    justify-content: end;
     align-items: center;
 }
 

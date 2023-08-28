@@ -1,0 +1,6 @@
+.container {
+    @apply bg-tertiary absolute top-16 right-2 px-4 py-2 animate-moveInRight;
+}
+.message {
+    @apply text-secondary text-sm;
+}

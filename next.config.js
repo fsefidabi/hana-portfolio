@@ -1,8 +1,19 @@
 /** @type {import('next').NextConfig} */
+const path = require('path')
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   webpack: (config, options) => {
+    config.module.rules.push({
+      resolve: {
+        alias: {
+          components: path.resolve(__dirname, "components"),
+          svgIcons: path.resolve(__dirname, "public/assets/svgs"),
+          hooks: path.resolve(__dirname, "hooks")
+        }
+      }
+    })
     config.module.rules.push({
         test: /\.svg$/,
         use: ["@svgr/webpack"]

@@ -1,0 +1,28 @@
+.footer {
+    @apply flex flex-col justify-between items-end mt-16 sm:mt-8;
+}
+.contactSection {
+    @apply w-full flex justify-between items-center;
+    border: 0.5px solid #898989;
+    border-right: 0;
+    border-left: 0;
+}
+.contactIconsWrapper {
+    @apply flex items-center p-4;
+    border-right: 0.5px solid #898989;
+}
+.contactIcon {
+    @apply fill-secondary cursor-pointer mx-4;
+}
+.copyrightText {
+    @apply mr-10 text-base font-ClashGrotesk py-4 pl-8;
+    border-left: 0.5px solid #898989;
+}
+.developerText {
+    @apply text-base font-ClashGrotesk text-center py-8;
+}
+@media screen and (max-width: 1349px) and (min-width: 1200px) {
+    .contactSvg {
+        transform: scale(0.7);
+    }
+}
