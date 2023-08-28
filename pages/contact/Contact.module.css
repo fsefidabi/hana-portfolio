@@ -1,0 +1,62 @@
+@keyframes animated_text {
+    0% { background-position: 0px 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0px 50%; }
+}
+
+@keyframes wink {
+    0% {
+        content: ":)";
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        content: ";)";
+    }
+}
+
+.container {
+    @apply max-w-screen-md mx-10 sm:mx-20 md:mx-auto my-10 lg:my-0 h-full flex flex-col flex-wrap flex-grow justify-center;
+}
+.title {
+    @apply md:ml-5 lg:ml-0 text-5xl lg:text-6xl text-tertiary font-medium mb-10;
+    background: linear-gradient(-45deg, #ab2702, #d35d3d, #ab2702, #d35d3d);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 5s linear infinite alternate;
+    -moz-animation: animated_text 5s linear infinite alternate;
+    -webkit-animation: animated_text 5s linear infinite alternate;
+}
+.content {
+    @apply flex justify-around lg:justify-between flex-wrap;
+}
+.section {
+    @apply w-full md:w-5/11 h-full mb-20 lg:mb-0 flex flex-col justify-center;
+}
+.text {
+    @apply text-secondary leading-tight font-light flex items-center gap-4 text-lg mb-8;
+}
+.text svg {
+    @apply fill-secondary rotate-45 w-6 h-6;
+}
+.text span:not(.contactFormDescription),
+.text a {
+    @apply border-b-2 border-transparent duration-300;
+}
+.text span:not(.contactFormDescription):hover,
+.text a:hover {
+    @apply border-b-2 border-secondary cursor-pointer;
+}
+.contactFormDescription:after {
+    content: ":)";
+    margin-left: 6px;
+    animation: wink 0.5s linear infinite alternate;
+}
+.inputWrapper {
+    @apply xs:mx-2 w-full xs:w-5/11 mb-7 xs:mb-0;
+}
+.formRow {
+    @apply flex justify-between flex-wrap mb-0 xs:mb-14 last:mb-0;
+}

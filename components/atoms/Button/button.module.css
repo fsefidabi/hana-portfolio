@@ -1,0 +1,9 @@
+.button {
+    @apply flex items-center justify-center gap-2 rounded-full bg-tertiary text-secondary uppercase font-bold text-lg w-56 py-1.5 duration-500;
+}
+.button:not(:disabled):hover {
+    box-shadow: 0px 0px 10px 6px #72220a;
+}
+.button:disabled {
+    @apply bg-quaternary;
+}
