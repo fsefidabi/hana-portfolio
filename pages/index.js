@@ -4,7 +4,7 @@ import ReactCardFlip from "react-card-flip"
 import OvalSvg from "svgIcons/oval.svg"
 import SquareSvg from "svgIcons/square.svg"
 import GridSvg from "svgIcons/grid.svg"
-import styles from "svgIcons.css"
+import styles from "../styles/Home.module.css"
 
 export default function Home() {
   const [isFlipped, setIsFlipped] = useState(false)
