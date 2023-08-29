@@ -1,5 +1,5 @@
-import styles from "./toast.module.css"
 import { useEffect, useState } from "react"
+import styles from "./toast.module.css"
 
 export function Toast(props) {
   const { message, show, duration, onClose = new Function() } = props
