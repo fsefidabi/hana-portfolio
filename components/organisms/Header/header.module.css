@@ -1,37 +1,24 @@
-/*.container {*/
-/*    @apply bg-quaternary flex text-primary font-normal font-NuetralFace lg:text-lg text-base items-center justify-between py-2 px-6;*/
-/*    border: 1px solid black;*/
-/*    border-right: 0;*/
-/*    border-left: 0;*/
-/*}*/
-/*.container svg {*/
-/*    @apply fill-primary;*/
-/*}*/
-/*.menuContainer {*/
-/*    @apply flex uppercase text-sm;*/
-/*}*/
-/*.menuItem {*/
-/*    @apply ml-5 uppercase;*/
-/*}*/
-/*.menuItem a {*/
-/*    @apply border-b-2 border-transparent duration-300;*/
-/*}*/
-/*.menuItem a:hover {*/
-/*    @apply border-b-2 border-primary cursor-pointer;*/
-/*}*/
-
-
 .container {
-    @apply flex font-normal font-NuetralFace lg:text-lg items-center justify-between py-2 px-6;
+    @apply flex font-normal font-NuetralFace lg:text-lg items-center justify-between py-2 flex-wrap;
     border: 0.5px solid #898989;
     border-right: 0;
     border-left: 0;
 }
+.mobileLogoWrapper {
+    @apply w-full justify-center pb-2;
+    border-bottom: 0.5px solid #898989;
+}
 .logoSvg {
     @apply fill-secondary cursor-pointer;
 }
+.mobileLogoSvg {
+    @apply mx-auto;
+}
 .menuContainer {
-    @apply flex uppercase text-sm;
+    @apply flex uppercase text-sm px-6;
+}
+.mobileMenuContainer {
+    @apply w-full justify-center pt-6 pb-4;
 }
 .menuItem {
     @apply ml-5 px-3 uppercase;
