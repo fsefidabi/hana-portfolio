@@ -5,7 +5,7 @@ export default function Button(props) {
   const { label = "", disabled = false, loading = false, handleOnClick } = props
 
   return <button
-    className={styles.button}
+    className={`${styles.button} ${loading ? "cursor-progress" : "cursor-default"}`}
     disabled={disabled}
     onClick={handleOnClick}
   >
