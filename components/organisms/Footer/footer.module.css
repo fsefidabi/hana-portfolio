@@ -1,5 +1,5 @@
 .footer {
-    @apply flex flex-col justify-between items-end mt-16 sm:mt-8;
+    @apply flex flex-col justify-between items-end;
 }
 .contactSection {
     @apply w-full flex justify-between items-center;
@@ -19,7 +19,7 @@
     border-left: 0.5px solid #898989;
 }
 .developerText {
-    @apply text-base font-ClashGrotesk text-center py-8;
+    @apply text-base font-ClashGrotesk text-center py-5;
 }
 @media screen and (max-width: 1349px) and (min-width: 1200px) {
     .contactSvg {

@@ -31,8 +31,7 @@
     @apply fill-secondary cursor-pointer;
 }
 .menuContainer {
-    @apply flex uppercase;
-    font-size: 13px;
+    @apply flex uppercase text-sm;
 }
 .menuItem {
     @apply ml-5 px-3 uppercase;

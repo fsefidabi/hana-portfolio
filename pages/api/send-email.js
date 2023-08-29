@@ -24,8 +24,8 @@ export default async function handler(req, res) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Email Failure</title>
       </head>
-      <body style="font-family: sans-serif; background-color: #ffffff; padding: 50px;">
-        <div style="background-color: #d35d3d; margin-bottom: 44px; padding: 4px 0;">
+      <body style="font-family: sans-serif; background-color: #ffffff; padding: 50px; max-width: 500px; margin: 0 auto;">
+        <div style="background-color: #d35d3d; margin-bottom: 44px; padding: 4px 0; color: #000 !important;">
           <p style="font-weight: bold; font-size: 28px; text-align: center;">📧 You Got New Email 📧</p>
         </div>
       
@@ -35,7 +35,7 @@ export default async function handler(req, res) {
           <p style="margin-bottom: 20px;">Date: ${new Date().toLocaleString()}</p>
           <p style="margin-bottom: 20px;">Name: ${name}</p>
           <p style="margin-bottom: 20px;">Email: ${email}</p>
-          <p style="margin-bottom: 20px;">Message: ${message}</p>
+            <div style="margin-bottom: 20px; display: flex;"><p>Message:</p> <p style="white-space: pre-line; margin-left: 10px;">${message}</p></p>
         </div>
       </body>
       </html>
@@ -54,12 +54,12 @@ export default async function handler(req, res) {
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Email Confirmation</title>
         </head>
-        <body style="font-family: sans-serif; background-color: #ffffff; padding: 50px;">
-        <div style="background-color: #d35d3d; margin-bottom: 44px; padding: 4px 0;">
+        <body style="font-family: sans-serif; background-color: #ffffff; padding: 50px; max-width: 500px; margin: 0 auto;">
+        <div style="background-color: #d35d3d; margin-bottom: 44px; padding: 4px 0; color: #000 !important;">
           <p style="font-weight: bold; font-size: 28px; text-align: center;">I'VE GOT YOUR MESSAGE ;)</p>
         </div>
         
-        <div style="margin-bottom: 50px;">
+        <div style="margin-bottom: 50px; color: #000 !important;">
           <p>Hi ${name},</p>
           <p>Thanks for reaching out! Just a quick note to let you know that I've received your message. I'm looking forward to
             our conversation. I'll be in touch soon to discuss further.</p>
@@ -72,12 +72,12 @@ export default async function handler(req, res) {
         <hr/>
         
         <div
-            style="background-color: #eee; font-size: 13px; font-weight: bold; padding: 30px 20px; margin: 20px 0; color: #393939">
+            style="background-color: #eee; font-size: 13px; font-weight: bold; padding: 30px 20px; margin: 20px 0; color: #393939;">
           <p style="text-transform: uppercase; margin-bottom: 28px">Your message details</p>
           <p style="margin-bottom: 20px;">Date: ${new Date().toLocaleString()}</p>
           <p style="margin-bottom: 20px;">Name: ${name}</p>
           <p style="margin-bottom: 20px;">Email: ${email}</p>
-          <p style="margin-bottom: 20px;">Message: ${message}</p>
+            <div style="margin-bottom: 20px; display: flex;"><p>Message:</p> <p style="white-space: pre-line; margin-left: 10px;">${message}</p></p>
         </div>
         
         <hr/>
@@ -139,12 +139,12 @@ export default async function handler(req, res) {
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Email Failure</title>
         </head>
-        <body style="font-family: sans-serif; background-color: #ffffff; padding: 50px;">
-          <div style="background-color: #d35d3d; margin-bottom: 44px; padding: 4px 0;">
+        <body style="font-family: sans-serif; background-color: #ffffff; padding: 50px; max-width: 500px; margin: 0 auto;">
+          <div style="background-color: #d35d3d; margin-bottom: 44px; padding: 4px 0; color: #000 !important;">
             <p style="font-weight: bold; font-size: 28px; text-align: center;">OOPS... THERE WAS AN ISSUE :(</p>
           </div>
           
-          <div style="margin-bottom: 50px;">
+          <div style="margin-bottom: 50px; color: #000 !important;">
             <p>Hi ${name},</p>
             <p>I'm sorry to let you know that there was a hiccup with sending your message. Please double-check your details and
               try again. If the issue persists, feel free to reach out to me directly at <span
@@ -161,12 +161,12 @@ export default async function handler(req, res) {
           <hr/>
           
           <div
-              style="background-color: #eee; font-size: 13px; font-weight: bold; padding: 30px 20px; margin: 20px 0; color: #393939">
+              style="background-color: #eee; font-size: 13px; font-weight: bold; padding: 30px 20px; margin: 20px 0; color: #393939;">
             <p style="text-transform: uppercase; margin-bottom: 28px">Your message details</p>
             <p style="margin-bottom: 20px;">Date: ${new Date().toLocaleString()}</p>
             <p style="margin-bottom: 20px;">Name: ${name}</p>
             <p style="margin-bottom: 20px;">Email: ${email}</p>
-            <p style="margin-bottom: 20px;">Message: ${message}</p>
+            <div style="margin-bottom: 20px; display: flex;"><p>Message:</p> <p style="white-space: pre-line; margin-left: 10px;">${message}</p></p>
           </div>
           
           <hr/>

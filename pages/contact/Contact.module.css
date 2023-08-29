@@ -17,7 +17,7 @@
 }
 
 .container {
-    @apply max-w-screen-md mx-10 sm:mx-20 md:mx-auto my-10 lg:my-0 h-full flex flex-col flex-wrap flex-grow justify-center;
+    @apply max-w-screen-md mx-10 sm:mx-20 md:mx-auto h-full flex flex-col flex-wrap flex-grow justify-center;
 }
 .title {
     @apply md:ml-5 lg:ml-0 text-5xl lg:text-6xl text-tertiary font-medium mb-10;
@@ -59,4 +59,10 @@
 }
 .formRow {
     @apply flex justify-between flex-wrap mb-0 xs:mb-14 last:mb-0;
+}
+@media screen and (max-height: 950px) {
+    .container {
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
 }

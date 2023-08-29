@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    font-size: 75%; /* = 12px */
+  }
+  svg {
+    transform: scale(0.8);
+  }
+  @screen md {
+    :root {
+      font-size: 87.5%; /* = 14px */
+    }
+    svg {
+      transform: scale(0.9);
+    }
+  }
+  @screen xl {
+    :root {
+      font-size: 100%; /* = 16px */
+    }
+    svg {
+      transform: scale(1);
+    }
+  }
+}
+
 @font-face {
   font-family: 'NuetralFace';
   src: url('/assets/fonts/NeutralFace.otf');
@@ -51,6 +76,11 @@ body {
   width: 100vw;
   font-family: ClashGroteskRegular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  background-color: #010203;
+  overflow-x: hidden;
 }
 
 a {
