@@ -3,7 +3,7 @@ import LinkedInSvg from "svgIcons/linkedin.svg"
 import BehanceSvg from "svgIcons/behance.svg"
 import InstagramSvg from "svgIcons/instagram.svg"
 import EmailSvg from "svgIcons/email.svg"
-import MobileFooter from "./mobileFooter"
+import MobileFooter from "./MobileFooter"
 import styles from "./footer.module.css"
 
 export default function Footer() {
