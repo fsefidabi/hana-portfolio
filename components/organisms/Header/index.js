@@ -1,29 +1,34 @@
 import Link from "next/link"
 import LogoSvg from "svgIcons/logo.svg"
+import { useMediaQuery } from "hooks/useMediaQuery"
+import MobileHeader from "./MobileHeader"
 import styles from "./header.module.css"
 
 export default function Header() {
-  return <header className={styles.container}>
-    <ul className={styles.menuContainer}>
-      <li className={styles.menuItem}>
-        <Link href="#">Works</Link>
-      </li>
-      <li className={styles.menuItem}>
-        <Link href="#">Research</Link>
-      </li>
-    </ul>
+  const matches = useMediaQuery("(max-width: 640px)")
 
-    <Link href={"/"}>
-      <LogoSvg className={styles.logoSvg} width={100}/>
-    </Link>
+  return matches ? <MobileHeader/> :
+    <header className={styles.container}>
+      <ul className={styles.menuContainer}>
+        <li className={styles.menuItem}>
+          <Link href="#">Works</Link>
+        </li>
+        <li className={styles.menuItem}>
+          <Link href="#">Research</Link>
+        </li>
+      </ul>
 
-    <ul className={styles.menuContainer}>
-      <li className={styles.menuItem}>
-        <Link href="#">About</Link>
-      </li>
-      <li className={styles.menuItem}>
-        <Link href="/contact">Contact</Link>
-      </li>
-    </ul>
-  </header>
+      <Link href={"/"}>
+        <LogoSvg className={styles.logoSvg} width={100}/>
+      </Link>
+
+      <ul className={styles.menuContainer}>
+        <li className={styles.menuItem}>
+          <Link href="#">About</Link>
+        </li>
+        <li className={styles.menuItem}>
+          <Link href="/contact">Contact</Link>
+        </li>
+      </ul>
+    </header>
 }

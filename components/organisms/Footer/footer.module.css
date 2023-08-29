@@ -2,21 +2,32 @@
     @apply flex flex-col justify-between items-end;
 }
 .contactSection {
-    @apply w-full flex justify-between items-center;
+    @apply w-full flex justify-between items-center flex-wrap;
     border: 0.5px solid #898989;
     border-right: 0;
     border-left: 0;
 }
-.contactIconsWrapper {
+.socialMediaSection {
     @apply flex items-center p-4;
     border-right: 0.5px solid #898989;
+}
+.mobileSocialMediaSection {
+    @apply w-full justify-center;
+    border-bottom: 0.5px solid #898989;
+    border-left: none;
+    border-right: none;
 }
 .contactIcon {
     @apply fill-secondary cursor-pointer mx-4;
 }
-.copyrightText {
+.copyrightSection {
     @apply mr-10 text-base font-ClashGrotesk py-4 pl-8;
     border-left: 0.5px solid #898989;
+}
+.mobileCopyrightSection {
+    @apply w-full justify-center mr-0 text-center px-8;
+    border-right: none;
+    border-left: none;
 }
 .developerText {
     @apply text-base font-ClashGrotesk text-center py-5;
