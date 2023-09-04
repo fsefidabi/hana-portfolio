@@ -205,7 +205,7 @@ export default function Contact({ pageContent, commonContent }) {
 export async function getStaticProps() {
   const pageContent = await getContactPageContent()
   const commonContent = await getCommonContent()
-  console.log("-", commonContent[0])
+
   return {
     props:
       {
