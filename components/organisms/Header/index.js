@@ -14,7 +14,7 @@ export default function Header() {
           <Link href="#">Works</Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="#">Research</Link>
+          <Link href="/research">Research</Link>
         </li>
       </ul>
 

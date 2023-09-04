@@ -9,7 +9,7 @@ const nextConfig = {
       resolve: {
         alias: {
           components: path.resolve(__dirname, "components"),
-          svgIcons: path.resolve(__dirname, "public/assets/svgs"),
+          svgIcons: path.resolve(__dirname, "public/assets/svg"),
           hooks: path.resolve(__dirname, "hooks")
         }
       }

@@ -15,7 +15,7 @@ export default function MobileHeader() {
         <Link href="#">Works</Link>
       </li>
       <li className={styles.menuItem}>
-        <Link href="#">Research</Link>
+        <Link href="/research">Research</Link>
       </li>
       <li className={styles.menuItem}>
         <Link href="#">About</Link>

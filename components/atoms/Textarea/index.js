@@ -1,7 +1,7 @@
 import { useId } from "react"
 
 export default function Textarea(props) {
-  const { id = useId(), placeholder = "", rows = "2", value, required = false, handleOnChange } = props
+  const { id = useId(), placeholder = "", rows = "2", value, name, required = false, handleOnChange } = props
 
   return <textarea
     className={"w-full bg-transparent border-b-2 outline-0 resize-none text-lg"}
@@ -9,7 +9,8 @@ export default function Textarea(props) {
     placeholder={placeholder}
     rows={rows}
     value={value}
+    name={name}
     required={required}
-    onChange={(e) => handleOnChange(e.target.value)}
+    onChange={handleOnChange}
   />
 }

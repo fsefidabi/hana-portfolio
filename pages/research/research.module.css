@@ -1,0 +1,32 @@
+.container {
+    @apply mt-24 flex flex-col;
+}
+.sectionWrapper {
+    border-top: 0.5px solid #898989;
+    border-bottom: 0.5px solid #898989;
+}
+.content {
+    @apply max-w-screen-xl mx-auto flex;
+}
+.content svg {
+    @apply fill-secondary rotate-45 w-9;
+}
+.title {
+    @apply w-full uppercase text-4xl;
+}
+.section {
+    @apply p-5;
+    border-right: 0.5px solid #898989;
+}
+.description p {
+    @apply text-base mt-10;
+}
+.description button {
+    @apply mt-10 mb-6;
+}
+.readFullTextButton {
+    @apply flex gap-2;
+}
+.readFullTextButton svg {
+    @apply fill-secondary -rotate-45 w-5;
+}

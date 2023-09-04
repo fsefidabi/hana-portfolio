@@ -7,6 +7,7 @@ import Button from "components/atoms/Button"
 import Tooltip from "components/atoms/Tooltip"
 import { Toast } from "components/atoms/Toast"
 import styles from "./Contact.module.css"
+import { getCommonContent, getContactPageContent } from "../../sanity-studio/sanity-utils"
 
 const INITIAL_CONTACT_FORM_FIELDS = {
   name: "",
@@ -14,7 +15,7 @@ const INITIAL_CONTACT_FORM_FIELDS = {
   message: ""
 }
 
-export default function Contact() {
+export default function Contact({ pageContent, commonContent }) {
   const [contactFormFields, setContactFormFields] = useState(INITIAL_CONTACT_FORM_FIELDS)
   const [emailCopiedToClipboard, setEmailCopiedToClipboard] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -29,8 +30,8 @@ export default function Contact() {
     }
   }, [showToast])
 
-  function handleFormFieldChange(fieldType, value) {
-    setContactFormFields(prev => ({ ...prev, [fieldType]: value }))
+  function handleFormFieldChange(e) {
+    setContactFormFields(prev => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
   async function handleFormSubmission(e) {
@@ -93,33 +94,34 @@ export default function Contact() {
 
   return <div className={styles.container}>
     <h1 className={`${styles.title} colored-text`}>
-      LET'S CONNECT!
+      {pageContent?.title?.map(item => {
+        return item?.children?.map(child => {
+          return <p key={child._key}>{child.text}</p>
+        })
+      })}
     </h1>
 
     <div
       className={styles.content}>
       <div className={styles.section}>
-        <p className={styles.text}>
-          If you have any inquiries, projects to discuss, or simply want to connect and have a conversation, I’m here!
-        </p>
+        {pageContent?.description1?.map(item => {
+          return item?.children?.map(child => {
+            return <p key={child._key} className={styles.text}>{child.text}</p>
+          })
+        })}
 
-        <p className={styles.text}>
-          Feel free to DM me on:
-        </p>
-
-        <p className={styles.text}>
-          <ArrowSvg/>
-          <a className={"linkWithBorderBottomOnHover"}
-             href={"https://www.linkedin.com/in/hananehsefidabi/"}
-             target={"_blank"}>LinkedIn</a>
-        </p>
-
-        <p className={styles.text}>
-          <ArrowSvg/>
-          <a className={"linkWithBorderBottomOnHover"}
-             href={"https://www.instagram.com/hananehsefidabi/"}
-             target={"_blank"}>Instagram</a>
-        </p>
+        {pageContent?.socialMediaLinks?.map(item => {
+          return <p key={item._key} className={styles.text}>
+            <ArrowSvg/>
+            <a
+              className={"linkWithBorderBottomOnHover"}
+              href={item.link}
+              target={"_blank"}
+            >
+              {item.label}
+            </a>
+          </p>
+        })}
 
         <p className={`${styles.text} relative`}>
           <ArrowSvg/>
@@ -134,7 +136,7 @@ export default function Contact() {
               onClick={() => handleCopyEmailToClipboard("hananehsefidabi@gmail.com")}
               onMouseOut={handleEmailLinkMouseLeave}
             >
-              hananehsefidabi@gmail.com
+              {commonContent.email}
             </span>
           </Tooltip>
         </p>
@@ -142,7 +144,11 @@ export default function Contact() {
 
       <div className={styles.section}>
         <p className={styles.text}>
-          <span className={styles.contactFormDescription}>or simply drop me a line here. I'll be more than happy to respond</span>
+          {pageContent?.description2?.map(item => {
+            return item?.children?.map(child => {
+              return <span key={child._key} className={styles.contactFormDescription}>{child.text}</span>
+            })
+          })}
         </p>
         <form>
           <div className={styles.formRow}>
@@ -151,7 +157,8 @@ export default function Contact() {
                 placeholder={"Name*"}
                 required={true}
                 value={contactFormFields.name}
-                handleOnChange={(value) => handleFormFieldChange("name", value)}
+                name={"name"}
+                handleOnChange={handleFormFieldChange}
               />
             </div>
 
@@ -161,7 +168,8 @@ export default function Contact() {
                 placeholder={"E-mail*"}
                 required={true}
                 value={contactFormFields.email}
-                handleOnChange={(value) => handleFormFieldChange("email", value)}
+                name={"email"}
+                handleOnChange={handleFormFieldChange}
               />
             </div>
           </div>
@@ -169,12 +177,13 @@ export default function Contact() {
             <Textarea
               placeholder={"Type your message here*"}
               value={contactFormFields.message}
-              handleOnChange={(value) => handleFormFieldChange("message", value)}
+              name={"message"}
+              handleOnChange={handleFormFieldChange}
             />
           </div>
           <div className={`${styles.formRow} mt-7 xs:mt-0`}>
             <Button
-              label={loading ? "Sending..." : "Send"}
+              label={loading ? pageContent.submitButtonLoadingLabel : pageContent.submitButtonLabel}
               loading={loading}
               disabled={Object.values(contactFormFields).some(field => !field)}
               handleOnClick={handleFormSubmission}
@@ -191,4 +200,17 @@ export default function Contact() {
       onClose={handleToastClose}
     />
   </div>
+}
+
+export async function getStaticProps() {
+  const pageContent = await getContactPageContent()
+  const commonContent = await getCommonContent()
+  console.log("-", commonContent[0])
+  return {
+    props:
+      {
+        pageContent: pageContent[0],
+        commonContent: commonContent[0]
+      }
+  }
 }
