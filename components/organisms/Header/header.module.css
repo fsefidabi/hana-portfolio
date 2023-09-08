@@ -23,9 +23,6 @@
 .menuItem {
     @apply ml-5 px-3 uppercase;
 }
-.menuItem a {
-    @apply border-b-2 border-transparent duration-300;
-}
 .menuItem a:hover {
     @apply border-b-2 border-secondary cursor-pointer;
 }

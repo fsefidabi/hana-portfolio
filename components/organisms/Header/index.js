@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { useRouter } from "next/router"
 import LogoSvg from "svgIcons/logo.svg"
 import { useMediaQuery } from "hooks/useMediaQuery"
 import MobileHeader from "./MobileHeader"
@@ -6,15 +7,17 @@ import styles from "./header.module.css"
 
 export default function Header() {
   const matches = useMediaQuery("(max-width: 640px)")
+  const router = useRouter()
+  const currentRoute = router.pathname
 
   return matches ? <MobileHeader/> :
     <header className={styles.container}>
       <ul className={styles.menuContainer}>
         <li className={styles.menuItem}>
-          <Link href="/">Works</Link>
+          <Link href="/" className={currentRoute === "/" ? "border-b-2 border-secondary" : ""}>Works</Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/research">Research</Link>
+          <Link href="/research" className={currentRoute === "/research" ? "border-b-2 border-secondary" : ""}>Research</Link>
         </li>
       </ul>
 
@@ -24,10 +27,10 @@ export default function Header() {
 
       <ul className={styles.menuContainer}>
         <li className={styles.menuItem}>
-          <Link href="/about">About</Link>
+          <Link href="/about" className={currentRoute === "/about" ? "border-b-2 border-secondary" : ""}>About</Link>
         </li>
         <li className={styles.menuItem}>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact" className={currentRoute === "/contact" ? "border-b-2 border-secondary" : ""}>Contact</Link>
         </li>
       </ul>
     </header>
