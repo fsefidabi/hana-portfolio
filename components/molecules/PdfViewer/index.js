@@ -5,6 +5,7 @@ import { Document, Page, pdfjs } from "react-pdf"
 import { useWindowSize } from "hooks/useWindowSize"
 import { useIsInViewport } from "hooks/useIsInViewport"
 import useEventListener from "hooks/useEventListener"
+import { MAX_SECTION_WIDTH } from "constants/index.js"
 import SingleArrow from "svgIcons/singleArrow.svg"
 import DoubleArrow from "svgIcons/doubleArrow.svg"
 import PdfViewerLoading from "./PdfViewerLoading"
@@ -15,14 +16,12 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url
 ).toString()
 
-const INITIAL_PDF_VIEWER_WIDTH = 1050
-
 export default function PdfViewer(props) {
   const { filePath } = props
 
   const [pageNumber, setPageNumber] = useState(1)
   const [totalPageCount, setTotalPageCount] = useState(0)
-  const [pdfViewerWidth, setPdfViewerWidth] = useState(INITIAL_PDF_VIEWER_WIDTH)
+  const [pdfViewerWidth, setPdfViewerWidth] = useState(MAX_SECTION_WIDTH)
   const [mousePositionOverDocument, setMousePositionOverDocument] = useState(null)
 
   const documentRef = useRef()
@@ -47,7 +46,7 @@ export default function PdfViewer(props) {
 
   function updatePdfViewerWidth() {
     if (window.innerWidth > 1100) {
-      setPdfViewerWidth(INITIAL_PDF_VIEWER_WIDTH)
+      setPdfViewerWidth(MAX_SECTION_WIDTH)
     } else {
       setPdfViewerWidth(window.innerWidth - 100)
     }

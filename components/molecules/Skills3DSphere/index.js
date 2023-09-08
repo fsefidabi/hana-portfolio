@@ -29,7 +29,7 @@ const SKILLS_DOTS_GEOMETRY_ARGS = [0.03, 32, 32]
 
 function Skills3DSphere() {
   return (
-    <div className={"relative flex-grow"} id={"test"}>
+    <div className={"relative w-full"}>
       <Canvas
         camera={{ zoom: 20, position: [0, 0, 100] }}
         style={{ position: "absolute", top: 0, left: 0 }}

@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react"
 import * as THREE from "three"
 import { useFrame, useThree } from "react-three-fiber"
+import { MAX_SECTION_WIDTH } from "constants/index.js"
 import useEventListener from "hooks/useEventListener"
-import { getRadiusBasedOnViewportSize } from "./utils"
+import { getObjectHeight, getRadiusBasedOnViewportSize } from "utils/3dUtils"
 
 function BufferGeometry({ radius }) {
   const segments = 256
@@ -30,6 +31,15 @@ function DashedBorderCircle({ initRadius, color }) {
   useEffect(() => {
     handleResizeListener()
   }, [])
+
+  useEffect(() => {
+    if (!lineRef.current) return
+    const objectHeight = getObjectHeight(lineRef)
+    if (!objectHeight) return
+    const aboutSkill3DElement = document.getElementById("about_skills_3d")
+    aboutSkill3DElement.style.height = (objectHeight * Math.min(window.innerWidth, MAX_SECTION_WIDTH)) / 10 + 50 + "px"
+  }, [lineRef.current])
+
 
   useFrame(() => {
     if (lineRef.current) {

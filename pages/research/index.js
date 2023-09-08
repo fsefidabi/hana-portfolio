@@ -28,7 +28,7 @@ export default function Research({ pageContent, commonContent }) {
       handleMoreButtonClick={handleOpenThesisPdf}
     />
 
-    <div id={"research_summary"} className={"borderTop"}>
+    <div id={"research_summary"} className={"borderTop overflow-x-hidden"}>
       <div className={"contentWrapper"}>
         <div className={"content borderRight title w-1/3"} style={{ border: "none" }}>
           <div className={"flex items-end gap-2"}>

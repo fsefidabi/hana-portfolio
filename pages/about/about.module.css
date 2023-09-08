@@ -1,0 +1,12 @@
+.skillsDescription {
+    @apply relative;
+}
+.skillsDescription p {
+    @apply inline;
+}
+.arrowContainer {
+    @apply inline absolute bottom-2.5 ml-3;
+}
+.generalizedSkills {
+    @apply w-full flex flex-col items-center text-tertiary uppercase text-sm mt-5;
+}

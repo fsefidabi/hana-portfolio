@@ -3,6 +3,7 @@ import JourneySection from "components/organisms/JourneySection"
 import PageSection from "components/organisms/PageSection"
 import Skills3DSphere from "components/molecules/Skills3DSphere"
 import ArrowSvg from "svgIcons/arrow.svg"
+import styles from "./about.module.css"
 
 export default function About({ pageContent, journeyMilestones }) {
   return <div className={"flexColContainer"}>
@@ -17,13 +18,13 @@ export default function About({ pageContent, journeyMilestones }) {
       <div className={"contentWrapper"}>
         <div className={"content borderRight title w-3/5"} style={{ border: "none" }}>
           <div className={"flex items-end gap-2"}>
-            <div className={"relative"}>
+            <div className={styles.skillsDescription}>
               {pageContent?.title2?.map(item => {
                 return item?.children?.map(child => {
                   return <p key={child._key}>{child.text}</p>
                 })
               })}
-              <div className={"inline absolute bottom-2.5 ml-3"}>
+              <div className={styles.arrowContainer}>
                 <ArrowSvg/>
               </div>
             </div>
@@ -33,12 +34,12 @@ export default function About({ pageContent, journeyMilestones }) {
         <div className={"md:w-1/6"}></div>
       </div>
 
-      <div className={"w-full flex flex-col items-center text-tertiary uppercase text-sm mt-5"}>
+      <div className={styles.generalizedSkills}>
         <p>Footwear /// Accessories /// Apparel</p>
         <p>URL /// IRL</p>
       </div>
 
-      <div id={"about_skills_3d"} className={"contentWrapper"} style={{ minHeight: "calc(100vh - 250px)" }}>
+      <div id={"about_skills_3d"} className={"contentWrapper overflow-x-hidden"}>
           <Skills3DSphere />
       </div>
     </section>

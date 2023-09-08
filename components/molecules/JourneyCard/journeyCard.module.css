@@ -1,5 +1,5 @@
 .card {
-    @apply flex flex-col border-[0.5px] w-96 bg-secondary text-primary;
+    @apply flex flex-col border-[0.5px] w-96 bg-secondary text-primary cursor-default;
 }
 .date {
     @apply flex gap-2 px-3 py-2 border-b-[0.5px] border-black uppercase font-medium text-3xl;

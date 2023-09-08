@@ -1,43 +1,42 @@
-import { useEffect, useId, useRef, useState } from "react"
-import useEventListener from "hooks/useEventListener"
+import { useEffect, useRef, useState } from "react"
+import useEventListener from "../../../hooks/useEventListener"
 
-function calcDynamicHeight(objectWidth) {
-  const windowWidth = window.innerWidth
-  const windowHeight = window.innerHeight
-  return objectWidth - windowWidth + windowHeight + 150
+const calcDynamicHeight = (objectWidth) => {
+  const vw = window.innerWidth
+  const vh = window.innerHeight
+  return objectWidth - vw + vh + 150
 }
 
-export default function Carousel({ id = useId(), header, children }) {
+const handleDynamicHeight = (ref, setDynamicHeight) => {
+  const objectWidth = ref.current.scrollWidth
+  const dynamicHeight = calcDynamicHeight(objectWidth)
+  setDynamicHeight(dynamicHeight)
+}
+
+export default function Carousel({ header, children }) {
   const [dynamicHeight, setDynamicHeight] = useState(null)
   const [translateX, setTranslateX] = useState(0)
 
   const containerRef = useRef(null)
-  const carouselRef = useRef(null)
+  const objectRef = useRef(null)
 
   useEffect(() => {
-    handleDynamicHeight(carouselRef)
+    handleDynamicHeight(objectRef, setDynamicHeight)
   }, [])
 
-  useEventListener(window, "resize", handlePageResize)
-  useEventListener(window, "scroll", handlePageScroll)
+  useEventListener(window, "resize", resizeHandler)
+  useEventListener(window, "scroll", applyScrollListener)
 
-  function handleDynamicHeight(ref) {
-    const objectWidth = ref.current.scrollWidth
-    const dynamicHeight = calcDynamicHeight(objectWidth)
-    setDynamicHeight(dynamicHeight)
-  }
-
-  function handlePageResize() {
-    handleDynamicHeight(carouselRef)
-  }
-
-  function handlePageScroll() {
+  function applyScrollListener() {
     const offsetTop = -containerRef.current.offsetTop
     setTranslateX(offsetTop)
   }
 
+  function resizeHandler() {
+    handleDynamicHeight(objectRef, setDynamicHeight)
+  }
+
   return <section
-    id={id}
     className={"borderTop relative"}
     style={{ height: `${dynamicHeight}px` }}
   >
@@ -46,7 +45,7 @@ export default function Carousel({ id = useId(), header, children }) {
       className={"sticky top-0 flex overflow-hidden h-screen"}
     >
       <div
-        ref={carouselRef}
+        ref={objectRef}
         style={{ transform: `translateX(${translateX}px)` }}>
         {header && <div
           className={"borderBottom w-screen"}
@@ -59,4 +58,5 @@ export default function Carousel({ id = useId(), header, children }) {
       </div>
     </div>
   </section>
+
 }

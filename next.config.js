@@ -11,7 +11,9 @@ const nextConfig = {
           components: path.resolve(__dirname, "components"),
           svgIcons: path.resolve(__dirname, "public/assets/svg"),
           hooks: path.resolve(__dirname, "hooks"),
-          sanityStudio: path.resolve(__dirname, "sanity-studio")
+          sanityStudio: path.resolve(__dirname, "sanity-studio"),
+          constants: path.resolve(__dirname, "constants"),
+          utils: path.resolve(__dirname, "utils")
         }
       }
     })

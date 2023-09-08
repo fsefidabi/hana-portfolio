@@ -3,7 +3,7 @@ import * as THREE from "three"
 import { useFrame, useThree } from "react-three-fiber"
 import { Html } from "@react-three/drei"
 import useEventListener from "hooks/useEventListener"
-import { getRadiusBasedOnViewportSize } from "./utils"
+import { getRadiusBasedOnViewportSize } from "utils/3dUtils"
 import styles from "./skills3dSphere.module.css"
 
 function createCircularLineGeometry(radius, segments) {
