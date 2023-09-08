@@ -1,5 +1,5 @@
 import { useId } from "react"
-import Image from "next/Image"
+import Image from "next/image"
 import Button from "components/atoms/Button"
 import Tooltip from "components/atoms/Tooltip"
 

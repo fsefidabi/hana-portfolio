@@ -20,5 +20,6 @@ export function getRadiusBasedOnViewportSize(viewport, initRadius) {
   if (!viewport.hasOwnProperty("width") || !viewport.hasOwnProperty("height")) throw new Error(`invalid value passed as viewport argument. viewport: ${JSON.stringify(viewport)}`)
   const scaleFactor = 0.013
   const radiusBasedOnViewportSize = (viewport.width - 200) * scaleFactor
-  return Math.min(radiusBasedOnViewportSize, initRadius)
+  console.log("radiusBasedOnViewportSize", radiusBasedOnViewportSize)
+  return radiusBasedOnViewportSize < initRadius ? initRadius : radiusBasedOnViewportSize
 }
