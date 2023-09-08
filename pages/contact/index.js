@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useCopyToClipboard } from "hooks/useCopyToClipboard"
-import { getCommonContent, getContactPageContent } from "sanityStudio/sanity-utils"
+import { getCommonContent, getPage } from "sanityStudio/sanity-utils"
 import ArrowSvg from "svgIcons/arrow.svg"
 import Input from "components/atoms/Input"
 import Textarea from "components/atoms/Textarea"
@@ -94,7 +94,7 @@ export default function Contact({ pageContent, commonContent }) {
 
   return <div className={styles.container}>
     <h1 className={`${styles.title} colored-text`}>
-      {pageContent?.title?.map(item => {
+      {pageContent?.title1?.map(item => {
         return item?.children?.map(child => {
           return <p key={child._key}>{child.text}</p>
         })
@@ -110,7 +110,7 @@ export default function Contact({ pageContent, commonContent }) {
           })
         })}
 
-        {pageContent?.socialMediaLinks?.map(item => {
+        {pageContent?.links?.map(item => {
           return <p key={item._key} className={styles.text}>
             <ArrowSvg/>
             <a
@@ -183,7 +183,7 @@ export default function Contact({ pageContent, commonContent }) {
           </div>
           <div className={`${styles.formRow} mt-7 xs:mt-0`}>
             <Button
-              label={loading ? pageContent.submitButtonLoadingLabel : pageContent.submitButtonLabel}
+              label={loading ? pageContent.buttonLoadingLabel1 : pageContent.buttonLabel1}
               loading={loading}
               disabled={Object.values(contactFormFields).some(field => !field)}
               handleOnClick={handleFormSubmission}
@@ -203,7 +203,7 @@ export default function Contact({ pageContent, commonContent }) {
 }
 
 export async function getStaticProps() {
-  const pageContent = await getContactPageContent()
+  const pageContent = await getPage("contact")
   const commonContent = await getCommonContent()
 
   return {

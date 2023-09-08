@@ -1,4 +1,5 @@
-import { getPages, getJourneyMilestones } from "sanityStudio/sanity-utils"
+import { useRouter } from "next/router"
+import { getPage, getJourneyMilestones } from "sanityStudio/sanity-utils"
 import JourneySection from "components/organisms/JourneySection"
 import PageSection from "components/organisms/PageSection"
 import Skills3DSphere from "components/molecules/Skills3DSphere"
@@ -6,6 +7,9 @@ import ArrowSvg from "svgIcons/arrow.svg"
 import styles from "./about.module.css"
 
 export default function About({ pageContent, journeyMilestones }) {
+  const router = useRouter()
+  const currentRoute = router.pathname
+
   return <div className={"flexColContainer"}>
     <PageSection
       id={"about_description"}
@@ -40,7 +44,7 @@ export default function About({ pageContent, journeyMilestones }) {
       </div>
 
       <div id={"about_skills_3d"} className={"contentWrapper overflow-x-hidden"}>
-          <Skills3DSphere />
+        <Skills3DSphere/>
       </div>
     </section>
 
@@ -54,7 +58,7 @@ export default function About({ pageContent, journeyMilestones }) {
 }
 
 export async function getStaticProps() {
-  const pageContent = await getPages()
+  const pageContent = await getPage("about")
   const journeyMilestones = await getJourneyMilestones()
 
   return {

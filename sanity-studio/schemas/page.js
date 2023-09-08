@@ -38,7 +38,8 @@ const page = {
     {
       name: "description2",
       title: "Description 2",
-      type: "file"
+      type: "array",
+      of: [{ type: "block" }]
     },
     {
       name: "title3",
@@ -53,12 +54,62 @@ const page = {
       of: [{ type: "block" }]
     },
     {
+      name: "fileTitle1",
+      title: "File Title 1",
+      type: "array",
+      of: [{ type: "block" }]
+    },
+    {
+      name: "file1",
+      title: "File 1",
+      type: "file"
+    },
+    {
       name: "image1",
       title: "Image 1",
       type: "image",
       options: {
         hotspot: true
       }
+    },
+    {
+      name: "links",
+      title: "Links",
+      type: "array",
+      of: [
+        {
+          name: "link",
+          title: "Link",
+          type: "object",
+          fields: [
+            {
+              name: "type",
+              title: "Type",
+              type: "string"
+            },
+            {
+              name: "label",
+              title: "Label",
+              type: "string"
+            },
+            {
+              name: "link",
+              title: "Link",
+              type: "url"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      name: "buttonLabel1",
+      title: "Button Label 1",
+      type: "string"
+    },
+    {
+      name: "buttonLoadingLabel1",
+      title: "Button Loading Label 1",
+      type: "string"
     }
   ]
 }

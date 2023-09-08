@@ -13,29 +13,15 @@ export async function getCommonContent() {
   )
 }
 
-export async function getResearchPageContent() {
-  return createClient(clientConfig).fetch(
-    groq`*[_type=="research"]{
-      _id,
-      _createdAt,
-      pageTitle,
-      descriptionTitle,
-      descriptionContent,
-      summaryTitle,
-      "presentationFile": presentationFile.asset -> url
-    }`
-  )
-}
-
 export async function getContactPageContent() {
   return createClient(clientConfig).fetch(
     groq`*[_type=="contact"]`
   )
 }
 
-export async function getPages() {
+export async function getPage(slug) {
   return createClient(clientConfig).fetch(
-    groq`*[_type=="page"]{
+    groq`*[_type=="page" && slug.current == $slug]{
       _id,
       _createdAt,
       pageTitle,
@@ -44,28 +30,18 @@ export async function getPages() {
       description1,
       title2,
       description2,
-      "image1": image1.asset->url,
       title3,
-      description3
-    }`
+      description3,
+      fileTitle1,
+      "file1": file1.asset->url,
+      "image1": image1.asset->url,
+      links,
+      buttonLabel1,
+      buttonLoadingLabel1
+    }`,
+    { slug }
   )
 }
-
-// export async function getPage(slug) {
-//   return createClient(clientConfig).fetch(
-//     groq`*[_type=="page" && slug.current == $slug][0]{
-//       _id,
-//       _createdAt,
-//       pageTitle,
-//       "slug": slug.current,
-//       title1,
-//       description1,
-//       title2,
-//       description2
-//     }`,
-//       { slug }
-//   )
-// }
 
 export async function getJourneyMilestones() {
   return createClient(clientConfig).fetch(

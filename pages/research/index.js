@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic"
-import { getCommonContent, getResearchPageContent } from "sanityStudio/sanity-utils"
+import { getCommonContent, getPage } from "sanityStudio/sanity-utils"
 import ArrowSvg from "svgIcons/arrow.svg"
 import PageSection from "components/organisms/PageSection"
 
@@ -21,8 +21,8 @@ export default function Research({ pageContent, commonContent }) {
     <PageSection
       id={"research_description"}
       pageTitle={pageContent?.pageTitle}
-      title={pageContent?.descriptionTitle}
-      description={pageContent?.descriptionContent}
+      title={pageContent?.title1}
+      description={pageContent?.description1}
       hasMoreButton={true}
       moreButtonLabel={moreButtonLabel}
       handleMoreButtonClick={handleOpenThesisPdf}
@@ -33,7 +33,7 @@ export default function Research({ pageContent, commonContent }) {
         <div className={"content borderRight title w-1/3"} style={{ border: "none" }}>
           <div className={"flex items-end gap-2"}>
             <div>
-              {pageContent?.summaryTitle?.map(item => {
+              {pageContent?.fileTitle1?.map(item => {
                 return item?.children?.map(child => {
                   return <p key={child._key}>{child.text}</p>
                 })
@@ -50,14 +50,14 @@ export default function Research({ pageContent, commonContent }) {
       </div>
 
       <div id={"research_pdf_viewer_container"} className={"content borderRight"}>
-        <DynamicPdfViewer filePath={pageContent?.presentationFile}/>
+        <DynamicPdfViewer filePath={pageContent?.file1}/>
       </div>
     </div>
   </div>
 }
 
 export async function getStaticProps() {
-  const pageContent = await getResearchPageContent()
+  const pageContent = await getPage("research")
   const commonContent = await getCommonContent()
 
   return {
