@@ -92,6 +92,12 @@ export default function Contact({ pageContent, commonContent }) {
     setToastMessage("")
   }
 
+  function copyToClipboardTooltip() {
+    return <div className={`${emailCopiedToClipboard ? "bg-tertiary" : "bg-quaternary"} font-light rounded-full px-5 py-1`}>
+      {emailCopiedToClipboard ? "copied to clipboard!" : "copy to clipboard"}
+    </div>
+  }
+
   return <div className={styles.container}>
     <h1 className={`${styles.title} colored-text`}>
       {pageContent?.title1?.map(item => {
@@ -125,12 +131,7 @@ export default function Contact({ pageContent, commonContent }) {
 
         <p className={`${styles.text} relative`}>
           <ArrowSvg/>
-          <Tooltip content={
-            <div
-              className={`${emailCopiedToClipboard ? "bg-tertiary" : "bg-quaternary"} font-light rounded-full px-5 py-1`}>
-              {emailCopiedToClipboard ? "copied to clipboard!" : "copy to clipboard"}
-            </div>
-          }>
+          <Tooltip content={copyToClipboardTooltip()}>
             <span
               className={"linkWithBorderBottomOnHover"}
               onClick={() => handleCopyEmailToClipboard(commonContent.email)}

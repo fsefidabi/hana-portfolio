@@ -3,162 +3,108 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    font-size: 55%; /* = 12px */
-  }
-  svg {
-    transform: scale(0.8);
-  }
-  @screen md {
     :root {
-      font-size: 87.5%; /* = 14px */
+        font-size: 55%; /* = 12px */
     }
+
     svg {
-      transform: scale(0.9);
+        transform: scale(0.8);
     }
-  }
-  @screen xl {
-    :root {
-      font-size: 100%; /* = 16px */
+
+    @screen md {
+        :root {
+            font-size: 87.5%; /* = 14px */
+        }
+
+        svg {
+            transform: scale(0.9);
+        }
     }
-    svg {
-      transform: scale(1);
+    @screen xl {
+        :root {
+            font-size: 100%; /* = 16px */
+        }
+
+        svg {
+            transform: scale(1);
+        }
     }
-  }
 }
 
 html,
 body {
-  @apply bg-primary text-secondary;
-  width: 100vw;
+    @apply bg-primary text-secondary;
+    width: 100vw;
 }
 
 body {
-  background-color: #010203;
-  overflow-x: hidden;
+    background-color: #010203;
+    overflow-x: hidden;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
-input:-webkit-autofill:active{
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: #ffffff;
-  transition: background-color 5000s ease-in-out 0s;
-  box-shadow: inset 0 0 20px 20px #23232329;
+input:-webkit-autofill:active {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
 }
 
 *::-moz-selection { /* Code for Firefox */
-  @apply text-secondary;
-  background: #D36C4F;
-  -webkit-text-fill-color: #FFF;
+    @apply text-secondary;
+    background: #D36C4F;
+    -webkit-text-fill-color: #FFF;
 }
 
 *::selection {
-  @apply text-secondary;
-  background: #D36C4F;
-  -webkit-text-fill-color: #FFF;
+    @apply text-secondary;
+    background: #D36C4F;
+    -webkit-text-fill-color: #FFF;
 }
 
 *:not(.colored-text)::-moz-selection { /* Code for Firefox */
-  @apply text-primary;
-  background: #D36C4F;
-  -webkit-text-fill-color: #000;
+    @apply text-primary;
+    background: #D36C4F;
+    -webkit-text-fill-color: #000;
 }
 
 *:not(.colored-text)::selection {
-  @apply text-primary;
-  background: #D36C4F;
-  -webkit-text-fill-color: #000;
+    @apply text-primary;
+    background: #D36C4F;
+    -webkit-text-fill-color: #000;
 }
 
 .oval-shadow {
-  width: 110%;
-  height: 95%;
-  position: absolute;
-  top: 12px;
-  transform: scale(1.25);
-  z-index: -1;
-  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    width: 110%;
+    height: 95%;
+    position: absolute;
+    top: 12px;
+    transform: scale(1.25);
+    z-index: -1;
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .linkWithBorderBottomOnHover {
-  @apply border-b-2 border-transparent duration-300;
-}
-.linkWithBorderBottomOnHover:hover {
-  @apply border-b-2 border-secondary cursor-pointer;
+    @apply border-b-2 border-transparent duration-300;
 }
 
-/*.tippy-box {*/
-/*  @apply bg-quaternary rounded-full px-5 py-1;*/
-/*}*/
+.linkWithBorderBottomOnHover:hover {
+    @apply border-b-2 border-secondary cursor-pointer;
+}
 
 .react-pdf__Page {
-  margin: 0 auto;
-}
-
-/************* GLOBAL PAGES STYLES *************/
-.dashedBorder {
-  height: 2px;
-  width: 40vw;
-  background-image: linear-gradient(to right, white 50%, transparent 50%);
-  background-position: left top;
-  background-repeat: repeat-x;
-  background-size: 20px 2px;
-}
-.borderTop {
-  border-top: 0.5px solid #898989;
-}
-.borderBottom {
-  border-bottom: 0.5px solid #898989;
-}
-.borderRight {
-  border-right: 0.5px solid #898989;
-}
-.borderLeft {
-  border-left: 0.5px solid #898989;
-}
-.title {
-  @apply uppercase text-4xl grow-0;
-}
-.content {
-  @apply p-5;
-}
-.contentWrapper {
-  @apply max-w-screen-xl mx-auto flex;
-}
-.contentWrapper svg {
-  @apply fill-secondary rotate-45 w-9;
-}
-.description p {
-  @apply text-base mt-6;
-}
-.description p:first-child {
-  @apply mt-0;
-}
-.description p:last-child {
-  @apply mb-5;
-}
-.description button {
-  @apply mt-10 mb-6;
-}
-.flexColContainer {
-  @apply mt-24 flex flex-col;
-}
-.readMoreButton {
-  @apply flex gap-2;
-}
-.readMoreButton svg {
-  @apply fill-secondary -rotate-45 w-5;
+    margin: 0 auto;
 }

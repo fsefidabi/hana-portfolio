@@ -6,16 +6,9 @@ const clientConfig = {
   apiVersion: "2023-08-30"
 }
 
-
 export async function getCommonContent() {
   return createClient(clientConfig).fetch(
     groq`*[_type=="common"]`
-  )
-}
-
-export async function getContactPageContent() {
-  return createClient(clientConfig).fetch(
-    groq`*[_type=="contact"]`
   )
 }
 
@@ -34,6 +27,7 @@ export async function getPage(slug) {
       description3,
       fileTitle1,
       "file1": file1.asset->url,
+      "file2": file2.asset->url,
       "image1": image1.asset->url,
       links,
       buttonLabel1,

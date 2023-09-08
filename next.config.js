@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const path = require('path')
+const path = require("path")
 
 const nextConfig = {
   reactStrictMode: true,
@@ -13,7 +13,9 @@ const nextConfig = {
           hooks: path.resolve(__dirname, "hooks"),
           sanityStudio: path.resolve(__dirname, "sanity-studio"),
           constants: path.resolve(__dirname, "constants"),
-          utils: path.resolve(__dirname, "utils")
+          utils: path.resolve(__dirname, "utils"),
+          framerMotionAnimations: path.resolve(__dirname, "framer-motion-animations"),
+          styles: path.resolve(__dirname, "styles")
         }
       }
     })
@@ -30,6 +32,15 @@ const nextConfig = {
       })
 
     return config
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+        port: ""
+      }
+    ]
   }
 }
 

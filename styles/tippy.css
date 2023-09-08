@@ -1,0 +1,9 @@
+.tippy-box[data-animation="fade_preview"] div img {
+    padding-bottom: 30px;
+}
+.tippy-box[data-animation="fade_preview"][data-state='visible'] {
+    @apply animate-fadeIn;
+}
+.tippy-box[data-animation="fade_preview"][data-state='hidden'] {
+    @apply animate-fadeOut;
+}

@@ -1,0 +1,68 @@
+.dashedBorder {
+    height: 2px;
+    width: 40vw;
+    background-image: linear-gradient(to right, white 50%, transparent 50%);
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-size: 20px 2px;
+}
+
+.borderTop {
+    border-top: 0.5px solid #898989;
+}
+
+.borderBottom {
+    border-bottom: 0.5px solid #898989;
+}
+
+.borderRight {
+    border-right: 0.5px solid #898989;
+}
+
+.borderLeft {
+    border-left: 0.5px solid #898989;
+}
+
+.title {
+    @apply uppercase text-4xl grow-0;
+}
+
+.content {
+    @apply p-5;
+}
+
+.contentWrapper {
+    @apply max-w-screen-xl mx-auto flex;
+}
+
+.contentWrapper svg {
+    @apply fill-secondary rotate-45 w-9;
+}
+
+.description p {
+    @apply text-base mt-6;
+}
+
+.description p:first-child {
+    @apply mt-0;
+}
+
+.description p:last-child {
+    @apply mb-5;
+}
+
+.description button {
+    @apply mt-10 mb-6;
+}
+
+.flexColContainer {
+    @apply mt-24 flex flex-col;
+}
+
+.readMoreButton {
+    @apply flex gap-2;
+}
+
+.readMoreButton svg {
+    @apply fill-secondary -rotate-45 w-5;
+}

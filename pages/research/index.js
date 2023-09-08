@@ -9,7 +9,7 @@ const DynamicPdfViewer = dynamic(() => import("components/molecules/PdfViewer"),
 
 export default function Research({ pageContent, commonContent }) {
   function handleOpenThesisPdf() {
-    window.open("/assets/thesis/Presentation-Thesis.pdf")
+    window.open(pageContent.file1)
   }
 
   const moreButtonLabel = <div className={"readMoreButton"}>
@@ -25,6 +25,7 @@ export default function Research({ pageContent, commonContent }) {
       description={pageContent?.description1}
       hasMoreButton={true}
       moreButtonLabel={moreButtonLabel}
+      moreButtonHoverImage={pageContent?.image1}
       handleMoreButtonClick={handleOpenThesisPdf}
     />
 
@@ -50,7 +51,7 @@ export default function Research({ pageContent, commonContent }) {
       </div>
 
       <div id={"research_pdf_viewer_container"} className={"content borderRight"}>
-        <DynamicPdfViewer filePath={pageContent?.file1}/>
+        <DynamicPdfViewer filePath={pageContent?.file2}/>
       </div>
     </div>
   </div>

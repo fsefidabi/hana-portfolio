@@ -65,6 +65,11 @@ const page = {
       type: "file"
     },
     {
+      name: "file2",
+      title: "File 2",
+      type: "file"
+    },
+    {
       name: "image1",
       title: "Image 1",
       type: "image",

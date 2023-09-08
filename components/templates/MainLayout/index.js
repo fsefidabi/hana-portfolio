@@ -5,7 +5,7 @@ import Footer from "components/organisms/Footer"
 const DynamicHeader = dynamic(() => import("components/organisms/Header"), {
   ssr: false
 })
-const DynamicScrollToTopButton = dynamic(() => import("components/molecules/ScrollToTopButton"), {
+const DynamicScrollToTopButton = dynamic(() => import("components/atoms/ScrollToTopButton"), {
   ssr: false
 })
 

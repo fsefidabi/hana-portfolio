@@ -26,10 +26,23 @@ module.exports = {
         moveInRight: {
           "0%": { right: "-100%" },
           "100%": { right: "0.5rem" }
+        },
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        },
+        fadeOut: {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 }
         }
       },
       animation: {
-        moveInRight: "moveInRight 1s ease"
+        moveInRight: "moveInRight 1s ease",
+        fadeIn: "fadeIn 500ms ease-in-out",
+        fadeOut: "fadeOut 500ms ease-in-out"
+      },
+      boxShadow: {
+        "smooth": "0px 0px 10px 6px #72220a"
       }
     },
     fontFamily: {
