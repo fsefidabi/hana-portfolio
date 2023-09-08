@@ -21,5 +21,5 @@ export function getRadiusBasedOnViewportSize(viewport, initRadius) {
   const scaleFactor = 0.013
   const radiusBasedOnViewportSize = (viewport.width - 200) * scaleFactor
   console.log("radiusBasedOnViewportSize", radiusBasedOnViewportSize)
-  return radiusBasedOnViewportSize < initRadius ? initRadius : radiusBasedOnViewportSize
+  return radiusBasedOnViewportSize < initRadius ? 2.5 : radiusBasedOnViewportSize
 }
