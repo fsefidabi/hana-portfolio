@@ -5,9 +5,12 @@ import Footer from "components/organisms/Footer"
 const DynamicHeader = dynamic(() => import("components/organisms/Header"), {
   ssr: false
 })
+const DynamicScrollToTopButton = dynamic(() => import("components/molecules/ScrollToTopButton"), {
+  ssr: false
+})
 
 export default function MainLayout({ children }) {
-  return <div className={"min-h-screen text-xs md:text-xl lg:text-2xl"}>
+  return <div className={"w-screen min-h-screen text-xs md:text-xl lg:text-2xl"}>
     <Head>
       <title>Hananeh Sefidabi</title>
       <meta name="description" content="Hananeh Sefidabi Portfolio"/>
@@ -20,6 +23,8 @@ export default function MainLayout({ children }) {
       <main className={"flex flex-col grow font-ClashGrotesk"}>
         {children}
       </main>
+
+      <DynamicScrollToTopButton/>
 
       <Footer/>
     </div>
