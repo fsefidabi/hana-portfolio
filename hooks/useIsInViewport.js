@@ -8,7 +8,6 @@ export function useIsInViewport(ref) {
     { rootMargin: "-400px" }
   )
 
-
   useEffect(() => {
     observer?.observe(ref.current)
 
