@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react"
 import { useMediaQuery } from "hooks/useMediaQuery"
+import { getCommonContent } from "sanityStudio/sanity-utils"
 import LinkedInSvg from "svgIcons/linkedin.svg"
 import BehanceSvg from "svgIcons/behance.svg"
 import InstagramSvg from "svgIcons/instagram.svg"
@@ -8,12 +10,19 @@ import styles from "./footer.module.css"
 
 export default function Footer() {
   const matches = useMediaQuery("(max-width: 640px)")
+  const [email, setEmail] = useState("")
 
-  return matches ? <MobileFooter/> :
+  useEffect(() => {
+    getCommonContent().then(res => {
+      setEmail(res[0].email)
+    })
+  }, [])
+
+  return matches ? <MobileFooter email={email}/> :
     <footer className={styles.footer}>
       <div className={styles.contactSection}>
         <div className={styles.socialMediaSection}>
-        <span onClick={() => window.open("mailto:hananehsefidabi@gmail.com")}>
+        <span onClick={() => window.open(`mailto:${email}`)}>
           <EmailSvg className={styles.contactIcon}/>
         </span>
           <a href={"https://www.instagram.com/hananehsefidabi/"} target={"_blank"}>

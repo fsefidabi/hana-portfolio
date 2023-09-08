@@ -1,0 +1,18 @@
+.card {
+    @apply flex flex-col border-[0.5px] w-96 bg-secondary text-primary;
+}
+.date {
+    @apply flex gap-2 px-3 py-2 border-b-[0.5px] border-black uppercase font-medium text-3xl;
+}
+.date svg {
+    @apply w-6;
+}
+.image {
+    @apply w-full object-cover bg-yellow-200 border-b-[0.5px] border-black;
+}
+.title {
+    @apply py-1 px-3 uppercase text-3xl leading-tight font-medium;
+}
+.description {
+    @apply text-[1.4rem] leading-tight p-3;
+}

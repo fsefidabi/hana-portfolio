@@ -19,7 +19,7 @@ export default function Home() {
   }
 
   return (
-    <div className={`font-ClashGrotesk ${styles.main}`}>
+    <div className={styles.main}>
       <div className={"flex text-6xl"} style={{ transform: "translate(2px, 0px)" }}>
         <div className={"relative flex justify-center"}>
           <div className={"uppercase absolute font-semibold flex flex-col justify-center align-center"}
@@ -43,7 +43,7 @@ export default function Home() {
             style={{ height: "100%" }}
             onMouseOver={flipOval}
           >
-            <p>Check out a selection of my works here!</p>
+            <p className={"z-10"}>Check out a selection of my works here!</p>
           </div>
           <OvalSvg className={"fill-secondary"} id={"oval"}/>
           <div className={"oval-shadow"}></div>
@@ -57,7 +57,7 @@ export default function Home() {
             onMouseLeave={flipOval}
             onClick={redirectToPortfolio}
           >
-            <p>Check out a selection of my works here!</p>
+            <p className={"z-10"}>Check out a selection of my works here!</p>
           </div>
           <OvalSvg className={"fill-tertiary"} id={"oval"}/>
           <div className={"oval-shadow"}></div>

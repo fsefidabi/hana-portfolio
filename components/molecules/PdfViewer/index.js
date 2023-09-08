@@ -1,12 +1,14 @@
+"use client"
+
 import { useEffect, useState, useRef } from "react"
 import { Document, Page, pdfjs } from "react-pdf"
 import { useWindowSize } from "hooks/useWindowSize"
 import { useIsInViewport } from "hooks/useIsInViewport"
-import PdfViewerLoading from "./PdfViewerLoading"
+import useEventListener from "hooks/useEventListener"
 import SingleArrow from "svgIcons/singleArrow.svg"
 import DoubleArrow from "svgIcons/doubleArrow.svg"
+import PdfViewerLoading from "./PdfViewerLoading"
 import styles from "./pdfViewer.module.css"
-import useEventListener from "../../../hooks/useEventListener"
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",

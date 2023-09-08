@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useCopyToClipboard } from "hooks/useCopyToClipboard"
+import { getCommonContent, getContactPageContent } from "sanityStudio/sanity-utils"
 import ArrowSvg from "svgIcons/arrow.svg"
 import Input from "components/atoms/Input"
 import Textarea from "components/atoms/Textarea"
@@ -7,7 +8,6 @@ import Button from "components/atoms/Button"
 import Tooltip from "components/atoms/Tooltip"
 import { Toast } from "components/atoms/Toast"
 import styles from "./Contact.module.css"
-import { getCommonContent, getContactPageContent } from "../../sanity-studio/sanity-utils"
 
 const INITIAL_CONTACT_FORM_FIELDS = {
   name: "",
@@ -133,7 +133,7 @@ export default function Contact({ pageContent, commonContent }) {
           }>
             <span
               className={"linkWithBorderBottomOnHover"}
-              onClick={() => handleCopyEmailToClipboard("hananehsefidabi@gmail.com")}
+              onClick={() => handleCopyEmailToClipboard(commonContent.email)}
               onMouseOut={handleEmailLinkMouseLeave}
             >
               {commonContent.email}

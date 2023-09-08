@@ -30,7 +30,7 @@
     @apply stroke-white opacity-50;
 }
 .loading {
-    @apply bg-gray-800 flex justify-center;
+    @apply bg-gray-800 flex justify-center mx-auto;
 }
 .loading svg {
     @apply h-16 w-16;

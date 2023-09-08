@@ -27,55 +27,10 @@
   }
 }
 
-@font-face {
-  font-family: 'NuetralFace';
-  src: url('/assets/fonts/NeutralFace.otf');
-  font-weight: 400;
-  font-style: normal;
-}
-/*@font-face {*/
-/*  font-family: 'NuetralFaceBold';*/
-/*  src: url('/assets/fonts/NeutralFace-Bold.otf');*/
-/*  font-weight: 600;*/
-/*  font-style: normal;*/
-/*}*/
-@font-face {
-  font-family: 'ClashGrotesk';
-  src: url('/assets/fonts/ClashGrotesk-Bold.otf');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ClashGrotesk';
-  src: url('/assets/fonts/ClashGrotesk-Semibold.otf');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ClashGrotesk';
-  src: url('/assets/fonts/ClashGrotesk-Medium.otf');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ClashGrotesk';
-  src: url('/assets/fonts/ClashGrotesk-Regular.otf');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'ClashGrotesk';
-  src: url('/assets/fonts/ClashGrotesk-Light.otf');
-  font-weight: 300;
-  font-style: normal;
-}
-
 html,
 body {
   @apply bg-primary text-secondary;
   width: 100vw;
-  font-family: ClashGroteskRegular, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 body {
@@ -148,3 +103,62 @@ input:-webkit-autofill:active{
 /*.tippy-box {*/
 /*  @apply bg-quaternary rounded-full px-5 py-1;*/
 /*}*/
+
+.react-pdf__Page {
+  margin: 0 auto;
+}
+
+/************* GLOBAL PAGES STYLES *************/
+.dashedBorder {
+  height: 2px;
+  width: 40vw;
+  background-image: linear-gradient(to right, white 50%, transparent 50%);
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: 20px 2px;
+}
+.borderTop {
+  border-top: 0.5px solid #898989;
+}
+.borderBottom {
+  border-bottom: 0.5px solid #898989;
+}
+.borderRight {
+  border-right: 0.5px solid #898989;
+}
+.borderLeft {
+  border-left: 0.5px solid #898989;
+}
+.title {
+  @apply uppercase text-4xl grow-0;
+}
+.content {
+  @apply p-5;
+}
+.contentWrapper {
+  @apply max-w-screen-xl mx-auto flex;
+}
+.contentWrapper svg {
+  @apply fill-secondary rotate-45 w-9;
+}
+.description p {
+  @apply text-base mt-6;
+}
+.description p:first-child {
+  @apply mt-0;
+}
+.description p:last-child {
+  @apply mb-5;
+}
+.description button {
+  @apply mt-10 mb-6;
+}
+.flexColContainer {
+  @apply mt-24 flex flex-col;
+}
+.readMoreButton {
+  @apply flex gap-2;
+}
+.readMoreButton svg {
+  @apply fill-secondary -rotate-45 w-5;
+}

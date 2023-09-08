@@ -4,11 +4,11 @@ import InstagramSvg from "svgIcons/instagram.svg"
 import EmailSvg from "svgIcons/email.svg"
 import styles from "./footer.module.css"
 
-export default function MobileFooter() {
+export default function MobileFooter({ email }) {
   return <footer className={styles.footer}>
     <div className={styles.contactSection}>
       <div className={`${styles.socialMediaSection} ${styles.mobileSocialMediaSection}`}>
-        <span onClick={() => window.open("mailto:hananehsefidabi@gmail.com")}>
+        <span onClick={() => window.open(`mailto:${email}`)}>
           <EmailSvg className={styles.contactIcon}/>
         </span>
         <a href={"https://www.instagram.com/hananehsefidabi/"} target={"_blank"}>

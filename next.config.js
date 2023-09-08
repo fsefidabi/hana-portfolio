@@ -10,7 +10,8 @@ const nextConfig = {
         alias: {
           components: path.resolve(__dirname, "components"),
           svgIcons: path.resolve(__dirname, "public/assets/svg"),
-          hooks: path.resolve(__dirname, "hooks")
+          hooks: path.resolve(__dirname, "hooks"),
+          sanityStudio: path.resolve(__dirname, "sanity-studio")
         }
       }
     })

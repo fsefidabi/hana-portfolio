@@ -11,7 +11,7 @@ export default function Header() {
     <header className={styles.container}>
       <ul className={styles.menuContainer}>
         <li className={styles.menuItem}>
-          <Link href="#">Works</Link>
+          <Link href="/">Works</Link>
         </li>
         <li className={styles.menuItem}>
           <Link href="/research">Research</Link>
@@ -24,7 +24,7 @@ export default function Header() {
 
       <ul className={styles.menuContainer}>
         <li className={styles.menuItem}>
-          <Link href="#">About</Link>
+          <Link href="/about">About</Link>
         </li>
         <li className={styles.menuItem}>
           <Link href="/contact">Contact</Link>

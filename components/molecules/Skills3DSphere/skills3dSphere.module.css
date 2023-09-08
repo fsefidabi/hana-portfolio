@@ -1,0 +1,5 @@
+.skillLabel {
+    @apply bg-primary flex justify-center items-center border-2 border-tertiary px-1 text-white text-xs whitespace-nowrap uppercase absolute;
+    top: -30px;
+    left: -50px;
+}

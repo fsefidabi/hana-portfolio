@@ -1,8 +1,7 @@
 import dynamic from "next/dynamic"
-import { getCommonContent, getResearchPageContent } from "../../sanity-studio/sanity-utils"
+import { getCommonContent, getResearchPageContent } from "sanityStudio/sanity-utils"
 import ArrowSvg from "svgIcons/arrow.svg"
-import Button from "components/atoms/Button"
-import styles from "./research.module.css"
+import PageSection from "components/organisms/PageSection"
 
 const DynamicPdfViewer = dynamic(() => import("components/molecules/PdfViewer"), {
   ssr: false
@@ -13,43 +12,25 @@ export default function Research({ pageContent, commonContent }) {
     window.open("/assets/thesis/Presentation-Thesis.pdf")
   }
 
-  return <div className={styles.container}>
-    <div className={styles.sectionWrapper}>
-      <div className={styles.content}>
-        <div className={`${styles.section} ${styles.title} w-1/3`}>{pageContent?.pageTitle}</div>
-        <div className={`${styles.section}`}>
-          <div className={styles.title}>
-            {pageContent?.descriptionTitle?.map(item => {
-              return item?.children?.map(child => {
-                return <p key={child._key}>{child.text}</p>
-              })
-            })}
-          </div>
+  const moreButtonLabel = <div className={"readMoreButton"}>
+    <span>{commonContent?.readFullText}</span>
+    <ArrowSvg/>
+  </div>
 
-          <div className={styles.description}>
-            {pageContent?.descriptionContent?.map(item => {
-              return item?.children?.map(child => {
-                return <p key={child._key}>{child.text}</p>
-              })
-            })}
+  return <div className={"flexColContainer"}>
+    <PageSection
+      id={"research_description"}
+      pageTitle={pageContent?.pageTitle}
+      title={pageContent?.descriptionTitle}
+      description={pageContent?.descriptionContent}
+      hasMoreButton={true}
+      moreButtonLabel={moreButtonLabel}
+      handleMoreButtonClick={handleOpenThesisPdf}
+    />
 
-            <Button
-              label={<div className={styles.readFullTextButton}>
-                <span>{commonContent?.readFullText}</span>
-                <ArrowSvg/>
-              </div>}
-              handleOnClick={handleOpenThesisPdf}
-            />
-          </div>
-        </div>
-        <div className={"w-1/6"} style={{ minWidth: "30px" }}></div>
-      </div>
-    </div>
-
-
-    <div>
-      <div className={styles.content}>
-        <div className={`${styles.section} ${styles.title} w-1/3`} style={{ border: "none" }}>
+    <div id={"research_summary"} className={"borderTop"}>
+      <div className={"contentWrapper"}>
+        <div className={"content borderRight title w-1/3"} style={{ border: "none" }}>
           <div className={"flex items-end gap-2"}>
             <div>
               {pageContent?.summaryTitle?.map(item => {
@@ -64,10 +45,11 @@ export default function Research({ pageContent, commonContent }) {
           </div>
 
         </div>
-        <div className={styles.section} style={{ border: "none" }}></div>
-        <div className={"w-1/6"}></div>
+        <div className={"content borderRight"} style={{ border: "none" }}></div>
+        <div className={"md:w-1/6"}></div>
       </div>
-      <div className={styles.section}>
+
+      <div id={"research_pdf_viewer_container"} className={"content borderRight"}>
         <DynamicPdfViewer filePath={pageContent?.presentationFile}/>
       </div>
     </div>

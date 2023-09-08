@@ -12,13 +12,13 @@ export default function MobileHeader() {
 
     <ul className={`${styles.menuContainer} ${styles.mobileMenuContainer}`}>
       <li className={styles.menuItem}>
-        <Link href="#">Works</Link>
+        <Link href="/">Works</Link>
       </li>
       <li className={styles.menuItem}>
         <Link href="/research">Research</Link>
       </li>
       <li className={styles.menuItem}>
-        <Link href="#">About</Link>
+        <Link href="/about">About</Link>
       </li>
       <li className={styles.menuItem}>
         <Link href="/contact">Contact</Link>
