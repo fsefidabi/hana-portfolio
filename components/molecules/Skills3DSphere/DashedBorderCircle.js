@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react"
 import * as THREE from "three"
-import { useFrame, useThree } from "react-three-fiber"
+import { useFrame, useThree } from "@react-three/fiber"
 import { MAX_SECTION_WIDTH } from "constants/index.js"
 import useEventListener from "hooks/useEventListener"
 import { getObjectHeight, getRadiusBasedOnViewportSize } from "utils/3dUtils"

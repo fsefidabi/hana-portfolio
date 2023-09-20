@@ -41,6 +41,7 @@ export default function JourneySection({ id, title, description, journeyMileston
           date={item.date}
           title={item.title}
           description={item.description}
+          image={item.image1}
         />
       })}
     </div>

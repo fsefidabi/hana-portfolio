@@ -40,6 +40,7 @@ export default function PdfViewer(props) {
   function handleKeyDownEvents(e) {
     if (!isDocumentInViewport) return
     documentRef.current.focus()
+    console.log("e.code", e?.code)
     if (e.code === "ArrowRight") handleGoToNextPage()
     if (e.code === "ArrowLeft") handleGoToPrevPage()
   }
@@ -57,10 +58,12 @@ export default function PdfViewer(props) {
   }
 
   function handleGoToPrevPage() {
+    console.log("in handleGoToPrevPage", pageNumber)
     setPageNumber(pageNumber - 1)
   }
 
   function handleGoToNextPage() {
+    console.log("in handleGoToNextPage", pageNumber)
     setPageNumber(pageNumber + 1)
   }
 

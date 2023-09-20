@@ -39,6 +39,14 @@ export async function getPage(slug) {
 
 export async function getJourneyMilestones() {
   return createClient(clientConfig).fetch(
-    groq`*[_type=="journeyMilestone"]`
+    groq`*[_type=="journeyMilestone"]{
+      _id,
+      _createdAt,
+      title,
+      date,
+      order,
+      description,
+      "image1": image1.asset->url,
+    }`
   )
 }

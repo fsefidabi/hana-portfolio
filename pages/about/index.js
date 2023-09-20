@@ -1,4 +1,3 @@
-import { useRouter } from "next/router"
 import { getPage, getJourneyMilestones } from "sanityStudio/sanity-utils"
 import JourneySection from "components/organisms/JourneySection"
 import PageSection from "components/organisms/PageSection"
@@ -7,15 +6,13 @@ import ArrowSvg from "svgIcons/arrow.svg"
 import styles from "./about.module.css"
 
 export default function About({ pageContent, journeyMilestones }) {
-  const router = useRouter()
-  const currentRoute = router.pathname
-
   return <div className={"flexColContainer"}>
     <PageSection
       id={"about_description"}
       pageTitle={pageContent?.pageTitle}
       title={pageContent?.title1}
       description={pageContent?.description1}
+      image={pageContent?.image1}
     />
 
     <section id={"about_skills"} className={"borderTop"}>

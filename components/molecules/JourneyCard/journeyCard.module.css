@@ -2,17 +2,55 @@
     @apply flex flex-col border-[0.5px] w-96 bg-secondary text-primary cursor-default;
 }
 .date {
-    @apply flex gap-2 px-3 py-2 border-b-[0.5px] border-black uppercase font-medium text-3xl;
+    @apply flex gap-2 px-3 py-2 border-b-[0.5px] border-black uppercase font-medium text-2xl;
 }
 .date svg {
     @apply w-6;
 }
 .image {
-    @apply w-full object-cover bg-yellow-200 border-b-[0.5px] border-black;
+    @apply relative w-full h-[25rem] object-cover bg-tertiary border-b-[0.5px] border-black;
+}
+.bottomSection {
+    @apply relative min-h-[4.25rem];
 }
 .title {
-    @apply py-1 px-3 uppercase text-3xl leading-tight font-medium;
+    @apply py-1 px-3 uppercase text-2xl leading-tight font-medium absolute;
 }
 .description {
-    @apply text-[1.4rem] leading-tight p-3;
+    @apply text-[1.2rem] leading-tight;
+}
+.description p {
+    @apply h-full;
+}
+
+@media screen and (max-height: 800px) {
+    .card {
+        @apply w-72;
+    }
+
+    .description {
+        @apply text-sm;
+    }
+
+    .image {
+        @apply h-[20rem]
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .card {
+        @apply w-60;
+    }
+
+    .title, .date {
+        @apply text-base;
+    }
+
+    .description {
+        @apply text-xs;
+    }
+
+    .image {
+        @apply h-[16rem]
+    }
 }

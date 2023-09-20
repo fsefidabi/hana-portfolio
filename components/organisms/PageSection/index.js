@@ -12,7 +12,8 @@ export default function PageSection(props) {
     hasMoreButton,
     moreButtonLabel,
     moreButtonHoverImage,
-    handleMoreButtonClick
+    handleMoreButtonClick,
+    image
   } = props
 
   function screenshotImageTooltip() {
@@ -33,13 +34,23 @@ export default function PageSection(props) {
       </div>
 
       <div className={"content borderRight w-2/3"}>
-        {title?.length > 0 ? <div className={"title mb-10"}>
-          {title?.map(item => {
-            return item?.children?.map(child => {
-              return <p key={child._key}>{child.text}</p>
-            })
-          })}
-        </div> : null}
+        <div className={"flex gap-4 mb-10"}>
+          {image && <div className={"w-48 bg-secondary relative shrink-0"}>
+            <Image
+              src={image}
+              alt={"Hana photo"}
+              layout={"fill"}
+              objectFit={"cover"}
+            />
+          </div>}
+          {title?.length > 0 ? <div className={"title"}>
+            {title?.map(item => {
+              return item?.children?.map(child => {
+                return <p key={child._key}>{child.text}</p>
+              })
+            })}
+          </div> : null}
+        </div>
 
         <div className={"description"}>
           {description?.map(item => {
