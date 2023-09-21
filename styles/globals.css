@@ -111,8 +111,6 @@ input:-webkit-autofill:active {
 }
 
 #custom-cursor {
-    @apply bg-tertiary rounded-full fixed z-[1000];
-    width: 10px;
-    height: 10px;
+    @apply w-[10px] h-[10px] bg-tertiary rounded-full fixed z-[1000] pointer-events-none;
 }
 
