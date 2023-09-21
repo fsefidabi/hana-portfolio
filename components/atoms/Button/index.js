@@ -13,7 +13,7 @@ export default function Button(props) {
   } = props
 
   return <button
-    className={`${styles.button} ${loading ? "cursor-progress" : "cursor-pointer"}`}
+    className={`${styles.button} ${loading ? "cursor-progress" : "cursor-none"}`}
     disabled={disabled}
     onClick={handleOnClick}
     onMouseMove={handleOnMouseMove}

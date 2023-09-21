@@ -51,6 +51,7 @@ a {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor: none;
 }
 
 input:-webkit-autofill,
@@ -102,9 +103,16 @@ input:-webkit-autofill:active {
 }
 
 .linkWithBorderBottomOnHover:hover {
-    @apply border-b-2 border-secondary cursor-pointer;
+    @apply border-b-2 border-secondary;
 }
 
 .react-pdf__Page {
     margin: 0 auto;
 }
+
+#custom-cursor {
+    @apply bg-tertiary rounded-full fixed z-[1000];
+    width: 10px;
+    height: 10px;
+}
+

@@ -9,7 +9,7 @@
     border-bottom: 0.5px solid #898989;
 }
 .logoSvg {
-    @apply fill-secondary cursor-pointer;
+    @apply fill-secondary;
 }
 .mobileLogoSvg {
     @apply mx-auto;
@@ -24,5 +24,5 @@
     @apply ml-5 px-3 uppercase;
 }
 .menuItem a:hover {
-    @apply border-b-2 border-secondary cursor-pointer;
+    @apply border-b-2 border-secondary;
 }

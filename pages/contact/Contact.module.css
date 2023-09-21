@@ -47,7 +47,7 @@
 }
 .text span:not(.contactFormDescription):hover,
 .text a:hover {
-    @apply border-b-2 border-secondary cursor-pointer;
+    @apply border-b-2 border-secondary;
 }
 .contactFormDescription:after {
     content: ":)";
