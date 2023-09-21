@@ -13,6 +13,7 @@ export default function About({ pageContent, journeyMilestones }) {
       title={pageContent?.title1}
       description={pageContent?.description1}
       image={pageContent?.image1}
+      customTitleStyle={"text-tertiary"}
     />
 
     <section id={"about_skills"} className={"borderTop"}>

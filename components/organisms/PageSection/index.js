@@ -9,11 +9,12 @@ export default function PageSection(props) {
     pageTitle,
     title,
     description,
+    image,
     hasMoreButton,
     moreButtonLabel,
     moreButtonHoverImage,
-    handleMoreButtonClick,
-    image
+    customTitleStyle,
+    handleMoreButtonClick
   } = props
 
   function screenshotImageTooltip() {
@@ -46,7 +47,7 @@ export default function PageSection(props) {
           {title?.length > 0 ? <div className={"title"}>
             {title?.map(item => {
               return item?.children?.map(child => {
-                return <p key={child._key}>{child.text}</p>
+                return <p key={child._key} className={customTitleStyle}>{child.text}</p>
               })
             })}
           </div> : null}

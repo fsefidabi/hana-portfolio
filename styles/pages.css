@@ -24,7 +24,7 @@
 }
 
 .title {
-    @apply uppercase text-4xl grow-0;
+    @apply text-4xl grow-0;
 }
 
 .content {

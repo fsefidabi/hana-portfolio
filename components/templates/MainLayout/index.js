@@ -1,3 +1,4 @@
+import { useRef } from "react"
 import Head from "next/head"
 import dynamic from "next/dynamic"
 import Footer from "components/organisms/Footer"
@@ -11,15 +12,14 @@ const DynamicScrollToTopButton = dynamic(() => import("components/atoms/ScrollTo
 })
 
 export default function MainLayout({ children }) {
-  const customCursorElement = document.getElementById("custom-cursor")
+  const customCursorRef = useRef()
 
   useEventListener(document, "mousemove", positionCustomCursor)
-  useEventListener(document, "mouseenter", positionCustomCursor)
 
   function positionCustomCursor(e) {
-    if (!customCursorElement) return
-    customCursorElement.style.left = e.clientX + "px"
-    customCursorElement.style.top = e.clientY + "px"
+    if (!customCursorRef.current) return
+    customCursorRef.current.style.left = e.clientX + "px"
+    customCursorRef.current.style.top = e.clientY + "px"
   }
 
   return <div className={"w-screen min-h-screen text-xs md:text-xl lg:text-2xl"}>
@@ -29,7 +29,7 @@ export default function MainLayout({ children }) {
       <link rel="icon" href="/favicon.svg" sizes="any"/>
     </Head>
 
-    <div id={"custom-cursor"}></div>
+    <div id={"custom-cursor"} ref={customCursorRef}></div>
 
     <div className={"flex flex-col min-h-screen relative z-10"}>
       <DynamicHeader/>
