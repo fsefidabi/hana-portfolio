@@ -35,13 +35,18 @@ export default function PageSection(props) {
       </div>
 
       <div className={"content borderRight w-2/3"}>
-        <div className={"flex gap-4 mb-10"}>
-          {image && <div className={"w-48 bg-secondary relative shrink-0"}>
+        <div className={"flex flex-col xs:flex-row gap-4 mb-10"}>
+          {image && <div className={"relative shrink-0 overflow-hidden"}>
             <Image
               src={image}
               alt={"Hana photo"}
-              layout={"fill"}
-              objectFit={"cover"}
+              width={200}
+              height={250}
+              className={"h-[16rem] md:h-[18rem] w-[12rem] md:w-[12rem]"}
+              // width="0"
+              // height="0"
+              // sizes="100vw"
+              // className="w-full h-auto"
             />
           </div>}
           {title?.length > 0 ? <div className={"title"}>
