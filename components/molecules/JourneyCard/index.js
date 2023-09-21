@@ -2,26 +2,13 @@ import { useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import ArrowSvg from "svgIcons/arrow.svg"
+import { titleVariants, descriptionVariants } from "./framerMotionVariants"
 import styles from "./journeyCard.module.css"
 
 export default function JourneyCard(props) {
   const { date, title, description, image } = props
 
   const [cardIsHovered, setCardIsHovered] = useState(false)
-
-  const titleVariants = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 }
-  }
-
-  const descriptionVariants = {
-    initial: { height: 0, opacity: 0 },
-    animate: {
-      height: "auto",
-      opacity: 1,
-      transition: { height: { duration: 0.5, type: "spring", velocity: 0, bounce: 0 }, opacity: { delay: 0.2 } }
-    }
-  }
 
   return <div
     className={styles.card}

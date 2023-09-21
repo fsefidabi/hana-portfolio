@@ -76,7 +76,7 @@ export default function PdfViewer(props) {
   }
 
   function handlePageMouseOver(e) {
-    const documentBoundingRect = canvasRef.current.getBoundingClientRect()
+    const documentBoundingRect = canvasRef?.current?.getBoundingClientRect()
     const threshold = window.innerWidth / 3
 
     if (e.clientX < threshold && e.clientX > documentBoundingRect.left) {
