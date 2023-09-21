@@ -62,6 +62,7 @@ export async function getStaticProps() {
     props: {
       pageContent: pageContent[0],
       journeyMilestones: journeyMilestones.sort((a, b) => a.order - b.order)
-    }
+    },
+    revalidate: 60
   }
 }

@@ -62,10 +62,10 @@ export async function getStaticProps() {
   const commonContent = await getCommonContent()
 
   return {
-    props:
-      {
-        pageContent: pageContent[0],
-        commonContent: commonContent[0]
-      }
+    props: {
+      pageContent: pageContent[0],
+      commonContent: commonContent[0]
+    },
+    revalidate: 60
   }
 }

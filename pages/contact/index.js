@@ -93,7 +93,8 @@ export default function Contact({ pageContent, commonContent }) {
   }
 
   function copyToClipboardTooltip() {
-    return <div className={`${emailCopiedToClipboard ? "bg-tertiary" : "bg-quaternary"} font-light rounded-full px-5 py-1`}>
+    return <div
+      className={`${emailCopiedToClipboard ? "bg-tertiary" : "bg-quaternary"} font-light rounded-full px-5 py-1`}>
       {emailCopiedToClipboard ? "copied to clipboard!" : "copy to clipboard"}
     </div>
   }
@@ -208,10 +209,10 @@ export async function getStaticProps() {
   const commonContent = await getCommonContent()
 
   return {
-    props:
-      {
-        pageContent: pageContent[0],
-        commonContent: commonContent[0]
-      }
+    props: {
+      pageContent: pageContent[0],
+      commonContent: commonContent[0]
+    },
+    revalidate: 60
   }
 }
