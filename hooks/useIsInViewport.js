@@ -5,7 +5,7 @@ export function useIsInViewport(ref) {
   const observer = new IntersectionObserver(([entry]) => {
       setIsIntersecting(entry.isIntersecting)
     },
-    { rootMargin: "-400px" }
+    { rootMargin: `-${window.screen.height/3}px` }
   )
 
 

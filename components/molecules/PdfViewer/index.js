@@ -38,11 +38,12 @@ export default function PdfViewer(props) {
   }, [width, height])
 
   function handleKeyDownEvents(e) {
+    console.log("e.code", e?.code)
+    console.log("isDocumentInViewport", isDocumentInViewport)
     if (!isDocumentInViewport) return
     documentRef.current.focus()
-    console.log("e.code", e?.code)
-    if (e.code === "ArrowRight") handleGoToNextPage()
-    if (e.code === "ArrowLeft") handleGoToPrevPage()
+    if (e.code === "ArrowRight" && pageNumber < totalPageCount) handleGoToNextPage()
+    if (e.code === "ArrowLeft" && pageNumber > 1) handleGoToPrevPage()
   }
 
   function updatePdfViewerWidth() {
