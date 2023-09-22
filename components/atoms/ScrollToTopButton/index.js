@@ -28,10 +28,10 @@ export default function ScrollToTopButton() {
       {show && <motion.button
         className={styles.button}
         initial={{ opacity: 0, x: "-50%", y: "-50%" }}
-        animate={fade.animate}
+        animate={fade.fadeInOut.animate}
         whileHover={{ scale: 1.2, x: "-50%", y: "-50%" }}
         transition={{ type: "spring", stiffness: 400, damping: 10 }}
-        exit={fade.exit}
+        exit={fade.fadeInOut.exit}
         onClick={scrollToTop}
       >
         <ArrowSvg/>

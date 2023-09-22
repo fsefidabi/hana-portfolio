@@ -2,7 +2,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import ArrowSvg from "svgIcons/arrow.svg"
-import { titleVariants, descriptionVariants } from "./framerMotionVariants"
+import { fade } from "framerMotionAnimations"
 import styles from "./journeyCard.module.css"
 
 export default function JourneyCard(props) {
@@ -32,7 +32,7 @@ export default function JourneyCard(props) {
     <div className={styles.bottomSection}>
       <motion.div
         className={styles.title}
-        variants={titleVariants}
+        variants={fade.fadeIn}
         animate={!cardIsHovered ? "animate" : "initial"}
       >
         {title.length > 0 ? title?.map(item => (
@@ -44,7 +44,7 @@ export default function JourneyCard(props) {
 
       <motion.div
         className={styles.description}
-        variants={descriptionVariants}
+        variants={fade.fadeInWithAutoHeightIncrease}
         animate={cardIsHovered ? "animate" : "initial"}
       >
         <div className={"p-3"}>

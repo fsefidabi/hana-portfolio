@@ -1,5 +1,7 @@
 import fade from "./fade"
+import textReveal from "./textReveal"
 
 export {
-  fade
+  fade,
+  textReveal
 }

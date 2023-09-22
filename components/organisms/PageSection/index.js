@@ -3,7 +3,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import Button from "components/atoms/Button"
 import Tooltip from "components/atoms/Tooltip"
-import { letterVariants, sentenceVariants } from "./framerMotionVariants"
+import { fade, textReveal } from "framerMotionAnimations"
 
 export default function PageSection(props) {
   const {
@@ -32,9 +32,14 @@ export default function PageSection(props) {
 
   return <section id={id} className={"borderTop"}>
     <div className={"contentWrapper"}>
-      <div className={"content borderRight title w-1/3"}>
+      <motion.div
+        className={"content borderRight title w-1/3"}
+        variants={fade.fadeIn}
+        initial={"initial"}
+        animate={"animate"}
+      >
         {pageTitle}
-      </div>
+      </motion.div>
 
       <div className={"content borderRight w-2/3"}>
         <div className={"flex flex-col xs:flex-row gap-4 mb-10"}>
@@ -53,16 +58,16 @@ export default function PageSection(props) {
           </div>}
           {title?.length > 0 ? <motion.div
             className={"title"}
-            variants={sentenceVariants}
-            initial={"hidden"}
-            animate={"visible"}
+            variants={textReveal.sentenceVariants}
+            initial={"initial"}
+            animate={"animate"}
           >
             {title?.map(item => {
               return item?.children?.map(child => {
                 return <p key={child._key} className={customTitleStyle}>
                   {child.text.split("").map((char, index) => {
                     return (
-                      <motion.span key={char + "-" + index} variants={letterVariants}>
+                      <motion.span key={char + "-" + index} variants={textReveal.letterVariants}>
                         {char}
                       </motion.span>
                     )
