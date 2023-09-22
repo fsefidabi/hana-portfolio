@@ -1,7 +1,9 @@
 import { useId } from "react"
 import Image from "next/image"
+import { motion } from "framer-motion"
 import Button from "components/atoms/Button"
 import Tooltip from "components/atoms/Tooltip"
+import { letterVariants, sentenceVariants } from "./framerMotionVariants"
 
 export default function PageSection(props) {
   const {
@@ -49,13 +51,26 @@ export default function PageSection(props) {
               // className="w-full h-auto"
             />
           </div>}
-          {title?.length > 0 ? <div className={"title"}>
+          {title?.length > 0 ? <motion.div
+            className={"title"}
+            variants={sentenceVariants}
+            initial={"hidden"}
+            animate={"visible"}
+          >
             {title?.map(item => {
               return item?.children?.map(child => {
-                return <p key={child._key} className={customTitleStyle}>{child.text}</p>
+                return <p key={child._key} className={customTitleStyle}>
+                  {child.text.split("").map((char, index) => {
+                    return (
+                      <motion.span key={char + "-" + index} variants={letterVariants}>
+                        {char}
+                      </motion.span>
+                    )
+                  })}
+                </p>
               })
             })}
-          </div> : null}
+          </motion.div> : null}
         </div>
 
         <div className={"description"}>

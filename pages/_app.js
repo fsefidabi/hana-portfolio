@@ -9,12 +9,17 @@ const DynamicMainLayout = dynamic(() => import("../components/templates/MainLayo
   ssr: false
 })
 
+const DynamicCustomCursor = dynamic(() => import("../components/atoms/CustomCursor"), {
+  ssr: false
+})
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
   if (router.pathname === "/sanity-studio") return <Component {...pageProps} />
 
   return <DynamicMainLayout>
+    <DynamicCustomCursor/>
     <Component {...pageProps} />
   </DynamicMainLayout>
 }
