@@ -8,7 +8,7 @@
     @apply w-6;
 }
 .image {
-    @apply relative w-full h-[25rem] object-cover bg-tertiary border-b-[0.5px] border-black;
+    @apply relative w-full h-[25rem] object-cover bg-tertiary border-b-[0.5px] border-black overflow-hidden;
 }
 .bottomSection {
     @apply relative min-h-[4.25rem];

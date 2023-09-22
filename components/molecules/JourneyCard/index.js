@@ -1,6 +1,5 @@
 import { useState } from "react"
-import Image from "next/image"
-import { motion } from "framer-motion"
+import { motion, useMotionValue, useTransform } from "framer-motion"
 import ArrowSvg from "svgIcons/arrow.svg"
 import { fade } from "framerMotionAnimations"
 import styles from "./journeyCard.module.css"
@@ -9,6 +8,20 @@ export default function JourneyCard(props) {
   const { date, title, description, image } = props
 
   const [cardIsHovered, setCardIsHovered] = useState(false)
+
+  const x = useMotionValue(1)
+  const y = useMotionValue(1)
+
+  const translateX = useTransform(x, [0, 400], [10, -10])
+  const translateY = useTransform(y, [0, 400], [10, -10])
+
+  function handleMouseMoveOnImage(event) {
+    const rect = event.currentTarget.getBoundingClientRect()
+
+    x.set(event.clientX - rect.left)
+    y.set(event.clientY - rect.top)
+  }
+
 
   return <div
     className={styles.card}
@@ -20,14 +33,18 @@ export default function JourneyCard(props) {
       <ArrowSvg/>
     </div>
 
-    <div className={styles.image}>
-      {image && <Image
+    <motion.div className={styles.image}>
+      {image && <motion.img
         src={image}
         alt={title}
-        layout={"fill"}
-        objectFit={"cover"}
+        className={"w-full h-full object-cover"}
+        style={{ translateX, translateY }}
+        initial={{ scale: 1.1, translateX: 0, translateY: 0 }}
+        whileHover={{ scale: 1.2 }}
+        transition={{ type: "spring", bounce: 0, duration: 1.5 }}
+        onMouseMove={handleMouseMoveOnImage}
       />}
-    </div>
+    </motion.div>
 
     <div className={styles.bottomSection}>
       <motion.div
