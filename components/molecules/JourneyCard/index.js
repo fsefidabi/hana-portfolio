@@ -41,7 +41,7 @@ export default function JourneyCard(props) {
         style={{ translateX, translateY }}
         initial={{ scale: 1.1, translateX: 0, translateY: 0 }}
         whileHover={{ scale: 1.2 }}
-        transition={{ type: "spring", bounce: 0, duration: 1.5 }}
+        transition={{ type: "spring", bounce: 0, duration: 3 }}
         onMouseMove={handleMouseMoveOnImage}
       />}
     </motion.div>
