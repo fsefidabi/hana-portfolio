@@ -65,11 +65,24 @@ export default function PageSection(props) {
             {title?.map(item => {
               return item?.children?.map(child => {
                 return <p key={child._key} className={customTitleStyle}>
-                  {child.text.split("").map((char, index) => {
+                  {child.text.split(" ").map((word, wordIndex) => {
                     return (
-                      <motion.span key={char + "-" + index} variants={textReveal.letterVariants}>
-                        {char}
-                      </motion.span>
+                      <>
+                        <span key={word + "-" + wordIndex} className={"whitespace-nowrap"}>
+                          {word.split("").map((char, charIndex) => {
+                            return (
+                              <motion.span
+                                key={char + "-" + charIndex}
+                                variants={textReveal.letterVariantsWithFixedPosition}
+                                className={"inline-block"}
+                              >
+                                {char}
+                              </motion.span>
+                            )
+                          })}
+                        </span>
+                        <span> </span>
+                      </>
                     )
                   })}
                 </p>

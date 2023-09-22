@@ -8,12 +8,18 @@ const sentenceVariants = {
   }
 }
 
-const letterVariants = {
-  initial: { opacity: 0, y: 50 },
-  animate: { opacity: 1, y: 0 }
+const letterVariantsWithFixedPosition = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 }
+}
+
+const letterVariantsWithYAxisMove = {
+  initial: {  y: "-100%" },
+  animate: {  y: 0 }
 }
 
 export default {
   sentenceVariants,
-  letterVariants
+  letterVariantsWithFixedPosition,
+  letterVariantsWithYAxisMove
 }
