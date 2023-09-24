@@ -1,0 +1,3 @@
+.arrowContainer {
+    @apply inline absolute bottom-2.5 ml-3;
+}

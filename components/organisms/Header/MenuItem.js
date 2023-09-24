@@ -30,6 +30,7 @@ export default function MenuItem(props) {
     >
       <Link
         href={path}
+        className={currentRoute !== path ? "clickable" : ""}
       >
         <span className={"inline-block flex flex-col relative overflow-hidden"}>
           <span className={currentRoute === path ? "border-b-2 border-secondary" : ""}>

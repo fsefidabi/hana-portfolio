@@ -1,37 +1,48 @@
 .page {
     @apply flex justify-center relative;
 }
+
 .page button {
     @apply w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 justify-center items-center rounded-full bg-gray-900 absolute top-1/2 -translate-y-1/2 transition-all duration-300;
 }
+
 .page button:not(:disabled):hover {
     @apply bg-gray-800;
 }
+
 .page button:disabled {
     @apply opacity-50;
 }
+
 .page button svg {
     @apply stroke-white;
 }
+
 .navigatorWrapper {
     @apply w-fit flex justify-center items-center gap-10 px-10 py-1 mx-auto my-4 text-sm border border-tertiary rounded-full;
 }
+
 .navigatorWrapper button {
     @apply relative w-7 h-7 flex justify-center items-center;
 }
+
 .navigatorWrapper button svg {
     @apply stroke-white;
 }
+
 .navigatorWrapper button:not(:disabled):hover:after {
     content: "";
     @apply w-full h-full block bg-gray-400 absolute top-0 left-0 opacity-30 rounded-full;
 }
+
 .navigatorWrapper button:disabled svg {
     @apply stroke-white opacity-50;
 }
+
 .loading {
     @apply bg-gray-800 flex justify-center mx-auto;
 }
+
 .loading svg {
     @apply h-16 w-16;
 }

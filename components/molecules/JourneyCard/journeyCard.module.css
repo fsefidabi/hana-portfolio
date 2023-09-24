@@ -13,7 +13,7 @@
 .image img {
     @apply mix-blend-luminosity;
 }
-.image:hover img {
+.card:hover img {
     @apply mix-blend-normal;
 }
 .bottomSection {

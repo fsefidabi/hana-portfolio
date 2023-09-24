@@ -54,6 +54,11 @@ a {
     cursor: none;
 }
 
+button,
+button:disabled {
+    cursor: none;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -110,7 +115,15 @@ input:-webkit-autofill:active {
     margin: 0 auto;
 }
 
-#custom-cursor {
-    @apply w-[10px] h-[10px] bg-tertiary rounded-full fixed z-[1000] pointer-events-none;
+#custom-default-cursor {
+    @apply w-[10px] h-[10px] bg-tertiary rounded-full fixed z-[1000] pointer-events-none mix-blend-difference transition-[scale] duration-300;
+    background-image: url("/assets/svg/pointer.svg");
+    background-size: cover;
 }
+
+/*#custom-pointer-cursor {*/
+/*    @apply w-[20px] h-[20px] fixed z-[1000] pointer-events-none;*/
+/*    background-image: url("/assets/svg/pointer.svg");*/
+/*    background-size: cover;*/
+/*}*/
 
