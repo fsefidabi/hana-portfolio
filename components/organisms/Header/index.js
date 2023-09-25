@@ -17,7 +17,7 @@ export default function Header() {
         })}
       </ul>
 
-      <Link href={"/"}>
+      <Link href={"/"} className={"clickable"}>
         <LogoSvg className={styles.logoSvg} width={100}/>
       </Link>
 

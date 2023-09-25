@@ -22,15 +22,16 @@ export default function JourneyCard(props) {
         y.set(event.clientY - rect.top)
     }
 
+    function handleCardHover() {
+        if (window.isScrollingToTop) return
+        setCardIsHovered(prev => !prev)
+    }
+
 
     return <motion.div
         className={styles.card}
-        initial={"initial"}
-        whileInView="animate"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={{ initial: fade.fadeInUp.initial, animate: fade.fadeIn.animate }}
-        onMouseOver={() => setCardIsHovered(prev => !prev)}
-        onMouseOut={() => setCardIsHovered(prev => !prev)}
+        onMouseOver={handleCardHover}
+        onMouseOut={handleCardHover}
     >
         <div className={styles.date}>
             {date}

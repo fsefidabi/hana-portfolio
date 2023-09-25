@@ -63,7 +63,8 @@ export default function PageSection(props) {
                 <motion.div
                     variants={fade.fadeInUp}
                     initial={"initial"}
-                    animate={"animate"}
+                    whileInView={"animate"}
+                    viewport={{ once: false, margin: "0px" }}
                 >
                     <div className={"description"}>
                         {description?.map(item => {

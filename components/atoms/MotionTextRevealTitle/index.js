@@ -9,7 +9,7 @@ export default function MotionTextRevealTitle({ text, wrapperClass, elementClass
             className={wrapperClass}
             initial={"initial"}
             whileInView="animate"
-            viewport={{ once: true, margin: `-200px 0px -200px 0px` }}
+            viewport={{ once: false, margin: `200px 0px -200px 0px` }}
             variants={textReveal.sentenceVariants}
         >
             {text?.map((item, itemIndex) => {

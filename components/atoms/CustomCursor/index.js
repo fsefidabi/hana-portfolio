@@ -14,6 +14,7 @@ export default function CustomCursor() {
             customCursorRef.current.style.backgroundImage = "none"
             customCursorRef.current.style.width = "10px"
             customCursorRef.current.style.height = "10px"
+            customCursorRef.current.zIndex = 1000
             customCursorRef.current.style.backgroundColor = "#d35d3d"
         }
     }

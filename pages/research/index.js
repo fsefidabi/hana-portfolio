@@ -53,7 +53,7 @@ export default function Research({ pageContent, commonContent }) {
                 className={"content borderRight"}
                 initial={"initial"}
                 whileInView="animate"
-                viewport={{ once: true, margin: "-100px" }}
+                viewport={{ once: false, margin: "-100px" }}
                 variants={fade.fadeInUp}
             >
                 <DynamicPdfViewer filePath={pageContent?.file2}/>

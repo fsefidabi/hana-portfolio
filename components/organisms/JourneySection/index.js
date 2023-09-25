@@ -23,7 +23,7 @@ export default function JourneySection({ id, title, description, journeyMileston
             className={"text-base"}
             initial={"initial"}
             whileInView="animate"
-            viewport={{ once: true, margin: "-100px 0px 0px -100px" }}
+            viewport={{ once: false, margin: "100px 0px 0px -100px" }}
             variants={fade.fadeInRight}
         >
             {description?.map(item => {
@@ -40,7 +40,7 @@ export default function JourneySection({ id, title, description, journeyMileston
             style={{ height: "calc(100vh - 88px)" }}
             initial={"initial"}
             whileInView="animate"
-            viewport={{ once: true, margin: "-100px 0px -100px 0px" }}
+            viewport={{ once: false, margin: "100px 0px -100px 0px" }}
             variants={fade.fadeInUp}
         >
             <div

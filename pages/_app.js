@@ -16,11 +16,17 @@ const DynamicCustomCursor = dynamic(() => import("../components/atoms/CustomCurs
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
-  if (router.pathname === "/sanity-studio") return <Component {...pageProps} />
+  console.log("router.pathname", router.pathname)
+  if (router.pathname.startsWith("/sanity-studio")) {
+    return <>
+      <Component {...pageProps} />
+      <DynamicCustomCursor/>
+    </>
+  }
 
   return <DynamicMainLayout>
-    <DynamicCustomCursor/>
     <Component {...pageProps} />
+    <DynamicCustomCursor/>
   </DynamicMainLayout>
 }
 

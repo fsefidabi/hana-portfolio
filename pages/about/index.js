@@ -35,8 +35,8 @@ export default function About({ pageContent, journeyMilestones }) {
 
             <motion.div
                 initial={"initial"}
-                whileInView="animate"
-                viewport={{ once: true, margin: "-100px" }}
+                whileInView={"animate"}
+                viewport={{ once: false, margin: "-100px" }}
                 variants={fade.fadeInUp}
             >
                 <div className={styles.generalizedSkills}>

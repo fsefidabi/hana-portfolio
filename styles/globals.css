@@ -116,7 +116,7 @@ input:-webkit-autofill:active {
 }
 
 #custom-default-cursor {
-    @apply w-[10px] h-[10px] bg-tertiary rounded-full fixed z-[1000] pointer-events-none mix-blend-difference transition-[scale] duration-300;
+    @apply w-[10px] h-[10px] bg-tertiary rounded-full fixed z-[1000] pointer-events-none mix-blend-color transition-[scale] duration-300;
     background-image: url("/assets/svg/pointer.svg");
     background-size: cover;
 }
