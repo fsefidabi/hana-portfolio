@@ -10,7 +10,7 @@ const DynamicScrollToTopButton = dynamic(() => import("components/atoms/ScrollTo
 })
 
 export default function MainLayout({ children }) {
-  return <div className={"w-screen min-h-screen text-xs md:text-xl lg:text-2xl"}>
+  return <div className={"mainPageContainer w-screen min-h-screen text-xs md:text-xl lg:text-2xl"}>
     <Head>
       <title>Hananeh Sefidabi</title>
       <meta name="description" content="Hananeh Sefidabi Portfolio"/>
