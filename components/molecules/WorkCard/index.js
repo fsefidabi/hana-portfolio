@@ -7,20 +7,21 @@ function WorkCard({ work }) {
     return (
         <motion.div
             key={work.id}
-            className={`clickable ${styles.card}`}
+            className={`${styles.card} clickable`}
             initial="initial"
             whileHover="animate"
         >
-            {work.projectMainTitle.length > 0 ? work.projectMainTitle?.map(item => (
-                item?.children?.map(child => (
-                    <motion.p
-                        className={styles.title}
-                        variants={fade.fadeInUp2}
-                    >
-                        {child.text}
-                    </motion.p>
-                ))
-            )) : null}
+            <motion.div className={styles.title} variants={fade.fadeInUp2}>
+                {work.projectMainTitle.length > 0 ? work.projectMainTitle?.map(item => (
+                    item?.children?.map(child => (
+                        <p>
+                            {child.text}
+                        </p>
+                    ))
+                )) : null}
+            </motion.div>
+
+            <motion.div className={styles.box} variants={fade.fadeIn}></motion.div>
 
             <img src={work.coverImageUrl}/>
         </motion.div>

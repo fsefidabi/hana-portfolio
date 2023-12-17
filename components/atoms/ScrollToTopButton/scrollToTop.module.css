@@ -1,5 +1,5 @@
 .button {
-    @apply sticky bottom-0 left-full -translate-x-1/2 -translate-y-1/2 w-fit
+    @apply fixed bottom-0 right-2 w-fit
     border border-primary rounded-full w-16 h-16 flex justify-center items-center bg-slate-200
     cursor-none transition-colors duration-500;
 }
