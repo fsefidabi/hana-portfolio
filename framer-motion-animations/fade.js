@@ -62,7 +62,7 @@ const fadeInWithAutoHeightIncrease = function (duration = 0.5) {
     }
 }
 
-const fadeInUp = function (duration = 2, delay = 0.5, initialOpacity = 0.3, initialYPosition = 50) {
+const fadeInUp = function (duration = 2, delay = 0.5, initialOpacity = 0.3, initialYPosition = 50, targetYPosition = 0) {
     return {
         initial: {
             opacity: initialOpacity,
@@ -70,7 +70,7 @@ const fadeInUp = function (duration = 2, delay = 0.5, initialOpacity = 0.3, init
         },
         animate: {
             opacity: 1,
-            y: 0,
+            y: targetYPosition,
             transition: { duration: duration, delay: delay, type: "spring", velocity: 0, bounce: 0 }
         }
     }
