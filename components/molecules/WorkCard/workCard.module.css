@@ -1,5 +1,5 @@
 .card {
-    @apply w-[34rem] h-[44rem] p-0.5 relative overflow-hidden;
+    @apply w-[34rem] h-[40rem] p-0.5 relative overflow-hidden;
 }
 
 .box {
@@ -11,5 +11,5 @@
 }
 
 .title {
-    @apply w-full absolute top-1/2 -translate-y-1/2 z-20 font-NuetralFace opacity-0 text-center;
+    @apply w-full absolute top-1/2 -translate-y-1/2 z-20 font-NuetralFace font-semibold opacity-0 text-center tracking-wider;
 }

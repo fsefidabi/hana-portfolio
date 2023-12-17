@@ -24,7 +24,7 @@ export default function JourneySection({ id, title, description, journeyMileston
             initial={"initial"}
             whileInView="animate"
             viewport={{ once: false, margin: "100px 0px 0px -100px" }}
-            variants={fade.fadeInRight}
+            variants={fade.fadeInRight()}
         >
             {description?.map(item => {
                 return item?.children?.map(child => {
@@ -41,7 +41,7 @@ export default function JourneySection({ id, title, description, journeyMileston
             initial={"initial"}
             whileInView="animate"
             viewport={{ once: false, margin: "100px 0px -100px 0px" }}
-            variants={fade.fadeInUp}
+            variants={fade.fadeInUp()}
         >
             <div
                 className={"content borderRight flex items-center justify-between"}

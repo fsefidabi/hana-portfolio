@@ -35,7 +35,7 @@ export default function PageSection(props) {
         <div className={"contentWrapper"}>
             <motion.div
                 className={"content borderRight title w-1/3"}
-                variants={fade.fadeIn}
+                variants={fade.fadeIn()}
                 initial={"initial"}
                 animate={"animate"}
             >
@@ -61,7 +61,7 @@ export default function PageSection(props) {
                 </div>
 
                 <motion.div
-                    variants={fade.fadeInUp}
+                    variants={fade.fadeInUp()}
                     initial={"initial"}
                     whileInView={"animate"}
                     viewport={{ once: false, margin: "0px" }}

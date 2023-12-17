@@ -11,7 +11,7 @@ function WorkCard({ work }) {
             initial="initial"
             whileHover="animate"
         >
-            <motion.div className={styles.title} variants={fade.fadeInUp2}>
+            <motion.div className={styles.title} variants={fade.fadeInUp(1, 0, 0, 20)}>
                 {work.projectMainTitle.length > 0 ? work.projectMainTitle?.map(item => (
                     item?.children?.map(child => (
                         <p>
@@ -21,7 +21,7 @@ function WorkCard({ work }) {
                 )) : null}
             </motion.div>
 
-            <motion.div className={styles.box} variants={fade.fadeIn}></motion.div>
+            <motion.div className={styles.box} variants={fade.fadeIn(0.3)} duration={0}></motion.div>
 
             <img src={work.coverImageUrl}/>
         </motion.div>

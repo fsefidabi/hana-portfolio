@@ -54,7 +54,7 @@ export default function JourneyCard(props) {
         <div className={styles.bottomSection}>
             <motion.div
                 className={styles.title}
-                variants={fade.fadeIn}
+                variants={fade.fadeIn()}
                 animate={!cardIsHovered ? "animate" : "initial"}
             >
                 {title.length > 0 ? title?.map(item => (
@@ -66,7 +66,7 @@ export default function JourneyCard(props) {
 
             <motion.div
                 className={styles.description}
-                variants={fade.fadeInWithAutoHeightIncrease}
+                variants={fade.fadeInWithAutoHeightIncrease()}
                 animate={cardIsHovered ? "animate" : "initial"}
             >
                 <div className={"p-3"}>

@@ -37,7 +37,7 @@ export default function About({ pageContent, journeyMilestones }) {
                 initial={"initial"}
                 whileInView={"animate"}
                 viewport={{ once: false, margin: "-100px" }}
-                variants={fade.fadeInUp}
+                variants={fade.fadeInUp()}
             >
                 <div className={styles.generalizedSkills}>
                     <p>Footwear /// Accessories /// Apparel</p>

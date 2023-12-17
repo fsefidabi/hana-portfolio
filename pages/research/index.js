@@ -54,7 +54,7 @@ export default function Research({ pageContent, commonContent }) {
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: false, margin: "-100px" }}
-                variants={fade.fadeInUp}
+                variants={fade.fadeInUp()}
             >
                 <DynamicPdfViewer filePath={pageContent?.file2}/>
             </motion.div>

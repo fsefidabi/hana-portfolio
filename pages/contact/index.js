@@ -115,7 +115,7 @@ export default function Contact({ pageContent, commonContent }) {
             initial={"initial"}
             whileInView="animate"
             viewport={{ once: true, margin: "-100px" }}
-            variants={fade.fadeInUp}
+            variants={fade.fadeInUp()}
         >
             <div className={styles.section}>
                 {pageContent?.description1?.map(item => {
