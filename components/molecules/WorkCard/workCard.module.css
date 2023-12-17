@@ -3,7 +3,7 @@
 }
 
 .box {
-    @apply w-full h-full absolute top-0 left-0 z-10 backdrop-blur-sm bg-black/30;
+    @apply w-full h-full absolute top-0 left-0 z-10 backdrop-blur-none xl:backdrop-blur-sm xl:bg-black/30;
 }
 
 .card img {

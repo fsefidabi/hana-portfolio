@@ -20,10 +20,10 @@ function DesktopWorkTitle({ title }) {
 }
 
 function MobileWorkTitle({ title }) {
-    return <div className={"w-full absolute bottom-0 bg-black"}>
+    return <div className={"w-full absolute bottom-0 bg-black mt-1"}>
         {title.length > 0 ? title?.map(item => (
             item?.children?.map(child => (
-                <p className={"text-center text-base mt-1"}>
+                <p className={"text-center text-lg uppercase"}>
                     {child.text}
                 </p>
             ))
