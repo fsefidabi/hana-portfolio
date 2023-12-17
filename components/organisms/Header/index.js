@@ -12,7 +12,7 @@ export default function Header() {
   return matches ? <MobileHeader/> :
     <header className={styles.container}>
       <ul className={styles.menuContainer}>
-        {MENUS.slice(0, 2).map(({ label, path }) => {
+        {MENUS.slice(0, 3).map(({ label, path }) => {
           return <MenuItem key={label} label={label} path={path} />
         })}
       </ul>
@@ -22,7 +22,7 @@ export default function Header() {
       </Link>
 
       <ul className={styles.menuContainer}>
-        {MENUS.slice(2).map(({ label, path }) => {
+        {MENUS.slice(3).map(({ label, path }) => {
           return <MenuItem key={label} label={label} path={path} />
         })}
       </ul>

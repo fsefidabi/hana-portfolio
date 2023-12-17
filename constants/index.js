@@ -10,6 +10,10 @@ export const MENUS = [
     path: "/research"
   },
   {
+    label: "Sketches",
+    path: "/sketches"
+  },
+  {
     label: "about",
     path: "/about"
   },

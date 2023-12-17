@@ -1,5 +1,6 @@
 import Link from "next/link"
 import LogoSvg from "svgIcons/logo.svg"
+import { MENUS } from "constants"
 import styles from "./header.module.css"
 
 export default function MobileHeader() {
@@ -11,18 +12,14 @@ export default function MobileHeader() {
     </div>
 
     <ul className={`${styles.menuContainer} ${styles.mobileMenuContainer}`}>
-      <li className={styles.menuItem}>
-        <Link href="/">Works</Link>
-      </li>
-      <li className={styles.menuItem}>
-        <Link href="/research">Research</Link>
-      </li>
-      <li className={styles.menuItem}>
-        <Link href="/about">About</Link>
-      </li>
-      <li className={styles.menuItem}>
-        <Link href="/contact">Contact</Link>
-      </li>
+      {MENUS.map(menuItem => (
+          <li
+              key={menuItem.path}
+              className={styles.menuItem}
+          >
+            <Link href={menuItem.path}>{menuItem.label}</Link>
+          </li>
+      ))}
     </ul>
   </header>
 }

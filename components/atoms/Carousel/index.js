@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import useEventListener from "../../../hooks/useEventListener"
+import useEventListener from "hooks/useEventListener"
 
 const calcDynamicHeight = (objectWidth) => {
     const vw = window.innerWidth
