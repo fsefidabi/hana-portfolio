@@ -23,7 +23,7 @@ function MobileWorkTitle({ title }) {
     return <div className={"w-full absolute bottom-0 bg-black"}>
         {title.length > 0 ? title?.map(item => (
             item?.children?.map(child => (
-                <p className={"text-center"}>
+                <p className={"text-center text-base mt-1"}>
                     {child.text}
                 </p>
             ))
@@ -32,7 +32,7 @@ function MobileWorkTitle({ title }) {
 }
 
 function WorkCard({ work }) {
-    const matches = useMediaQuery("(max-width: 640px)")
+    const matches = useMediaQuery("(max-width: 1024px)")
 
     return (
         <motion.div

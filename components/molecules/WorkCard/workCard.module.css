@@ -1,5 +1,5 @@
 .card {
-    @apply w-[34rem] h-[40rem] p-1 relative overflow-hidden;
+    @apply w-[34rem] h-[40rem] p-1 relative overflow-hidden mb-6 xl:mb-0;
 }
 
 .box {
