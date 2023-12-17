@@ -1,15 +1,23 @@
+import React from "react"
+import { motion } from "framer-motion"
 import { getWorks } from "sanityStudio/sanity-utils"
+import { textReveal } from "framerMotionAnimations"
 import WorkCard from "components/molecules/WorkCard"
 import styles from "./works.module.css"
 
 export default function Works({ works }) {
     return <>
         <div className={"contentWrapper"}>
-            <div className={`${styles.cardsWrapper} borderRight borderLeft`}>
+            <motion.div className={`${styles.cardsWrapper} borderRight borderLeft`}
+                 initial={"initial"}
+                 whileInView="animate"
+                 viewport={{ once: false }}
+                 variants={textReveal.parentVariantsWithStaggerChildren(0.5)}
+            >
                 {works.map(work => {
                     return <WorkCard work={work}/>
                 })}
-            </div>
+            </motion.div>
         </div>
     </>
 }

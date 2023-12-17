@@ -39,7 +39,7 @@ export default function MenuItem(props) {
                 <motion.span
                   key={char + "-" + charIndex}
                   transition={{ delay: 0.05 * charIndex, type: "spring", bounce: 0, duration: 0.8 }}
-                  variants={textReveal.letterVariantsWithYAxisMove}
+                  variants={textReveal.letterVariantsWithYAxisMove()}
                   animate={controls}
                   className={"inline-block"}
                 >
@@ -55,7 +55,7 @@ export default function MenuItem(props) {
                 <motion.span
                   key={char + "-" + charIndex}
                   transition={{ delay: 0.05 * charIndex, type: "spring", bounce: 0, duration: 0.8 }}
-                  variants={textReveal.letterVariantsWithYAxisMove}
+                  variants={textReveal.letterVariantsWithYAxisMove()}
                   animate={controls}
                   className={"inline-block"}
                 >
