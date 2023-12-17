@@ -1,0 +1,11 @@
+.card {
+    @apply w-[30rem] h-[46rem] p-6 relative overflow-hidden;
+}
+
+.card img {
+    @apply w-full h-full object-cover hover:blur-sm transition duration-500;
+}
+
+.title {
+    @apply w-10/12 absolute bottom-10 left-10 z-10 font-NuetralFace text-base opacity-0;
+}

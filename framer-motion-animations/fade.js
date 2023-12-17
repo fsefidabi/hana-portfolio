@@ -65,6 +65,18 @@ const fadeInUp = {
     }
 }
 
+const fadeInUp2 = {
+    initial: {
+        opacity: 0,
+        y: 20
+    },
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 1, type: "spring", velocity: 0, bounce: 0 }
+    }
+}
+
 const fadeInRight = {
     initial: {
         opacity: 0.3,
@@ -82,5 +94,6 @@ export default {
     fadeIn,
     fadeInWithAutoHeightIncrease,
     fadeInUp,
+    fadeInUp2,
     fadeInRight
 }

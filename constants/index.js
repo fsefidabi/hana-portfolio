@@ -3,7 +3,7 @@ export const MAX_SECTION_WIDTH = 1050
 export const MENUS = [
   {
     label: "works",
-    path: "/"
+    path: "/works"
   },
   {
     label: "research",

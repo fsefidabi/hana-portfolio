@@ -50,3 +50,24 @@ export async function getJourneyMilestones() {
     }`
   )
 }
+
+export async function getWorks() {
+  return createClient(clientConfig).fetch(
+      groq`*[_type=="work"]{
+      _id,
+      _createdAt,
+      order,
+      projectMainTitle,
+      projectMainDescription,
+      slug,
+      title1,
+      description1,
+      title2,
+      description2,
+      title3,
+      description3,
+      "coverImageUrl": coverImage.asset->url,
+      links
+    }`
+  )
+}
