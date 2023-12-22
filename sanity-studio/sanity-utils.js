@@ -71,3 +71,14 @@ export async function getWorks() {
     }`
   )
 }
+
+export async function getSketches() {
+  return createClient(clientConfig).fetch(
+      groq`*[_type=="sketch"]{
+      _id,
+      _createdAt,
+      order,
+      "images": [image1.asset->url, image2.asset->url, image3.asset->url, image4.asset->url, image5.asset->url, image6.asset->url, image7.asset->url, image8.asset->url, image9.asset->url, image10.asset->url]
+    }`
+  )
+}

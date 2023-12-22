@@ -1,0 +1,6 @@
+.card {
+}
+
+.card img {
+    @apply w-full h-full object-cover;
+}

@@ -1,0 +1,125 @@
+.sketch_card-1 {
+    grid-column-start: 1;
+    grid-column-end: 16;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.sketch_card-2 {
+    grid-column-start: 16;
+    grid-column-end: 33;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.sketch_card-3 {
+    grid-column-start: 1;
+    grid-column-end: 16;
+    grid-row-start: 6;
+    grid-row-end: 13;
+}
+
+.sketch_card-4 {
+    grid-column-start: 16;
+    grid-column-end: 33;
+    grid-row-start: 5;
+    grid-row-end: 10;
+}
+
+.sketch_card-5 {
+    grid-column-start: 1;
+    grid-column-end: 16;
+    grid-row-start: 13;
+    grid-row-end: 19;
+}
+
+.sketch_card-6 {
+    grid-column-start: 16;
+    grid-column-end: 33;
+    grid-row-start: 10;
+    grid-row-end: 16;
+}
+
+.sketch_card-7 {
+    grid-column-start: 16;
+    grid-column-end: 33;
+    grid-row-start: 16;
+    grid-row-end: 23;
+}
+
+.sketch_card-8 {
+    grid-column-start: 1;
+    grid-column-end: 16;
+    grid-row-start: 19;
+    grid-row-end: 26;
+}
+
+.sketch_card-9 {
+    grid-column-start: 16;
+    grid-column-end: 33;
+    grid-row-start: 23;
+    grid-row-end: 30;
+}
+
+.sketch_card-10 {
+    grid-column-start: 1;
+    grid-column-end: 16;
+    grid-row-start: 26;
+    grid-row-end: 36;
+}
+
+.sketch_card-11 {
+    grid-column-start: 16;
+    grid-column-end: 33;
+    grid-row-start: 30;
+    grid-row-end: 36;
+}
+
+.sketch_card-12 {
+    grid-column-start: 1;
+    grid-column-end: 33;
+    grid-row-start: 36;
+    grid-row-end: 42;
+}
+
+.sketch_card-13 {
+    grid-column-start: 1;
+    grid-column-end: 20;
+    grid-row-start: 42;
+    grid-row-end: 47;
+}
+
+.sketch_card-14 {
+    grid-column-start: 20;
+    grid-column-end: 33;
+    grid-row-start: 42;
+    grid-row-end: 52;
+}
+
+.sketch_card-15 {
+    grid-column-start: 1;
+    grid-column-end: 20;
+    grid-row-start: 47;
+    grid-row-end: 52;
+}
+
+.sketch_card-16 {
+    grid-column-start: 1;
+    grid-column-end: 17;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.sketch_card-17 {
+    grid-column-start: 17;
+    grid-column-end: 33;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.sketch_card-18 {
+    grid-column-start: 8;
+    grid-column-end: 26;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}

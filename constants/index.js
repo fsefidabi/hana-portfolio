@@ -6,12 +6,12 @@ export const MENUS = [
     path: "/works"
   },
   {
-    label: "research",
-    path: "/research"
-  },
-  {
     label: "Sketches",
     path: "/sketches"
+  },
+  {
+    label: "research",
+    path: "/research"
   },
   {
     label: "about",

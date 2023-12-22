@@ -1,0 +1,14 @@
+.contentWrapper {
+    @apply w-11/12 mx-auto p-10;
+}
+
+.cardsWrapper {
+    @apply w-full grid mx-auto;
+    grid-template-columns: repeat(32, 1fr);
+    /*grid-auto-rows: 4vw;*/
+    grid-gap: 4px;
+}
+
+.title {
+    @apply w-full text-center uppercase;
+}

@@ -3,8 +3,8 @@ import ReactCardFlip from "react-card-flip"
 import OvalSvg from "svgIcons/oval.svg"
 import SquareSvg from "svgIcons/square.svg"
 import GridSvg from "svgIcons/grid.svg"
+import { getPage } from "sanityStudio/sanity-utils"
 import styles from "../styles/Home.module.css"
-import { getPage } from "../sanity-studio/sanity-utils"
 
 export default function Home({ pageContent }) {
     const [isFlipped, setIsFlipped] = useState(false)
