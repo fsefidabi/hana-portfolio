@@ -106,7 +106,7 @@ export default function Contact({ pageContent, commonContent }) {
         <h1 className={`${styles.title} colored-text`}>
             <MotionTextRevealTitle
                 text={pageContent?.title1}
-                elementClass={"hoverable-title"}
+                elementClass={"__hoverable-title"}
             />
         </h1>
 
@@ -128,7 +128,7 @@ export default function Contact({ pageContent, commonContent }) {
                     return <p key={item._key} className={styles.text}>
                         <ArrowSvg/>
                         <a
-                            className={"linkWithBorderBottomOnHover clickable"}
+                            className={"linkWithBorderBottomOnHover __link"}
                             href={item.link}
                             target={"_blank"}
                         >
@@ -141,7 +141,7 @@ export default function Contact({ pageContent, commonContent }) {
                     <ArrowSvg/>
                     <Tooltip content={copyToClipboardTooltip()}>
                         <span
-                            className={"linkWithBorderBottomOnHover clickable"}
+                            className={"linkWithBorderBottomOnHover __link"}
                             onClick={() => handleCopyEmailToClipboard(commonContent.email)}
                             onMouseOut={handleEmailLinkMouseLeave}
                         >

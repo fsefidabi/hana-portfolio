@@ -30,7 +30,7 @@ export default function ScrollToTopButton() {
     return (
         <AnimatePresence>
             {show && <motion.button
-                className={`clickable ${styles.button}`}
+                className={`__link ${styles.button}`}
                 initial={{ opacity: 0, x: "-50%", y: "-50%" }}
                 animate={fade.fadeInOut().animate}
                 whileHover={{ scale: 1.2, x: "-50%", y: "-50%" }}

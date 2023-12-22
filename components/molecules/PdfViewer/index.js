@@ -57,12 +57,10 @@ export default function PdfViewer(props) {
     }
 
     function handleGoToPrevPage() {
-        console.log("in handleGoToPrevPage", pageNumber)
         setPageNumber(pageNumber - 1)
     }
 
     function handleGoToNextPage() {
-        console.log("in handleGoToNextPage", pageNumber)
         setPageNumber(pageNumber + 1)
     }
 
@@ -110,7 +108,7 @@ export default function PdfViewer(props) {
                 <button
                     type="button"
                     style={{ left: `${navigationButtonsPosition}px` }}
-                    className={`clickable ${mousePositionOverDocument === "left" && pageNumber > 1 ? "flex" : "hidden"}`}
+                    className={`__link ${mousePositionOverDocument === "left" && pageNumber > 1 ? "flex" : "hidden"}`}
                     disabled={pageNumber <= 1}
                     onClick={handleGoToPrevPage}
                 >
@@ -121,7 +119,7 @@ export default function PdfViewer(props) {
                     type="button"
                     disabled={pageNumber >= totalPageCount}
                     style={{ right: `${navigationButtonsPosition}px` }}
-                    className={`clickable ${mousePositionOverDocument === "right" && pageNumber < totalPageCount ? "flex" : "hidden"}`}
+                    className={`__link ${mousePositionOverDocument === "right" && pageNumber < totalPageCount ? "flex" : "hidden"}`}
                     onClick={handleGoToNextPage}
                 >
                     <SingleArrow className={"w-2 sm:w-3 translate-x-0.5"}/>
@@ -131,7 +129,7 @@ export default function PdfViewer(props) {
         <div className={styles.navigatorWrapper}>
             <button
                 type="button"
-                className={pageNumber <= 1 ? "" : "clickable"}
+                className={pageNumber <= 1 ? "" : "__link"}
                 disabled={pageNumber <= 1}
                 onClick={handleGoToFirstPage}
             >
@@ -140,7 +138,7 @@ export default function PdfViewer(props) {
 
             <button
                 type="button"
-                className={pageNumber <= 1 ? "" : "clickable"}
+                className={pageNumber <= 1 ? "" : "__link"}
                 disabled={pageNumber <= 1}
                 onClick={handleGoToPrevPage}
             >
@@ -153,7 +151,7 @@ export default function PdfViewer(props) {
 
             <button
                 type="button"
-                className={pageNumber >= totalPageCount ? "" : "clickable"}
+                className={pageNumber >= totalPageCount ? "" : "__link"}
                 disabled={pageNumber >= totalPageCount}
                 onClick={handleGoToNextPage}
             >
@@ -162,7 +160,7 @@ export default function PdfViewer(props) {
 
             <button
                 type="button"
-                className={pageNumber >= totalPageCount ? "" : "clickable"}
+                className={pageNumber >= totalPageCount ? "" : "__link"}
                 disabled={pageNumber >= totalPageCount}
                 onClick={handleGoToLastPage}
             >

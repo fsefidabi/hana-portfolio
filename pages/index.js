@@ -50,7 +50,7 @@ export default function Home({ pageContent }) {
                     <div className={"oval-shadow"}></div>
                 </div>
 
-                <div className={"clickable relative flex justify-center text-3xl z-10 rounded-5xl"}
+                <div className={"__link relative flex justify-center text-3xl z-10 rounded-5xl"}
                      style={{ width: 298, height: 467 }}>
                     <div
                         className={"uppercase absolute font-medium text-center text-secondary flex flex-col justify-center align-center"}

@@ -13,7 +13,7 @@ export default function Button(props) {
   } = props
 
   return <button
-    className={`clickable ${styles.button} ${loading ? "cursor-progress" : "cursor-none"}`}
+    className={`__link ${styles.button} ${loading ? "cursor-progress" : "cursor-none"}`}
     disabled={disabled}
     onClick={handleOnClick}
     onMouseMove={handleOnMouseMove}

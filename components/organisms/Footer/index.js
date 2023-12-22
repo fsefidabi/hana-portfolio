@@ -22,16 +22,16 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.contactSection}>
         <div className={styles.socialMediaSection}>
-        <span className={"clickable"} onClick={() => window.open(`mailto:${email}`)}>
+        <span className={"__link"} onClick={() => window.open(`mailto:${email}`)}>
           <EmailSvg className={styles.contactIcon}/>
         </span>
-          <a href={"https://www.instagram.com/hananehsefidabi/"} target={"_blank"} className={"clickable"}>
+          <a href={"https://www.instagram.com/hananehsefidabi/"} target={"_blank"} className={"__link"}>
             <InstagramSvg className={styles.contactIcon}/>
           </a>
-          <a href={"https://www.behance.net/hananehsefidabi"} target={"_blank"} className={"clickable"} style={{ paddingTop: "1px" }}>
+          <a href={"https://www.behance.net/hananehsefidabi"} target={"_blank"} className={"__link"} style={{ paddingTop: "1px" }}>
             <BehanceSvg className={styles.contactIcon}/>
           </a>
-          <a href={"https://www.linkedin.com/in/hananehsefidabi/"} className={"clickable"} target={"_blank"}
+          <a href={"https://www.linkedin.com/in/hananehsefidabi/"} className={"__link"} target={"_blank"}
              style={{ transform: "scale(0.8)", marginLeft: "-5px" }}>
             <LinkedInSvg className={styles.contactIcon}/>
           </a>

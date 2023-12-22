@@ -39,7 +39,7 @@ export default function PageSection(props) {
                 initial={"initial"}
                 animate={"animate"}
             >
-                <span className={"hoverable-title"}>{pageTitle}</span>
+                <span className={"__hoverable-title"}>{pageTitle}</span>
             </motion.div>
 
             <div className={"content borderRight w-2/3"}>

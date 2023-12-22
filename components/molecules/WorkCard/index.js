@@ -37,7 +37,7 @@ function WorkCard({ work }) {
     return (
         <motion.div
             key={work._id}
-            className={`${styles.card} clickable`}
+            className={`${styles.card} __link`}
             variants={textReveal.boxRevealToTop()}
             transition={{ duration: 2 }}
         >

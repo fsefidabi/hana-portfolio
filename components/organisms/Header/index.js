@@ -20,7 +20,7 @@ export default function Header() {
             </div>
 
             <div className={"w-2/12 flex justify-center"}>
-                <Link href={"/"} className={"clickable"}>
+                <Link href={"/"} className={"__link"}>
                     <LogoSvg className={styles.logoSvg} width={100}/>
                 </Link>
             </div>

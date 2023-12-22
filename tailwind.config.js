@@ -34,12 +34,18 @@ module.exports = {
         fadeOut: {
           "0%": { opacity: 1 },
           "100%": { opacity: 0 }
+        },
+        scale: {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+          "100%": { transform: "scale(1)" }
         }
       },
       animation: {
         moveInRight: "moveInRight 1s ease",
         fadeIn: "fadeIn 500ms ease-in-out",
-        fadeOut: "fadeOut 500ms ease-in-out"
+        fadeOut: "fadeOut 500ms ease-in-out",
+        scale: "scale 300ms ease-in-out"
       },
       boxShadow: {
         "smooth": "0px 0px 10px 6px #72220a"
