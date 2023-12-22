@@ -2,7 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { textReveal } from "framerMotionAnimations"
 import styles from "./sketchCard.module.css"
-import "./sketch.css"
+import "../../../styles/sketch.css"
 
 function SketchCard({ sketch, index }) {
     return (
