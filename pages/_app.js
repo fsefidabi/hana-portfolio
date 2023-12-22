@@ -4,6 +4,7 @@ import "styles/globals.css"
 import "styles/pages.css"
 import "styles/tippy.css"
 import "styles/fonts.css"
+import "styles/sketch.css"
 
 const DynamicMainLayout = dynamic(() => import("../components/templates/MainLayout"), {
   ssr: false
