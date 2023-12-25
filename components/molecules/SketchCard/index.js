@@ -2,6 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { textReveal } from "framerMotionAnimations"
 import styles from "./sketchCard.module.css"
+import ImageCarousel from "../../atoms/ImageCarousel"
 
 function SketchCard({ sketch, index, onPhotoClick }) {
     return (
@@ -11,13 +12,7 @@ function SketchCard({ sketch, index, onPhotoClick }) {
             variants={textReveal.boxRevealToTop()}
             transition={{ duration: 2 }}
         >
-            <figure className={"w-full h-full"}>
-                <img
-                    src={sketch.images[0]}
-                    className={"__zoomable __zoom-in"}
-                    onClick={onPhotoClick}
-                />
-            </figure>
+            <ImageCarousel images={sketch.images} onClick={onPhotoClick}/>
         </motion.div>
     )
 }

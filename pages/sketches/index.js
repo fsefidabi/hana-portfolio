@@ -5,6 +5,7 @@ import { getSketches, getPage } from "sanityStudio/sanity-utils"
 import SketchesGallery from "components/templates/SketchesGallery"
 import useEventListener from "hooks/useEventListener"
 import styles from "./sketches.module.css"
+import ImageCarousel from "../../components/atoms/ImageCarousel"
 
 function SketchesTitle({ title, customStyle }) {
     return (
@@ -23,7 +24,8 @@ function SketchesTitle({ title, customStyle }) {
 }
 
 function Sketches({ pageContent, sketches }) {
-    const [zoomedImage, setZoomedImage] = useState("")
+    const [zoomedImageSrc, setZoomedImageSrc] = useState("")
+    const [zoomedImageCollection, setZoomedImageCollections] = useState([])
     const [zoomedSize, setZoomedSize] = useState({ width: "0px", height: "0px" })
     const [clickPosition, setClickPosition] = useState({ x: "0px", y: "0px" })
 
@@ -33,16 +35,16 @@ function Sketches({ pageContent, sketches }) {
 
     useEffect(() => {
         updateZoomedSize()
-    }, [zoomedImage])
+    }, [zoomedImageSrc])
 
     function updateZoomedSize() {
-        if (!zoomedImage) return
+        if (!zoomedImageSrc) return
 
         const windowHeight = window.innerHeight * 0.95
         const windowWidth = window.innerWidth * 0.90
 
         const image = new Image()
-        image.src = zoomedImage
+        image.src = zoomedImageSrc
         image.onload = () => {
             const imageWidth = image.width
             const imageHeight = image.height
@@ -57,29 +59,28 @@ function Sketches({ pageContent, sketches }) {
         }
     }
 
-    function handleImageClick(event) {
+    function handleImageClick(event, zoomedImageSrc, images) {
         const x = event.clientX
         const y = event.clientY
         setClickPosition({ x, y })
 
-        handleZoomInImage(event)
+        handleZoomInImage(event, zoomedImageSrc, images)
     }
 
-    function handleZoomInImage(event) {
-        setZoomedImage(event.target.src)
+    function handleZoomInImage(event, targetImage, imageCollection) {
+        setZoomedImageSrc(targetImage)
+        setZoomedImageCollections(imageCollection)
         document.dispatchEvent(new CustomEvent("changeCursor", { detail: { cursorType: "zoomIn", event: event } }))
     }
 
     function handleZoomOutImage(event) {
-        // if (event.target !== zoomedImageRef?.current) {
-            setZoomedImage(null)
-            document.dispatchEvent(new CustomEvent("changeCursor", { detail: { cursorType: "zoomOut", event: event } }))
-        // }
+        setZoomedImageSrc("")
+        setZoomedImageCollections([])
+        document.dispatchEvent(new CustomEvent("changeCursor", { detail: { cursorType: "zoomOut", event: event } }))
     }
 
     function handleKeyDownEvent(event) {
         if (event.code === "Escape") {
-            // setZoomedImage(null)
             handleZoomOutImage(event)
         }
     }
@@ -95,20 +96,20 @@ function Sketches({ pageContent, sketches }) {
             >
                 <SketchesTitle title={pageContent.title1} customStyle={"mt-14 mb-16 text-3xl"}/>
 
-                <SketchesGallery sketches={sketches.slice(0, 15)} onPhotoClick={handleImageClick}/>
+                <SketchesGallery sketches={sketches.slice(0, 15)} sectionNumber={1} onPhotoClick={handleImageClick}/>
 
                 <SketchesTitle title={pageContent.title2} customStyle={"mt-24 mb-2 text-2xl"}/>
 
-                <SketchesGallery sketches={sketches.slice(15, 17)} onPhotoClick={handleImageClick}/>
+                <SketchesGallery sketches={sketches.slice(15, 17)} sectionNumber={2} onPhotoClick={handleImageClick}/>
 
                 <SketchesTitle title={pageContent.title3} customStyle={"mt-24 mb-2 text-2xl"}/>
 
-                <SketchesGallery sketches={sketches.slice(17)} onPhotoClick={handleImageClick}/>
+                <SketchesGallery sketches={sketches.slice(17)} sectionNumber={3} onPhotoClick={handleImageClick}/>
             </motion.div>
         </div>
 
         <AnimatePresence>
-            {zoomedImage && (
+            {zoomedImageSrc.length && (
                 <motion.div
                     className={`${styles.zoomedImageContainer} __zoomable __zoom-out`}
                     onClick={handleZoomOutImage}
@@ -117,11 +118,9 @@ function Sketches({ pageContent, sketches }) {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.1 }}
                 >
-                    <motion.img
+                    <motion.div
                         ref={zoomedImageRef}
-                        className={styles.zoomedImage}
-                        src={zoomedImage}
-                        alt="Zoomed"
+                        className={`${styles.zoomedImage} zoomed`}
                         style={{
                             transformOrigin: `${clickPosition.x}px ${clickPosition.y}px`,
                             width: zoomedSize.width,
@@ -131,7 +130,18 @@ function Sketches({ pageContent, sketches }) {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.5 }}
                         transition={{ duration: 0.4 }}
-                    />
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: zoomedSize.width,
+                                height: zoomedSize.height,
+                                maxWidth: "95vw",
+                                maxHeight: "95vh"
+                            }}
+                            images={zoomedImageCollection}
+                            onClick={handleZoomOutImage}
+                        />
+                    </motion.div>
                 </motion.div>
             )}
         </AnimatePresence>

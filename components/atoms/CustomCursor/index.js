@@ -21,6 +21,7 @@ export default function CustomCursor() {
                 customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/pointer.svg\")"
                 customCursorRef.current.style.width = "20px"
                 customCursorRef.current.style.height = "20px"
+                customCursorRef.current.style.transform = "translateX(-30%) translateY(0)"
                 customCursorRef.current.style.backgroundColor = "transparent"
                 customCursorRef.current.style.mixBlendMode = "normal"
                 break
@@ -28,6 +29,7 @@ export default function CustomCursor() {
                 customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/zoomOut.svg\")"
                 customCursorRef.current.style.width = "40px"
                 customCursorRef.current.style.height = "40px"
+                customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%)"
                 customCursorRef.current.style.backgroundColor = "transparent"
                 customCursorRef.current.style.mixBlendMode = "normal"
                 break
@@ -35,6 +37,7 @@ export default function CustomCursor() {
                 customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/zoomIn.svg\")"
                 customCursorRef.current.style.width = "40px"
                 customCursorRef.current.style.height = "40px"
+                customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%)"
                 customCursorRef.current.style.backgroundColor = "transparent"
                 customCursorRef.current.style.mixBlendMode = "normal"
                 break
@@ -46,6 +49,7 @@ export default function CustomCursor() {
                 customCursorRef.current.style.backgroundColor = "#d35d3d"
                 customCursorRef.current.style.mixBlendMode = "normal"
                 customCursorRef.current.style.scale = 1
+                customCursorRef.current.style.transform = "translateX(0) translateY(0)"
                 customCursorRef.current.style.mixBlendMode = "normal"
                 break
         }

@@ -1,0 +1,51 @@
+.slideshow {
+    @apply w-full h-full mx-auto overflow-hidden relative;
+}
+
+.slideshowSlider {
+    @apply w-full h-full whitespace-nowrap transition duration-1000;
+}
+
+.slide {
+    @apply w-full h-full inline-block;
+}
+
+.slide img {
+    @apply mx-auto;
+}
+
+.slideshowDots {
+    @apply w-full h-[8px] absolute bottom-[8px] flex justify-center;
+}
+
+.slideshowDot {
+    @apply w-[8px] rounded-full bg-lightGray mx-1;
+}
+
+.slideshowDot.active {
+    @apply bg-tertiary;
+}
+
+.arrowButton {
+    @apply absolute top-1/2 -translate-y-1/2 rounded-full border border-lightGray p-2.5 transition duration-300;
+}
+
+.arrowButton:not(:disabled):hover {
+    @apply border-primary;
+}
+
+.arrowButton:not(:disabled):hover svg {
+    @apply stroke-primary;
+}
+
+.arrowButton svg {
+    @apply w-[12px] h-[12px] stroke-lightGray;
+}
+
+.leftButton {
+    @apply absolute left-[16px] rotate-180;
+}
+
+.rightButton {
+    @apply absolute right-[16px];
+}
