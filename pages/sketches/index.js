@@ -50,10 +50,14 @@ function Sketches({ pageContent, sketches }) {
         image.src = zoomedImageSrc
         image.onload = () => {
             const imageAspectRatio = image.width / image.height
+            const windowAspectRatio = window.innerWidth / window.innerHeight
+
             const imageHeight = window.innerHeight * 0.95
             const imageWidth = imageHeight * imageAspectRatio
 
-            if (window.innerHeight > window.innerWidth) {
+            if (windowAspectRatio < imageAspectRatio) {
+                setZoomedSize({ width: window.innerWidth * 0.95 + "px", height: "auto" })
+            } else if (window.innerHeight > window.innerWidth) {
                 setZoomedSize({ width: window.innerWidth * 0.95 + "px", height: "auto" })
             } else {
                 setZoomedSize({ width: imageWidth + "px", height: imageHeight + "px" })
@@ -71,12 +75,14 @@ function Sketches({ pageContent, sketches }) {
 
     function handleZoomInImage(event, targetImage, imageCollection) {
         setZoomedImageSrc(targetImage)
+        document.body.style.overflow = "hidden"
         setZoomedImageCollections(imageCollection)
         document.dispatchEvent(new CustomEvent("changeCursor", { detail: { cursorType: "zoomIn", event: event } }))
     }
 
     function handleZoomOutImage(event) {
         setZoomedImageSrc("")
+        document.body.style.overflow = "auto"
         setZoomedImageCollections([])
         document.dispatchEvent(new CustomEvent("changeCursor", { detail: { cursorType: "zoomOut", event: event } }))
     }
@@ -90,15 +96,15 @@ function Sketches({ pageContent, sketches }) {
                 viewport={{ once: false }}
                 variants={textReveal.parentVariantsWithStaggerChildren(0.3)}
             >
-                <SketchesTitle title={pageContent.title1} customStyle={"mt-14 mb-16 text-3xl"}/>
+                <SketchesTitle title={pageContent.title1} customStyle={"mt-14 mb-16 text-2xl"}/>
 
                 <SketchesGallery sketches={sketches.slice(0, 15)} sectionNumber={1} onPhotoClick={handleImageClick}/>
 
-                <SketchesTitle title={pageContent.title2} customStyle={"mt-24 mb-2 text-2xl"}/>
+                <SketchesTitle title={pageContent.title2} customStyle={"mt-24 mb-2 text-xl"}/>
 
                 <SketchesGallery sketches={sketches.slice(15, 17)} sectionNumber={2} onPhotoClick={handleImageClick}/>
 
-                <SketchesTitle title={pageContent.title3} customStyle={"mt-24 mb-2 text-2xl"}/>
+                <SketchesTitle title={pageContent.title3} customStyle={"mt-24 mb-2 text-xl"}/>
 
                 <SketchesGallery sketches={sketches.slice(17)} sectionNumber={3} onPhotoClick={handleImageClick}/>
             </motion.div>

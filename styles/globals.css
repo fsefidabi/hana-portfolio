@@ -119,11 +119,10 @@ input:-webkit-autofill:active {
 }
 
 #custom-default-cursor {
-    @apply hidden sm:block w-[10px] h-[10px] bg-tertiary rounded-full fixed z-[1000] pointer-events-none mix-blend-color transition-[scale] duration-300;
+    @apply hidden sm:block w-[10px] h-[10px] bg-tertiary rounded-full fixed z-[1000] pointer-events-none mix-blend-color transition-[scale,width,height,transform] duration-300;
     cursor: url("/assets/svg/pointer.svg");
     background-size: cover;
     transform: translateX(-50%) translateY(-50%);
-    transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
 }
 
 /*#custom-pointer-cursor {*/
