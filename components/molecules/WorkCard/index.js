@@ -1,4 +1,5 @@
 import React from "react"
+import { useRouter } from "next/router"
 import { motion } from "framer-motion"
 import { fade, textReveal } from "framerMotionAnimations"
 import { useMediaQuery } from "hooks/useMediaQuery"
@@ -32,7 +33,15 @@ function MobileWorkTitle({ title }) {
 }
 
 function WorkCard({ work }) {
+    const router = useRouter()
+
     const matches = useMediaQuery("(max-width: 1024px)")
+
+    function handleImageClick() {
+        const { slug } = work
+        const subPath = slug.current || ""
+        router.push(`/works/${subPath}`)
+    }
 
     return (
         <motion.div
@@ -40,14 +49,15 @@ function WorkCard({ work }) {
             className={`${styles.card} __link`}
             variants={textReveal.boxRevealToTop()}
             transition={{ duration: 2 }}
+            onClick={handleImageClick}
         >
             <motion.div
                 className={"w-full h-full"}
                 initial="initial"
                 whileHover="animate"
             >
-                {matches ? <MobileWorkTitle title={work.projectMainTitle}/> :
-                    <DesktopWorkTitle title={work.projectMainTitle}/>}
+                {matches ? <MobileWorkTitle title={work.projectCoverTitle}/> :
+                    <DesktopWorkTitle title={work.projectCoverTitle}/>}
 
                 <motion.div className={styles.box} variants={fade.fadeIn(0.3)} duration={0}></motion.div>
 

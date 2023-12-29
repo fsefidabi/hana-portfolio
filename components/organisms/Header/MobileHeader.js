@@ -17,7 +17,7 @@ export default function MobileHeader() {
               key={menuItem.path}
               className={styles.menuItem}
           >
-            <Link href={menuItem.path}>{menuItem.label}</Link>
+            <Link href={menuItem.path} prefetch>{menuItem.label}</Link>
           </li>
       ))}
     </ul>

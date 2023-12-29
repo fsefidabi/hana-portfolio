@@ -1,0 +1,43 @@
+.container {
+    @apply mt-16 flex-col justify-center items-center;
+}
+
+.mainTitle {
+    @apply w-full font-semibold text-center tracking-wider;
+}
+
+.title {
+    @apply w-full text-center tracking-wider mt-9 mb-8;
+}
+
+.subTitle {
+    @apply w-full italic text-center text-xl;
+}
+
+.divider {
+    @apply w-10 h-[1px] bg-secondary mt-8 mb-4;
+}
+
+.description {
+    @apply w-9/12 text-base text-center leading-loose;
+}
+
+.detail {
+    @apply w-full flex justify-center items-center text-base italic tracking-wider my-10;
+}
+
+.detail p:nth-child(2) {
+    @apply mx-10;
+}
+
+.flexImageWrapper {
+    @apply w-full flex gap-1 justify-center items-center;
+}
+
+.singleImageWrapper {
+    @apply w-[38rem] mt-10;
+}
+
+.links {
+    @apply flex justify-center items-center gap-[50px] text-sm uppercase mb-32;
+}

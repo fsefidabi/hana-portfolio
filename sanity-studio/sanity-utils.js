@@ -57,18 +57,35 @@ export async function getWorks() {
       _id,
       _createdAt,
       order,
-      projectMainTitle,
-      projectMainDescription,
       slug,
+      projectCoverTitle,
+      "coverImageUrl": coverImage.asset->url
+    }`
+  )
+}
+
+export async function getWork(slug) {
+  return createClient(clientConfig).fetch(
+      groq`*[_type=="work" && slug.current == $slug]{
+      _id,
+      _createdAt,
+      slug,
+      templateNumber,
+      projectMainTitle,
+      projectSubTitle,
+      projectMainDescription,
+      projectDetail,
       title1,
       description1,
       title2,
       description2,
       title3,
       description3,
-      "coverImageUrl": coverImage.asset->url,
+      footer,
+      "images": [image1.asset->url, image2.asset->url, image3.asset->url, image4.asset->url, image5.asset->url, image6.asset->url, image7.asset->url, image8.asset->url, image9.asset->url, image10.asset->url, image11.asset->url, image12.asset->url, image13.asset->url, image14.asset->url, image15.asset->url, image16.asset->url, image17.asset->url, image18.asset->url, image19.asset->url, image20.asset->url, image21.asset->url, image22.asset->url, image23.asset->url, image24.asset->url, image25.asset->url],
       links
-    }`
+    }`,
+    { slug }
   )
 }
 

@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react"
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import { textReveal } from "framerMotionAnimations"
 import { getSketches, getPage } from "sanityStudio/sanity-utils"
 import useEventListener from "hooks/useEventListener"
 import SketchesGallery from "components/templates/SketchesGallery"
 import ImageCarousel from "components/atoms/ImageCarousel"
 import styles from "./sketches.module.css"
+import { getZoomedImageSize } from "../../utils"
 
 function SketchesTitle({ title, customStyle }) {
     return (
@@ -29,39 +30,26 @@ function Sketches({ pageContent, sketches }) {
     const [zoomedSize, setZoomedSize] = useState({ width: "0px", height: "0px" })
     const [clickPosition, setClickPosition] = useState({ x: "0px", y: "0px" })
 
-    const zoomedImageRef = useRef(null)
-
     useEventListener(window, "keydown", handleKeyDownEvent)
 
     useEffect(() => {
-        updateZoomedImageSize()
+        (async function () {
+            try {
+                const dimensions = await getZoomedImageSize(zoomedImageSrc)
+                setZoomedSize({
+                    width: dimensions.width,
+                    height: dimensions.height
+                })
+            } catch (error) {
+                console.error("Error fetching image dimensions:", error)
+            }
+        })()
     }, [zoomedImageSrc])
 
     function handleKeyDownEvent(event) {
         if (event.code === "Escape") {
             handleZoomOutImage(event)
-        }
-    }
-
-    function updateZoomedImageSize() {
-        if (!zoomedImageSrc) return
-
-        const image = new Image()
-        image.src = zoomedImageSrc
-        image.onload = () => {
-            const imageAspectRatio = image.width / image.height
-            const windowAspectRatio = window.innerWidth / window.innerHeight
-
-            const imageHeight = window.innerHeight * 0.95
-            const imageWidth = imageHeight * imageAspectRatio
-
-            if (windowAspectRatio < imageAspectRatio) {
-                setZoomedSize({ width: window.innerWidth * 0.95 + "px", height: "auto" })
-            } else if (window.innerHeight > window.innerWidth) {
-                setZoomedSize({ width: window.innerWidth * 0.95 + "px", height: "auto" })
-            } else {
-                setZoomedSize({ width: imageWidth + "px", height: imageHeight + "px" })
-            }
+            document.body.style.overflow = "auto"
         }
     }
 
@@ -75,15 +63,15 @@ function Sketches({ pageContent, sketches }) {
 
     function handleZoomInImage(event, targetImage, imageCollection) {
         setZoomedImageSrc(targetImage)
-        document.body.style.overflow = "hidden"
         setZoomedImageCollections(imageCollection)
+        document.body.style.overflow = "hidden"
         document.dispatchEvent(new CustomEvent("changeCursor", { detail: { cursorType: "zoomIn", event: event } }))
     }
 
     function handleZoomOutImage(event) {
         setZoomedImageSrc("")
-        document.body.style.overflow = "auto"
         setZoomedImageCollections([])
+        document.body.style.overflow = "auto"
         document.dispatchEvent(new CustomEvent("changeCursor", { detail: { cursorType: "zoomOut", event: event } }))
     }
 
@@ -110,44 +98,19 @@ function Sketches({ pageContent, sketches }) {
             </motion.div>
         </div>
 
-        <AnimatePresence>
-            {zoomedImageSrc.length && (
-                <motion.div
-                    className={styles.zoomedImageContainer}
-                    onClick={handleZoomOutImage}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.1 }}
-                >
-                    <motion.div
-                        ref={zoomedImageRef}
-                        className={`${styles.zoomedImage} zoomed`}
-                        style={{
-                            transformOrigin: `${clickPosition.x}px ${clickPosition.y}px`,
-                            width: zoomedSize.width,
-                            height: zoomedSize.height
-                        }}
-                        initial={{ opacity: 0, scale: 0.5 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.5 }}
-                        transition={{ duration: 0.4 }}
-                    >
-                        <ImageCarousel
-                            style={{
-                                width: zoomedSize.width,
-                                height: zoomedSize.height,
-                                maxWidth: "95vw",
-                                maxHeight: "95vh"
-                            }}
-                            mode={"zoomed"}
-                            images={zoomedImageCollection}
-                            onClick={handleZoomOutImage}
-                        />
-                    </motion.div>
-                </motion.div>
-            )}
-        </AnimatePresence>
+        <ImageCarousel
+            style={{
+                width: zoomedSize.width,
+                height: zoomedSize.height,
+                maxWidth: "95vw",
+                maxHeight: "95vh"
+            }}
+            clickPosition={clickPosition}
+            zoomedSize={zoomedSize}
+            zoomed={zoomedImageSrc !== ""}
+            images={zoomedImageCollection}
+            onClick={handleZoomOutImage}
+        />
     </>
 }
 

@@ -12,11 +12,3 @@
 .title {
     @apply w-full text-center;
 }
-
-.zoomedImageContainer {
-    @apply w-full h-full bg-black fixed top-0 left-0 flex justify-center items-center overflow-hidden z-[1000];
-}
-
-.zoomedImage {
-    @apply max-w-[95%] max-h-[95%];
-}

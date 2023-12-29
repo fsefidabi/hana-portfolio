@@ -1,13 +1,14 @@
 .slideshow {
     @apply w-full h-full mx-auto overflow-hidden relative;
+    line-height: 0;
 }
 
 .slideshowSlider {
-    @apply w-full h-full whitespace-nowrap transition duration-1000;
+    @apply w-full h-full whitespace-nowrap;
 }
 
 .slide {
-    @apply w-full h-full inline-block;
+    @apply w-full h-full inline-block m-0 p-0;
 }
 
 .slide img {
@@ -48,4 +49,12 @@
 
 .rightButton {
     @apply absolute right-[16px];
+}
+
+.zoomedImageContainer {
+    @apply w-full h-full bg-black fixed top-0 left-0 flex justify-center items-center overflow-hidden z-[1000];
+}
+
+.zoomedImage {
+    @apply max-w-[95%] max-h-[95%];
 }
