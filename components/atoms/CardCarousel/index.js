@@ -13,7 +13,7 @@ const handleDynamicHeight = (ref, setDynamicHeight) => {
     setDynamicHeight(dynamicHeight)
 }
 
-export default function Carousel({ header, children }) {
+export default function CardCarousel({ header, children }) {
     const [dynamicHeight, setDynamicHeight] = useState(null)
     const [translateX, setTranslateX] = useState(0)
 

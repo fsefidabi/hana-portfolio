@@ -106,7 +106,7 @@ export default function Contact({ pageContent, commonContent }) {
         <h1 className={`${styles.title} colored-text`}>
             <MotionTextRevealTitle
                 text={pageContent?.title1}
-                elementClass={"__hoverable-title"}
+                elementClass={"__hoverable_title"}
             />
         </h1>
 

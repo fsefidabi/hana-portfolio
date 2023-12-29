@@ -1,9 +1,17 @@
-import React, { useEffect, useState } from "react"
-import SingleArrow from "svgIcons/singleArrow.svg"
+import React, { useEffect, useRef, useState } from "react"
 import styles from "./imageCarousel.module.css"
 
-function ImageCarousel({ images, defaultSlideIndex = 0, style, onClick }) {
+const CLICK_FUNCTIONALITY = {
+    ZOOM: "zoom",
+    SLIDE_LEFT: "slideLeft",
+    SLIDE_RIGHT: "slideRight"
+}
+
+function ImageCarousel({ images, defaultSlideIndex = 0, mode, style, onClick }) {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0)
+    const [clickFunctionalityType, setClickFunctionalityType] = useState(CLICK_FUNCTIONALITY.ZOOM)
+
+    const slideshowRef = useRef()
 
     useEffect(() => {
         setCurrentSlideIndex(defaultSlideIndex)
@@ -14,20 +22,76 @@ function ImageCarousel({ images, defaultSlideIndex = 0, style, onClick }) {
         setCurrentSlideIndex(index)
     }
 
+    function handleMouseMove(event) {
+        const image = event.currentTarget
+        const mouseX = event.clientX - image.getBoundingClientRect().left
+        const imageWidth = image.offsetWidth
+
+        const leftThreshold = 0.25 * imageWidth
+        const rightThreshold = 0.75 * imageWidth
+
+        if (images.length > 1 && (mouseX < leftThreshold || mouseX > rightThreshold)) {
+            if (mouseX < leftThreshold) {
+                setClickFunctionalityType(CLICK_FUNCTIONALITY.SLIDE_LEFT)
+                switchClassesForCursor(["__clickable", "__slide_to_left"], ["__zoomable", "__zoom_in", "__slide_to_right"])
+            } else if (mouseX > rightThreshold) {
+                setClickFunctionalityType(CLICK_FUNCTIONALITY.SLIDE_RIGHT)
+                switchClassesForCursor(["__clickable", "__slide_to_right"], ["__zoomable", "__zoom_in", "__slide_to_left"])
+            }
+        } else {
+            setClickFunctionalityType(CLICK_FUNCTIONALITY.ZOOM)
+            if (mode === "zoomed") {
+                switchClassesForCursor(["__zoomable", "__zoom_out"], ["__clickable", "__slide_to_right", "__slide_to_left", "__zoom_in"])
+            } else {
+                switchClassesForCursor(["__zoomable", "__zoom_in"], ["__clickable", "__slide_to_right", "__slide_to_left", "__zoom_out"])
+            }
+        }
+    }
+
+    function switchClassesForCursor(classesToAdd, classesToRemove) {
+        for (const cls of classesToAdd) {
+            slideshowRef.current.classList.add(cls)
+        }
+        for (const cls of classesToRemove) {
+            slideshowRef.current.classList.remove(cls)
+        }
+    }
+
+    function handleImageClick(event, image) {
+        switch (clickFunctionalityType) {
+            case CLICK_FUNCTIONALITY.ZOOM:
+                onClick(event, image)
+                break
+            case CLICK_FUNCTIONALITY.SLIDE_LEFT:
+                handleShowPrevSlide(event)
+                break
+            case CLICK_FUNCTIONALITY.SLIDE_RIGHT:
+                handleShowNextSlide(event)
+                break
+            default:
+                throw new Error(`unsupported click functionality type: ${clickFunctionalityType}`)
+        }
+    }
+
     function handleShowNextSlide(e) {
-        if (currentSlideIndex === images.length - 1) return
         e.stopPropagation()
-        setCurrentSlideIndex(prevIndex => prevIndex + 1)
+        setCurrentSlideIndex(prevIndex => {
+            return prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        })
     }
 
     function handleShowPrevSlide(e) {
-        if (currentSlideIndex === 0) return
         e.stopPropagation()
-        setCurrentSlideIndex(prevIndex => prevIndex - 1)
+        setCurrentSlideIndex(prevIndex => {
+            return prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        })
     }
 
     return (
-        <div className={`${styles.slideshow} __zoomable __zoom-in`}>
+        <div
+            ref={slideshowRef}
+            className={styles.slideshow}
+        >
             <div
                 className={styles.slideshowSlider}
                 style={{ transform: `translate3d(${-currentSlideIndex * 100}%, 0, 0)` }}
@@ -41,7 +105,8 @@ function ImageCarousel({ images, defaultSlideIndex = 0, style, onClick }) {
                             src={images[imageIndex]}
                             alt={"image carousel"}
                             style={style}
-                            onClick={event => onClick(event, images[imageIndex])}
+                            onClick={event => handleImageClick(event, images[imageIndex])}
+                            onMouseMove={handleMouseMove}
                         />
                     </figure>
                 ))}
@@ -56,25 +121,6 @@ function ImageCarousel({ images, defaultSlideIndex = 0, style, onClick }) {
                     ></button>
                 ))}
             </div>}
-
-            {images.length > 1 && <>
-                <button
-                    type="button"
-                    className={`${currentSlideIndex === 0 ? "" : "__link"} ${styles.arrowButton} ${styles.leftButton}`}
-                    disabled={currentSlideIndex === 0}
-                    onClick={handleShowPrevSlide}
-                >
-                    <SingleArrow/>
-                </button>
-                <button
-                    type="button"
-                    className={`${currentSlideIndex === images.length ? "" : "__link"} ${styles.arrowButton} ${styles.rightButton}`}
-                    disabled={currentSlideIndex === images.length}
-                    onClick={handleShowNextSlide}
-                >
-                    <SingleArrow/>
-                </button>
-            </>}
         </div>
 
     )

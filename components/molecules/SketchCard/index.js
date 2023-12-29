@@ -2,7 +2,7 @@ import React from "react"
 import { motion } from "framer-motion"
 import { textReveal } from "framerMotionAnimations"
 import styles from "./sketchCard.module.css"
-import ImageCarousel from "../../atoms/ImageCarousel"
+import ImageCarousel from "components/atoms/ImageCarousel"
 
 function SketchCard({ sketch, index, onPhotoClick }) {
     return (

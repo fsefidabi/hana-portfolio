@@ -15,11 +15,11 @@
 }
 
 .slideshowDots {
-    @apply w-full h-[8px] absolute bottom-[8px] flex justify-center;
+    @apply w-full h-[4px] sm:h-[8px] absolute bottom-[8px] flex justify-center;
 }
 
 .slideshowDot {
-    @apply w-[8px] rounded-full bg-lightGray mx-1;
+    @apply w-[4px] sm:w-[8px] rounded-full bg-lightGray mx-1;
 }
 
 .slideshowDot.active {

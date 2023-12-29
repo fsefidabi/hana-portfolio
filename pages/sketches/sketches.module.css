@@ -3,7 +3,7 @@
 }
 
 .cardsWrapper {
-    @apply w-full grid mx-auto;
+    @apply w-full flex flex-wrap xs:grid mx-auto;
     grid-template-columns: repeat(32, 1fr);
     /*grid-auto-rows: 4vw;*/
     grid-gap: 12px;
@@ -14,7 +14,7 @@
 }
 
 .zoomedImageContainer {
-    @apply w-screen h-screen bg-black fixed top-0 left-0 flex justify-center items-center overflow-hidden z-[1000];
+    @apply w-full h-full bg-black fixed top-0 left-0 flex justify-center items-center overflow-hidden z-[1000];
 }
 
 .zoomedImage {

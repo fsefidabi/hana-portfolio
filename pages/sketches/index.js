@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { textReveal } from "framerMotionAnimations"
 import { getSketches, getPage } from "sanityStudio/sanity-utils"
-import SketchesGallery from "components/templates/SketchesGallery"
 import useEventListener from "hooks/useEventListener"
+import SketchesGallery from "components/templates/SketchesGallery"
+import ImageCarousel from "components/atoms/ImageCarousel"
 import styles from "./sketches.module.css"
-import ImageCarousel from "../../components/atoms/ImageCarousel"
 
 function SketchesTitle({ title, customStyle }) {
     return (
@@ -34,27 +34,29 @@ function Sketches({ pageContent, sketches }) {
     useEventListener(window, "keydown", handleKeyDownEvent)
 
     useEffect(() => {
-        updateZoomedSize()
+        updateZoomedImageSize()
     }, [zoomedImageSrc])
 
-    function updateZoomedSize() {
-        if (!zoomedImageSrc) return
+    function handleKeyDownEvent(event) {
+        if (event.code === "Escape") {
+            handleZoomOutImage(event)
+        }
+    }
 
-        const windowHeight = window.innerHeight * 0.95
-        const windowWidth = window.innerWidth * 0.90
+    function updateZoomedImageSize() {
+        if (!zoomedImageSrc) return
 
         const image = new Image()
         image.src = zoomedImageSrc
         image.onload = () => {
-            const imageWidth = image.width
-            const imageHeight = image.height
+            const imageAspectRatio = image.width / image.height
+            const imageHeight = window.innerHeight * 0.95
+            const imageWidth = imageHeight * imageAspectRatio
 
-            const aspectRatio = imageWidth / imageHeight
-
-            if (imageWidth > imageHeight) {
-                setZoomedSize({ width: windowWidth + "px", height: "auto" })
+            if (window.innerHeight > window.innerWidth) {
+                setZoomedSize({ width: window.innerWidth * 0.95 + "px", height: "auto" })
             } else {
-                setZoomedSize({ width: "auto", height: windowHeight + "px" })
+                setZoomedSize({ width: imageWidth + "px", height: imageHeight + "px" })
             }
         }
     }
@@ -77,12 +79,6 @@ function Sketches({ pageContent, sketches }) {
         setZoomedImageSrc("")
         setZoomedImageCollections([])
         document.dispatchEvent(new CustomEvent("changeCursor", { detail: { cursorType: "zoomOut", event: event } }))
-    }
-
-    function handleKeyDownEvent(event) {
-        if (event.code === "Escape") {
-            handleZoomOutImage(event)
-        }
     }
 
     return <>
@@ -111,7 +107,7 @@ function Sketches({ pageContent, sketches }) {
         <AnimatePresence>
             {zoomedImageSrc.length && (
                 <motion.div
-                    className={`${styles.zoomedImageContainer} __zoomable __zoom-out`}
+                    className={styles.zoomedImageContainer}
                     onClick={handleZoomOutImage}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -138,6 +134,7 @@ function Sketches({ pageContent, sketches }) {
                                 maxWidth: "95vw",
                                 maxHeight: "95vh"
                             }}
+                            mode={"zoomed"}
                             images={zoomedImageCollection}
                             onClick={handleZoomOutImage}
                         />

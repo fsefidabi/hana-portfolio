@@ -4,7 +4,7 @@ import { fade } from "framerMotionAnimations"
 import JourneyCard from "components/molecules/JourneyCard"
 import MotionTextRevealTitle from "components/atoms/MotionTextRevealTitle"
 
-const DynamicCarousel = dynamic(() => import("components/atoms/Carousel"), {
+const DynamicCarousel = dynamic(() => import("components/atoms/CardCarousel"), {
     ssr: false
 })
 
