@@ -14,7 +14,7 @@ export async function getStaticPaths() {
     const works = await getWorks()
 
     const paths = works.map(work => ({
-        params: { slug: work?.slug?.current || "" }
+        params: { slug: work?.slug?.current }
     }))
 
     return {
