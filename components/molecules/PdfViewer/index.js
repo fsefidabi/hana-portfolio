@@ -6,6 +6,7 @@ import { useWindowSize } from "hooks/useWindowSize"
 import { useIsInViewport } from "hooks/useIsInViewport"
 import useEventListener from "hooks/useEventListener"
 import { MAX_SECTION_WIDTH } from "constants/index.js"
+import ArrowWithTail from "svgIcons/arrowWithTail2.svg"
 import SingleArrow from "svgIcons/singleArrow.svg"
 import DoubleArrow from "svgIcons/doubleArrow.svg"
 import PdfViewerLoading from "./PdfViewerLoading"
@@ -108,21 +109,21 @@ export default function PdfViewer(props) {
                 <button
                     type="button"
                     style={{ left: `${navigationButtonsPosition}px` }}
-                    className={`__link ${mousePositionOverDocument === "left" && pageNumber > 1 ? "flex" : "hidden"}`}
+                    className={`__link ${mousePositionOverDocument === "left" && pageNumber > 1 ? "flex" : "flex"}`}
                     disabled={pageNumber <= 1}
                     onClick={handleGoToPrevPage}
                 >
-                    <SingleArrow className={"rotate-180 w-2 sm:w-3 -translate-x-0.5"}/>
+                    <ArrowWithTail className={"rotate-180 w-6"}/>
                 </button>
 
                 <button
                     type="button"
                     disabled={pageNumber >= totalPageCount}
                     style={{ right: `${navigationButtonsPosition}px` }}
-                    className={`__link ${mousePositionOverDocument === "right" && pageNumber < totalPageCount ? "flex" : "hidden"}`}
+                    className={`__link ${mousePositionOverDocument === "right" && pageNumber < totalPageCount ? "flex" : "flex"}`}
                     onClick={handleGoToNextPage}
                 >
-                    <SingleArrow className={"w-2 sm:w-3 translate-x-0.5"}/>
+                    <ArrowWithTail className={"w-6"}/>
                 </button>
             </Page>
         </Document>

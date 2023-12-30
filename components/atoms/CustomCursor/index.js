@@ -24,22 +24,25 @@ export default function CustomCursor() {
                 customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%) rotate(0)"
                 customCursorRef.current.style.backgroundColor = "transparent"
                 customCursorRef.current.style.mixBlendMode = "normal"
+                customCursorRef.current.style.borderRadius = "0"
                 break
             case "zoomIn":
                 customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/zoomOut.svg\")"
-                customCursorRef.current.style.width = "40px"
-                customCursorRef.current.style.height = "40px"
+                customCursorRef.current.style.width = "20px"
+                customCursorRef.current.style.height = "20px"
                 customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%) rotate(0)"
                 customCursorRef.current.style.backgroundColor = "transparent"
                 customCursorRef.current.style.mixBlendMode = "normal"
+                customCursorRef.current.style.borderRadius = "0"
                 break
             case "zoomOut":
                 customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/zoomIn.svg\")"
                 customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%) rotate(0)"
-                customCursorRef.current.style.width = "40px"
-                customCursorRef.current.style.height = "40px"
+                customCursorRef.current.style.width = "20px"
+                customCursorRef.current.style.height = "20px"
                 customCursorRef.current.style.backgroundColor = "transparent"
                 customCursorRef.current.style.mixBlendMode = "normal"
+                customCursorRef.current.style.borderRadius = "0"
                 break
             case "slideToLeft":
                 customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/singleArrowWithBorder.svg\")"
@@ -48,6 +51,7 @@ export default function CustomCursor() {
                 customCursorRef.current.style.height = "40px"
                 customCursorRef.current.style.backgroundColor = "transparent"
                 customCursorRef.current.style.mixBlendMode = "normal"
+                customCursorRef.current.style.borderRadius = "0"
                 break
             case "slideToRight":
                 customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/singleArrowWithBorder.svg\")"
@@ -56,6 +60,7 @@ export default function CustomCursor() {
                 customCursorRef.current.style.height = "40px"
                 customCursorRef.current.style.backgroundColor = "transparent"
                 customCursorRef.current.style.mixBlendMode = "normal"
+                customCursorRef.current.style.borderRadius = "0"
                 break
             default:
                 customCursorRef.current.style.backgroundImage = "none"
@@ -67,6 +72,7 @@ export default function CustomCursor() {
                 customCursorRef.current.style.scale = 1
                 customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%) rotate(0)"
                 customCursorRef.current.style.mixBlendMode = "normal"
+                customCursorRef.current.style.borderRadius = "50%"
                 break
         }
 

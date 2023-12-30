@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import { textReveal } from "framerMotionAnimations"
-import ArrowSvg from "svgIcons/arrow.svg"
+import ArrowSvg from "svgIcons/arrowWithTail1.svg"
 import styles from "./motionTextRevealTitle.module.css"
 
 export default function MotionTextRevealTitle({ text, wrapperClass, elementClass, showArrowSvg = false }) {

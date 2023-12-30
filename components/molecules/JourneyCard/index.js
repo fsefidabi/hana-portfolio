@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { motion, useMotionValue, useTransform } from "framer-motion"
-import ArrowSvg from "svgIcons/arrow.svg"
+import ArrowSvg from "svgIcons/arrowWithTail1.svg"
 import { fade } from "framerMotionAnimations"
 import styles from "./journeyCard.module.css"
 

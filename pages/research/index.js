@@ -2,7 +2,7 @@ import dynamic from "next/dynamic"
 import { motion } from "framer-motion"
 import { getCommonContent, getPage } from "sanityStudio/sanity-utils"
 import { fade } from "framerMotionAnimations"
-import ArrowSvg from "svgIcons/arrow.svg"
+import ArrowSvg from "svgIcons/arrowWithTail1.svg"
 import PageSection from "components/organisms/PageSection"
 import MotionTextRevealTitle from "components/atoms/MotionTextRevealTitle"
 

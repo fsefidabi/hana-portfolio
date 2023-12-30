@@ -78,7 +78,9 @@ function Sketches({ pageContent, sketches }) {
                 viewport={{ once: false }}
                 variants={textReveal.parentVariantsWithStaggerChildren(0.3)}
             >
-                <SketchesTitle title={pageContent.title1} customStyle={"mt-14 mb-16 text-2xl"}/>
+                <SketchesTitle title={pageContent.title1} customStyle={"mt-14 mb-10 text-2xl"}/>
+
+                <SketchesTitle title={pageContent.description1} customStyle={"mb-16 text-xl"}/>
 
                 <SketchesGallery sketches={sketches.slice(0, 15)} sectionNumber={1} onPhotoClick={handleImageClick}/>
 

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import useEventListener from "hooks/useEventListener"
-import ArrowSvg from "svgIcons/arrow.svg"
+import ArrowSvg from "svgIcons/arrowWithTail1.svg"
 import { fade } from "framerMotionAnimations"
 import styles from "./scrollToTop.module.css"
 
