@@ -1,26 +1,20 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { textReveal } from "framerMotionAnimations"
 import { getSketches, getPage } from "sanityStudio/sanity-utils"
+import { getZoomedImageSize } from "utils"
 import useEventListener from "hooks/useEventListener"
 import SketchesGallery from "components/templates/SketchesGallery"
 import ImageCarousel from "components/atoms/ImageCarousel"
+import MotionTextRevealTitle from "components/atoms/MotionTextRevealTitle"
 import styles from "./sketches.module.css"
-import { getZoomedImageSize } from "../../utils"
 
 function SketchesTitle({ title, customStyle }) {
     return (
-        <motion.div
-            className={`${styles.title} ${customStyle}`}
-            variants={textReveal.boxRevealToTop()}
-            transition={{ duration: 2 }}
-        >
-            {title.length > 0 ? title?.map(item => (
-                item?.children?.map(child => (
-                    <p>{child.text}</p>
-                ))
-            )) : null}
-        </motion.div>
+        <MotionTextRevealTitle
+            text={title}
+            wrapperClass={`${styles.title} ${customStyle}`}
+        />
     )
 }
 

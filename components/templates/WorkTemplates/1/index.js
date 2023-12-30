@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react"
 import { getZoomedImageSize } from "utils"
+import { motion } from "framer-motion"
 import useEventListener from "hooks/useEventListener"
+import { textReveal } from "framerMotionAnimations"
 import ImageCarousel from "components/atoms/ImageCarousel"
+import MotionTextRevealTitle from "components/atoms/MotionTextRevealTitle"
 import styles from "../workTemplates.module.css"
 
 function FirstWorkTemplate({ work }) {
@@ -52,350 +55,663 @@ function FirstWorkTemplate({ work }) {
 
     return (
         <>
-            <div className={`contentWrapper ${styles.container}`}>
-                <div className={styles.mainTitle}>
-                    {work.projectMainTitle.length > 0 ? work.projectMainTitle?.map(item => (
-                        item?.children?.map(child => (
-                            <p>{child.text}</p>
-                        ))
-                    )) : null}
-                </div>
-
-                <div className={styles.subTitle}>
-                    {work.projectSubTitle.length > 0 ? work.projectSubTitle?.map(item => (
-                        item?.children?.map(child => (
-                            <p>{child.text}</p>
-                        ))
-                    )) : null}
-                </div>
-
-                <div className={styles.divider}></div>
-
-                <div className={styles.description}>
-                    {work.projectMainDescription.length > 0 ? work.projectMainDescription?.map(item => (
-                        item?.children?.map(child => (
-                            <p>{child.text}</p>
-                        ))
-                    )) : null}
-                </div>
-
-                <div className={styles.detail}>
-                    [
-                    {work.projectDetail.length > 0 ? work.projectDetail?.map(item => (
-                        item?.children?.map(child => (
-                            <p>{child.text}</p>
-                        ))
-                    )) : null}
-                    ]
-                </div>
-
-                <ImageCarousel
-                    style={{
-                        width: "auto",
-                        height: "auto"
-                    }}
-                    clickPosition={clickPosition}
-                    zoomedSize={zoomedSize}
-                    zoomed={false}
-                    images={[work.images[0]]}
-                    onClick={handleImageClick}
+            <div className={`contentWrapper mt-16 ${styles.container}`}>
+                <MotionTextRevealTitle
+                    text={work.projectMainTitle}
+                    wrapperClass={styles.mainTitle}
                 />
 
-                <div className={`${styles.flexImageWrapper} mt-1`}>
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[1]]}
-                        onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[2]]}
-                        onClick={handleImageClick}
-                    />
-                </div>
+                <MotionTextRevealTitle
+                    text={work.projectSubTitle}
+                    wrapperClass={styles.subTitle}
+                />
 
-                <div className={"mt-1"}>
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[3]]}
+                <motion.div
+                    className={`contentWrapper ${styles.container}`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(1)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={styles.divider}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
                         onClick={handleImageClick}
-                    />
-                </div>
+                    >
+                    </motion.div>
+                </motion.div>
 
-                <div className={`${styles.flexImageWrapper} mt-1`}>
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[4]]}
+                <motion.div
+                    className={`contentWrapper ${styles.container}`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(1)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={styles.description}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
                         onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[5]]}
-                        onClick={handleImageClick}
-                    />
-                </div>
+                    >
+                        {work.projectMainDescription.length > 0 ? work.projectMainDescription?.map(item => (
+                            item?.children?.map(child => (
+                                <p>{child.text}</p>
+                            ))
+                        )) : null}
+                    </motion.div>
+                </motion.div>
 
-                <div className={`${styles.flexImageWrapper} mt-1`}>
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[6]]}
-                        onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[7]]}
-                        onClick={handleImageClick}
-                    />
-                </div>
 
-                <div className={styles.title}>
-                    {work.title1.length > 0 ? work.title1?.map(item => (
-                        item?.children?.map(child => (
-                            <p>{child.text}</p>
-                        ))
-                    )) : null}
-                </div>
+                <motion.div
+                    className={`contentWrapper ${styles.container}`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(1)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={styles.detail}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        [
+                        {work.projectDetail.length > 0 ? work.projectDetail?.map(item => (
+                            item?.children?.map(child => (
+                                <p>{child.text}</p>
+                            ))
+                        )) : null}
+                        ]
+                    </motion.div>
+                </motion.div>
 
-                <div className={styles.description}>
-                    {work.description1.length > 0 ? work.description1?.map(item => (
-                        item?.children?.map(child => (
-                            <p>{child.text}</p>
-                        ))
-                    )) : null}
-                </div>
+                <motion.div
+                    className={`contentWrapper ${styles.container}`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(1)}
+                >
+                    <motion.div
+                        key={work._id}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[0]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+                </motion.div>
 
-                <div className={styles.singleImageWrapper}>
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[8]]}
+                <motion.div
+                    className={`${styles.flexImageWrapper} mt-1`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(0.5)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
                         onClick={handleImageClick}
-                    />
-                </div>
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[1]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
 
-                <div className={`${styles.flexImageWrapper} my-10`}>
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[9]]}
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
                         onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[10]]}
-                        onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[11]]}
-                        onClick={handleImageClick}
-                    />
-                </div>
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[2]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+                </motion.div>
 
-                <div className={`${styles.flexImageWrapper} mt-1`}>
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[12]]}
+                <motion.div
+                    className={`contentWrapper ${styles.container}`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(1)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={"mt-1"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
                         onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[13]]}
-                        onClick={handleImageClick}
-                    />
-                </div>
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[3]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+                </motion.div>
 
-                <div className={`${styles.flexImageWrapper} mt-1`}>
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[14]]}
+                <motion.div
+                    className={`${styles.flexImageWrapper} mt-1`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(0.5)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
                         onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[15]]}
-                        onClick={handleImageClick}
-                    />
-                </div>
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[4]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
 
-                <div className={`${styles.flexImageWrapper} my-10`}>
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[16]]}
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
                         onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[17]]}
-                        onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[18]]}
-                        onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[19]]}
-                        onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[20]]}
-                        onClick={handleImageClick}
-                    />
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[21]]}
-                        onClick={handleImageClick}
-                    />
-                </div>
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[5]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+                </motion.div>
 
-                <div className={styles.detail}>
-                    {work.footer.length > 0 ? work.footer?.map(item => (
-                        item?.children?.map(child => (
-                            <p>{child.text}</p>
-                        ))
-                    )) : null}
-                </div>
+                <motion.div
+                    className={`${styles.flexImageWrapper} mt-1`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(0.5)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[6]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
 
-                <div className={styles.links}>
-                    {work?.links?.map(item => {
-                        return <p key={item._key}>
-                            <a
-                                className={"linkWithBorderBottomOnHover __link"}
-                                href={item.link}
-                                target={"_blank"}
-                            >
-                                {item.label}
-                            </a>
-                        </p>
-                    })}
-                </div>
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[7]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    className={`contentWrapper ${styles.container}`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(1)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={styles.title}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        {work.title1.length > 0 ? work.title1?.map(item => (
+                            item?.children?.map(child => (
+                                <p>{child.text}</p>
+                            ))
+                        )) : null}
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    className={`contentWrapper ${styles.container}`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(1)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={styles.description}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        {work.description1.length > 0 ? work.description1?.map(item => (
+                            item?.children?.map(child => (
+                                <p>{child.text}</p>
+                            ))
+                        )) : null}
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    className={`contentWrapper ${styles.container}`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(1)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={styles.singleImageWrapper}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[8]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    className={`${styles.flexImageWrapper} my-10`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(0.5)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[9]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[10]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[11]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    className={`${styles.flexImageWrapper} mt-1`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(0.5)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[12]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[13]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    className={`${styles.flexImageWrapper} mt-1`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(0.5)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[14]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[15]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    className={`${styles.flexImageWrapper} my-10`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(0.2)}
+                >
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[16]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[17]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[18]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[19]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[20]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[20]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+
+                    <motion.div
+                        key={work._id}
+                        className={"w-1/2"}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
+                        onClick={handleImageClick}
+                    >
+                        <ImageCarousel
+                            style={{
+                                width: "auto",
+                                height: "auto"
+                            }}
+                            clickPosition={clickPosition}
+                            zoomedSize={zoomedSize}
+                            zoomed={false}
+                            images={[work.images[21]]}
+                            onClick={handleImageClick}
+                        />
+                    </motion.div>
+                </motion.div>
             </div>
 
             {zoomedImageSrc?.length ? <ImageCarousel

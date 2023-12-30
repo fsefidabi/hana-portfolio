@@ -54,9 +54,6 @@ function ImageCarousel(props) {
         const leftThreshold = 0.25 * imageWidth
         const rightThreshold = 0.75 * imageWidth
 
-        // console.log("mouseX", mouseX)
-        // console.log("image.getBoundingClientRect().left", image.getBoundingClientRect())
-
         if (images.length > 1 && ((mouseX < leftThreshold) || mouseX > rightThreshold)) {
             if (mouseX < leftThreshold) {
                 setClickFunctionalityType(CLICK_FUNCTIONALITY.SLIDE_LEFT)
@@ -160,7 +157,7 @@ function ImageCarousel(props) {
             className={styles.slideshow}
         >
             <div
-                className={`${styles.slideshowSlider} ${shouldApplyTransition ? "transition duration-300" : ""}`}
+                className={`${styles.slideshowSlider} ${shouldApplyTransition ? "transition duration-1000" : ""}`}
                 style={{ transform: `translate3d(${-currentSlideIndex * 100}%, 0, 0)` }}
             >
                 {images.map((image, imageIndex) => (

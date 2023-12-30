@@ -1,5 +1,5 @@
 .container {
-    @apply mt-16 flex-col justify-center items-center;
+    @apply flex-col justify-center items-center;
 }
 
 .mainTitle {
@@ -36,8 +36,4 @@
 
 .singleImageWrapper {
     @apply w-[38rem] mt-10;
-}
-
-.links {
-    @apply flex justify-center items-center gap-[50px] text-sm uppercase mb-32;
 }
