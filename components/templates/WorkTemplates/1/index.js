@@ -723,7 +723,7 @@ function FirstWorkTemplate({ work }) {
                 </motion.div>
             </div>
 
-            <ImageCarousel
+            {zoomedImageSrc?.length ? <ImageCarousel
                 style={{
                     width: zoomedSize.width,
                     height: zoomedSize.height,
@@ -736,7 +736,7 @@ function FirstWorkTemplate({ work }) {
                 images={work.images}
                 defaultSlideIndex={zoomedImageIndex}
                 onClick={handleZoomOutImage}
-            />
+            /> : null}
         </>
     )
 }
