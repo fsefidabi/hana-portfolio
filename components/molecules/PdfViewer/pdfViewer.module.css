@@ -3,7 +3,7 @@
 }
 
 .page button {
-    @apply w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 justify-center items-center rounded-full bg-gray-900 absolute top-1/2 -translate-y-1/2 transition-all duration-300;
+    @apply w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 flex justify-center items-center rounded-full bg-gray-900 absolute top-1/2 -translate-y-1/2 transition-all duration-300;
 }
 
 .page button:not(:disabled):hover {

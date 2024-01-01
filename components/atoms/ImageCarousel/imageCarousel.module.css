@@ -8,11 +8,43 @@
 }
 
 .slide {
-    @apply w-full h-full inline-block m-0 p-0;
+    @apply w-full h-full inline-block relative m-0 p-0;
 }
 
 .slide img {
     @apply mx-auto;
+}
+
+.slideshowButtons button {
+    @apply justify-center items-center rounded-full bg-gray-900 absolute top-1/2 -translate-y-1/2 transition-all duration-300;
+}
+
+.slideshowButtons button:first-child {
+    @apply left-2;
+}
+
+.slideshowButtons button:last-child {
+    @apply right-2;
+}
+
+.smallSlideshowButtons button {
+    @apply w-8 h-8;
+}
+
+.largeSlideshowButtons button {
+    @apply w-12 h-12;
+}
+
+.slideshowButtons button:not(:disabled):hover {
+    @apply bg-gray-800;
+}
+
+.slideshowButtons button:disabled {
+    @apply opacity-50;
+}
+
+.slideshowButtons button svg {
+    @apply fill-white w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5;
 }
 
 .slideshowDots {
@@ -27,32 +59,12 @@
     @apply bg-tertiary;
 }
 
-.arrowButton {
-    @apply absolute top-1/2 -translate-y-1/2 rounded-full border border-lightGray p-2.5 transition duration-300;
-}
-
-.arrowButton:not(:disabled):hover {
-    @apply border-primary;
-}
-
-.arrowButton:not(:disabled):hover svg {
-    @apply stroke-primary;
-}
-
-.arrowButton svg {
-    @apply w-[12px] h-[12px] stroke-lightGray;
-}
-
-.leftButton {
-    @apply absolute left-[16px] rotate-180;
-}
-
-.rightButton {
-    @apply absolute right-[16px];
-}
-
-.zoomedImageContainer {
+.zoomedImageBackground {
     @apply w-full h-full bg-black fixed top-0 left-0 flex justify-center items-center overflow-hidden z-[1000];
+}
+
+.zoomedImageWrapper {
+    @apply w-full h-full flex justify-center items-center;
 }
 
 .zoomedImage {

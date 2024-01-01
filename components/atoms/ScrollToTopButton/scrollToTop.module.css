@@ -1,5 +1,5 @@
 .button {
-    @apply fixed bottom-0 right-2 w-fit
+    @apply fixed bottom-0 right-0 w-fit
     border border-primary rounded-full w-16 h-16 flex justify-center items-center bg-slate-200
     cursor-none transition-colors duration-500;
 }

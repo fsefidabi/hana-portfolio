@@ -139,9 +139,40 @@ function FirstWorkTemplate({ work }) {
                 >
                     <motion.div
                         key={work._id}
+                        className={styles.disclaimer}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
                         onClick={handleImageClick}
+                    >
+                        [
+                        <div className={"flex mr-2 font-semibold"}>
+                            {work.title2.length > 0 ? work.title2?.map(item => (
+                                item?.children?.map(child => (
+                                    <p>{child.text}</p>
+                                ))
+                            )) : null}
+                            <p>:</p>
+                        </div>
+                        {work.description2.length > 0 ? work.description2?.map(item => (
+                            item?.children?.map(child => (
+                                <p>{child.text}</p>
+                            ))
+                        )) : null}
+                        ]
+                    </motion.div>
+                </motion.div>
+
+                <motion.div
+                    className={`contentWrapper ${styles.container}`}
+                    initial={"initial"}
+                    whileInView="animate"
+                    viewport={{ once: true }}
+                    variants={textReveal.parentVariantsWithStaggerChildren(1)}
+                >
+                    <motion.div
+                        key={work._id}
+                        variants={textReveal.boxRevealToTop()}
+                        transition={{ duration: 2 }}
                     >
                         <ImageCarousel
                             style={{
@@ -169,7 +200,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -189,7 +219,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -217,7 +246,6 @@ function FirstWorkTemplate({ work }) {
                         className={"mt-1"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -245,7 +273,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -265,7 +292,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -293,7 +319,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -313,7 +338,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -385,7 +409,6 @@ function FirstWorkTemplate({ work }) {
                         className={styles.singleImageWrapper}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -413,7 +436,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -433,7 +455,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -453,7 +474,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -481,7 +501,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -501,7 +520,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -529,7 +547,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -549,7 +566,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -577,7 +593,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -597,7 +612,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -617,7 +631,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -637,7 +650,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -657,7 +669,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -677,7 +688,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -697,7 +707,6 @@ function FirstWorkTemplate({ work }) {
                         className={"w-1/2"}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         <ImageCarousel
                             style={{
@@ -714,7 +723,7 @@ function FirstWorkTemplate({ work }) {
                 </motion.div>
             </div>
 
-            {zoomedImageSrc?.length ? <ImageCarousel
+            <ImageCarousel
                 style={{
                     width: zoomedSize.width,
                     height: zoomedSize.height,
@@ -727,7 +736,7 @@ function FirstWorkTemplate({ work }) {
                 images={work.images}
                 defaultSlideIndex={zoomedImageIndex}
                 onClick={handleZoomOutImage}
-            /> : null}
+            />
         </>
     )
 }

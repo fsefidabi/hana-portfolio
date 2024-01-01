@@ -1,11 +1,13 @@
 "use client"
 
-import { useEffect, useState, useRef } from "react"
+import React, { useEffect, useState, useRef } from "react"
 import { Document, Page, pdfjs } from "react-pdf"
+import { AnimatePresence, motion } from "framer-motion"
 import { useWindowSize } from "hooks/useWindowSize"
 import { useIsInViewport } from "hooks/useIsInViewport"
 import useEventListener from "hooks/useEventListener"
 import { MAX_SECTION_WIDTH } from "constants/index.js"
+import fade from "framerMotionAnimations/fade"
 import ArrowWithTail from "svgIcons/arrowWithTail2.svg"
 import SingleArrow from "svgIcons/singleArrow.svg"
 import DoubleArrow from "svgIcons/doubleArrow.svg"
@@ -106,25 +108,33 @@ export default function PdfViewer(props) {
                 loading={<PdfViewerLoading width={pdfViewerWidth}/>}
                 onMouseMove={handlePageMouseOver}
             >
-                <button
-                    type="button"
-                    style={{ left: `${navigationButtonsPosition}px` }}
-                    className={`__link ${mousePositionOverDocument === "left" && pageNumber > 1 ? "flex" : "flex"}`}
-                    disabled={pageNumber <= 1}
-                    onClick={handleGoToPrevPage}
-                >
-                    <ArrowWithTail className={"rotate-180 w-6"}/>
-                </button>
+                <AnimatePresence>
+                    <motion.button
+                        type="button"
+                        disabled={pageNumber <= 1}
+                        style={{ left: `${navigationButtonsPosition}px` }}
+                        className={"__link"}
+                        variants={fade.fadeIn(0.5)}
+                        animate={mousePositionOverDocument === "left" && pageNumber > 1 ? "animate" : "initial"}
+                        onClick={handleGoToPrevPage}
+                    >
+                        <ArrowWithTail className={"rotate-180 w-6"}/>
+                    </motion.button>
+                </AnimatePresence>
 
-                <button
-                    type="button"
-                    disabled={pageNumber >= totalPageCount}
-                    style={{ right: `${navigationButtonsPosition}px` }}
-                    className={`__link ${mousePositionOverDocument === "right" && pageNumber < totalPageCount ? "flex" : "flex"}`}
-                    onClick={handleGoToNextPage}
-                >
-                    <ArrowWithTail className={"w-6"}/>
-                </button>
+                <AnimatePresence>
+                    <motion.button
+                        type="button"
+                        disabled={pageNumber >= totalPageCount}
+                        style={{ right: `${navigationButtonsPosition}px` }}
+                        className={"__link"}
+                        variants={fade.fadeIn(0.5)}
+                        animate={mousePositionOverDocument === "right" && pageNumber < totalPageCount ? "animate" : "initial"}
+                        onClick={handleGoToNextPage}
+                    >
+                        <ArrowWithTail className={"w-6"}/>
+                    </motion.button>
+                </AnimatePresence>
             </Page>
         </Document>
         <div className={styles.navigatorWrapper}>

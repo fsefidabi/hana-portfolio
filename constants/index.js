@@ -22,3 +22,9 @@ export const MENUS = [
     path: "/contact"
   }
 ]
+
+export const ALIGNMENT = {
+  CENTER: "center",
+  RIGHT: "right",
+  LEFT: "left"
+}

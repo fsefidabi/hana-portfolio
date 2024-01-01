@@ -31,9 +31,9 @@ export default function ScrollToTopButton() {
         <AnimatePresence>
             {show && <motion.button
                 className={`__link ${styles.button}`}
-                initial={{ opacity: 0, x: "-50%", y: "-50%" }}
+                initial={{ opacity: 0, x: "-35px", y: "-15px" }}
                 animate={fade.fadeInOut().animate}
-                whileHover={{ scale: 1.2, x: "-50%", y: "-50%" }}
+                whileHover={{ scale: 1.2, x: "-35px", y: "-15px" }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 exit={fade.fadeInOut().exit}
                 onClick={scrollToTop}

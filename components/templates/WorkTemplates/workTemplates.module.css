@@ -23,11 +23,15 @@
 }
 
 .detail {
-    @apply w-full flex justify-center items-center text-base italic tracking-wider my-10;
+    @apply w-full flex justify-center items-center text-base italic tracking-wider my-16;
 }
 
 .detail p:nth-child(2) {
     @apply mx-10;
+}
+
+.disclaimer {
+    @apply w-full flex items-center text-sm tracking-wider italic mb-10;
 }
 
 .flexImageWrapper {

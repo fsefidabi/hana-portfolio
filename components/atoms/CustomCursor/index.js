@@ -15,70 +15,48 @@ export default function CustomCursor() {
     function toggleCursorStyle({ detail }) {
         const cursorType = detail?.cursorType
         const event = detail?.event
+        const styles = {
+            height: "20px",
+            width: "20px",
+            backgroundColor: "transparent",
+            mixBlendMode: "normal",
+            borderRadius: "0",
+            transform: "translateX(-50%) translateY(0%) rotate(0)"
+        }
 
         switch (cursorType) {
             case "pointer":
-                customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/pointer.svg\")"
-                customCursorRef.current.style.width = "20px"
-                customCursorRef.current.style.height = "20px"
-                customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%) rotate(0)"
-                customCursorRef.current.style.backgroundColor = "transparent"
-                customCursorRef.current.style.mixBlendMode = "normal"
-                customCursorRef.current.style.borderRadius = "0"
+                styles.backgroundImage = "url(\"/assets/svg/pointer.svg\")"
                 break
             case "zoomIn":
-                customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/zoomOut.svg\")"
-                customCursorRef.current.style.width = "20px"
-                customCursorRef.current.style.height = "20px"
-                customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%) rotate(0)"
-                customCursorRef.current.style.backgroundColor = "transparent"
-                customCursorRef.current.style.mixBlendMode = "normal"
-                customCursorRef.current.style.borderRadius = "0"
+                styles.backgroundImage = "url(\"/assets/svg/zoomOut.svg\")"
                 break
             case "zoomOut":
-                customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/zoomIn.svg\")"
-                customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%) rotate(0)"
-                customCursorRef.current.style.width = "20px"
-                customCursorRef.current.style.height = "20px"
-                customCursorRef.current.style.backgroundColor = "transparent"
-                customCursorRef.current.style.mixBlendMode = "normal"
-                customCursorRef.current.style.borderRadius = "0"
-                break
-            case "slideToLeft":
-                customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/singleArrowWithBorder.svg\")"
-                customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%) rotate(180deg)"
-                customCursorRef.current.style.width = "40px"
-                customCursorRef.current.style.height = "40px"
-                customCursorRef.current.style.backgroundColor = "transparent"
-                customCursorRef.current.style.mixBlendMode = "normal"
-                customCursorRef.current.style.borderRadius = "0"
-                break
-            case "slideToRight":
-                customCursorRef.current.style.backgroundImage = "url(\"/assets/svg/singleArrowWithBorder.svg\")"
-                // customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%) rotate(0)"
-                customCursorRef.current.style.width = "40px"
-                customCursorRef.current.style.height = "40px"
-                customCursorRef.current.style.backgroundColor = "transparent"
-                customCursorRef.current.style.mixBlendMode = "normal"
-                customCursorRef.current.style.borderRadius = "0"
+                styles.backgroundImage = "url(\"/assets/svg/zoomIn.svg\")"
                 break
             default:
-                customCursorRef.current.style.backgroundImage = "none"
-                customCursorRef.current.style.width = "10px"
-                customCursorRef.current.style.height = "10px"
-                customCursorRef.current.zIndex = 1000
-                customCursorRef.current.style.backgroundColor = "#d35d3d"
-                customCursorRef.current.style.mixBlendMode = "normal"
-                customCursorRef.current.style.scale = 1
-                customCursorRef.current.style.transform = "translateX(-50%) translateY(-50%) rotate(0)"
-                customCursorRef.current.style.mixBlendMode = "normal"
-                customCursorRef.current.style.borderRadius = "50%"
+                styles.width = "10px"
+                styles.height = "10px"
+                styles.backgroundColor = "#d35d3d"
+                styles.backgroundImage = "none"
+                styles.mixBlendMode = "normal"
+                styles.borderRadius = "50%"
+                styles.zIndex = 1000
+                styles.scale = 1
+                styles.transform = "translateX(-50%) translateY(-50%) rotate(0)"
                 break
         }
 
+        applyStyleOnCustomCursor(styles)
         setCursorType(cursorType)
         customCursorRef.current.style.left = event.clientX + "px"
         customCursorRef.current.style.top = event.clientY + "px"
+    }
+
+    function applyStyleOnCustomCursor(styles = {}) {
+        for (const style in styles) {
+            customCursorRef.current.style[style] = styles[style]
+        }
     }
 
     function positionCustomCursor(e) {
@@ -88,9 +66,11 @@ export default function CustomCursor() {
         let path = detail.composedPath()
         if (path.some(x => x != null && x.classList && Array.from(x?.classList).includes("__hoverable_title"))) {
             toggleCursorStyle({ detail: { cursorType: "default", event: e } })
-            customCursorRef.current.style.transform = "translateX(-10%) translateY(-10%) rotate(0)"
-            customCursorRef.current.style.scale = 10
-            customCursorRef.current.style.mixBlendMode = "color"
+            applyStyleOnCustomCursor({
+                transform: "translateX(-10%) translateY(-10%) rotate(0)",
+                scale: 10,
+                mixBlendMode: "color"
+            })
         } else if (path.some(x => x != null && x.classList && Array.from(x?.classList).includes("__link"))) {
             toggleCursorStyle({ detail: { cursorType: "pointer", event: e } })
         } else if (path.some(x => x != null && x.classList && Array.from(x?.classList).includes("__zoomable"))) {
@@ -98,12 +78,6 @@ export default function CustomCursor() {
                 toggleCursorStyle({ detail: { cursorType: "zoomIn", event: e } })
             } else {
                 toggleCursorStyle({ detail: { cursorType: "zoomOut", event: e } })
-            }
-        } else if (path.some(x => x != null && x.classList && Array.from(x?.classList).includes("__clickable"))) {
-            if (path.some(x => x != null && x.classList && Array.from(x?.classList).includes("__slide_to_left"))) {
-                toggleCursorStyle({ detail: { cursorType: "slideToLeft", event: e } })
-            } else {
-                toggleCursorStyle({ detail: { cursorType: "slideToRight", event: e } })
             }
         } else {
             toggleCursorStyle({ detail: { cursorType: "default", event: e } })
