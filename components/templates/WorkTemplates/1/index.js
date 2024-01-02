@@ -78,7 +78,6 @@ function FirstWorkTemplate({ work }) {
                         className={styles.divider}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                     </motion.div>
                 </motion.div>
@@ -95,7 +94,6 @@ function FirstWorkTemplate({ work }) {
                         className={styles.description}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         {work.projectMainDescription.length > 0 ? work.projectMainDescription?.map(item => (
                             item?.children?.map(child => (
@@ -118,7 +116,6 @@ function FirstWorkTemplate({ work }) {
                         className={styles.detail}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         [
                         {work.projectDetail.length > 0 ? work.projectDetail?.map(item => (
@@ -142,7 +139,6 @@ function FirstWorkTemplate({ work }) {
                         className={styles.disclaimer}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         [
                         <div className={"flex mr-2 font-semibold"}>
@@ -365,7 +361,6 @@ function FirstWorkTemplate({ work }) {
                         className={styles.title}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         {work.title1.length > 0 ? work.title1?.map(item => (
                             item?.children?.map(child => (
@@ -387,7 +382,6 @@ function FirstWorkTemplate({ work }) {
                         className={styles.description}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
-                        onClick={handleImageClick}
                     >
                         {work.description1.length > 0 ? work.description1?.map(item => (
                             item?.children?.map(child => (

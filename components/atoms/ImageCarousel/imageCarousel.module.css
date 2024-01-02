@@ -15,24 +15,28 @@
     @apply mx-auto;
 }
 
-.slideshowButtons button {
-    @apply justify-center items-center rounded-full bg-gray-900 absolute top-1/2 -translate-y-1/2 transition-all duration-300;
+.buttonWrapper {
+    @apply justify-center items-center absolute top-1/2 -translate-y-1/2 transition-all duration-300;
 }
 
-.slideshowButtons button:first-child {
+.slideshowButtons div:first-child {
     @apply left-2;
 }
 
-.slideshowButtons button:last-child {
+.slideshowButtons div:last-child {
     @apply right-2;
 }
 
-.smallSlideshowButtons button {
-    @apply w-8 h-8;
+.smallSlideshowButtons div {
+    @apply w-12 h-12 p-2;
 }
 
-.largeSlideshowButtons button {
-    @apply w-12 h-12;
+.largeSlideshowButtons div {
+    @apply w-14 h-14 p-2;
+}
+
+.slideshowButtons button {
+    @apply w-full h-full flex justify-center items-center rounded-full bg-gray-900 bg-opacity-50;
 }
 
 .slideshowButtons button:not(:disabled):hover {

@@ -12,27 +12,29 @@ function SlideshowButtons(props) {
         <div
             className={`${styles.slideshowButtons} ${isZoomed ? styles.largeSlideshowButtons : styles.smallSlideshowButtons}`}>
             <AnimatePresence>
-                <motion.button
-                    type="button"
-                    className={`__link ${(mousePositionOverSlider === ALIGNMENT.LEFT || (isSlidable && isZoomed)) ? "flex" : "hidden"}`}
+                <motion.div
+                    className={`__link ${styles.buttonWrapper} ${(mousePositionOverSlider === ALIGNMENT.LEFT || (isSlidable && isZoomed)) ? "flex" : "flex"}`}
                     variants={fade.fadeIn(0.5)}
-                    animate={(mousePositionOverSlider === ALIGNMENT.LEFT || (isSlidable && isZoomed)) ? "animate" : "initial"}
+                    animate={(mousePositionOverSlider === ALIGNMENT.LEFT || (isSlidable && isZoomed)) ? "animate" : "animate"}
                     onClick={handleShowPrevSlide}
                 >
-                    <ArrowWithTail className={"rotate-180 w-6"}/>
-                </motion.button>
+                    <button type="button">
+                        <ArrowWithTail className={"rotate-180 w-6"}/>
+                    </button>
+                </motion.div>
             </AnimatePresence>
 
             <AnimatePresence>
-                <motion.button
-                    type="button"
-                    className={`__link ${(mousePositionOverSlider === ALIGNMENT.RIGHT || (isSlidable && isZoomed)) ? "flex" : "hidden"}`}
+                <motion.div
+                    className={`__link ${styles.buttonWrapper} ${(mousePositionOverSlider === ALIGNMENT.RIGHT || (isSlidable && isZoomed)) ? "flex" : "flex"}`}
                     variants={fade.fadeIn(0.5)}
-                    animate={(mousePositionOverSlider === ALIGNMENT.RIGHT || (isSlidable && isZoomed)) ? "animate" : "initial"}
+                    animate={(mousePositionOverSlider === ALIGNMENT.RIGHT || (isSlidable && isZoomed)) ? "animate" : "animate"}
                     onClick={handleShowNextSlide}
                 >
-                    <ArrowWithTail className={"w-6"}/>
-                </motion.button>
+                    <button type="button">
+                        <ArrowWithTail className={"w-6"}/>
+                    </button>
+                </motion.div>
             </AnimatePresence>
         </div>
     )
