@@ -59,7 +59,7 @@ function SlideshowSlider(props) {
     }
 
     function handleMouseLeave(event) {
-        if (event.relatedTarget.classList.contains("__link")) return
+        if (event?.relatedTarget?.classList?.contains("__link")) return
         setMousePositionOverSlider(ALIGNMENT.CENTER)
     }
 

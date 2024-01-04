@@ -18,9 +18,9 @@ const work = {
             }
         },
         {
-            name: "templateNumber",
-            title: "Template Number",
-            type: "number"
+            name: "templateName",
+            title: "Template Name",
+            type: "string"
         },
         {
             name: "projectCoverTitle",
@@ -297,6 +297,126 @@ const work = {
         {
             name: "image25",
             title: "Image 25",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image26",
+            title: "Image 26",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image27",
+            title: "Image 27",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image28",
+            title: "Image 28",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image29",
+            title: "Image 29",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image30",
+            title: "Image 30",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image31",
+            title: "Image 31",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image32",
+            title: "Image 32",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image33",
+            title: "Image 33",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image34",
+            title: "Image 34",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image35",
+            title: "Image 35",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image36",
+            title: "Image 36",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image37",
+            title: "Image 37",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image38",
+            title: "Image 38",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image39",
+            title: "Image 39",
+            type: "image",
+            options: {
+                hotspot: true
+            }
+        },
+        {
+            name: "image40",
+            title: "Image 40",
             type: "image",
             options: {
                 hotspot: true
