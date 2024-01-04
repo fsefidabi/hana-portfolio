@@ -14,7 +14,12 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             />
 
             <MotionTextRevealTitle
-                text={work.projectSubTitle}
+                text={work.projectSubTitle1}
+                wrapperClass={styles.subTitle_label}
+            />
+
+            <MotionTextRevealTitle
+                text={work.projectSubTitle2}
                 wrapperClass={styles.subTitle}
             />
 
@@ -106,6 +111,23 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
                         ))
                     )) : null}
                     ]
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                className={`contentWrapper ${styles.container}`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    id={37}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    <img src={work.images[36]} alt="logo"/>
                 </motion.div>
             </motion.div>
 
@@ -288,6 +310,27 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             </motion.div>
 
             <motion.div
+                className={`contentWrapper ${styles.container} my-10`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    className={styles.description}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    {work.description1.length > 0 ? work.description1?.map(item => (
+                        item?.children?.map(child => (
+                            <p>{child.text}</p>
+                        ))
+                    )) : null}
+                </motion.div>
+            </motion.div>
+
+            <motion.div
                 className={`contentWrapper ${styles.container} mt-1`}
                 initial={"initial"}
                 whileInView="animate"
@@ -363,27 +406,6 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} my-10`}
-                initial={"initial"}
-                whileInView="animate"
-                viewport={{ once: true }}
-                variants={textReveal.parentVariantsWithStaggerChildren(1)}
-            >
-                <motion.div
-                    key={work._id}
-                    className={styles.description}
-                    variants={textReveal.boxRevealToTop()}
-                    transition={{ duration: 2 }}
-                >
-                    {work.description1.length > 0 ? work.description1?.map(item => (
-                        item?.children?.map(child => (
-                            <p>{child.text}</p>
-                        ))
-                    )) : null}
-                </motion.div>
-            </motion.div>
-
-            <motion.div
                 className={`contentWrapper ${styles.container} mt-1`}
                 initial={"initial"}
                 whileInView="animate"
@@ -411,7 +433,7 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             </motion.div>
 
             <motion.div
-                className={`${styles.flexImageWrapper}`}
+                className={`${styles.flexImageWrapper} mt-1`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -480,7 +502,7 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mt-1`}
+                className={`contentWrapper ${styles.container}`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -659,7 +681,8 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
                         clickPosition={clickPosition}
                         zoomedSize={zoomedSize}
                         zoomed={false}
-                        images={[work.images[19]]}
+                        images={work.images.slice(19, 25)}
+                        hasThumbnail={true}
                         onClick={handleImageClick}
                     />
                 </motion.div>
@@ -671,128 +694,6 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
                 whileInView="animate"
                 viewport={{ once: true }}
                 variants={textReveal.parentVariantsWithStaggerChildren(0.5)}
-            >
-                <motion.div
-                    key={work._id}
-                    id={20}
-                    className={"w-1/4"}
-                    variants={textReveal.boxRevealToTop()}
-                    transition={{ duration: 2 }}
-                >
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[20]]}
-                        onClick={handleImageClick}
-                    />
-                </motion.div>
-
-                <motion.div
-                    key={work._id}
-                    id={21}
-                    className={"w-1/4"}
-                    variants={textReveal.boxRevealToTop()}
-                    transition={{ duration: 2 }}
-                >
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[21]]}
-                        onClick={handleImageClick}
-                    />
-                </motion.div>
-
-                <motion.div
-                    key={work._id}
-                    id={22}
-                    className={"w-1/2"}
-                    variants={textReveal.boxRevealToTop()}
-                    transition={{ duration: 2 }}
-                >
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[22]]}
-                        onClick={handleImageClick}
-                    />
-                </motion.div>
-            </motion.div>
-
-            <motion.div
-                className={`contentWrapper ${styles.container} ${styles.centeredContainer} mt-1`}
-                initial={"initial"}
-                whileInView="animate"
-                viewport={{ once: true }}
-                variants={textReveal.parentVariantsWithStaggerChildren(1)}
-            >
-                <motion.div
-                    key={work._id}
-                    id={23}
-                    variants={textReveal.boxRevealToTop()}
-                    transition={{ duration: 2 }}
-                >
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[23]]}
-                        onClick={handleImageClick}
-                    />
-                </motion.div>
-            </motion.div>
-
-            <motion.div
-                className={`contentWrapper ${styles.container} ${styles.centeredContainer} my-10`}
-                initial={"initial"}
-                whileInView="animate"
-                viewport={{ once: true }}
-                variants={textReveal.parentVariantsWithStaggerChildren(1)}
-            >
-                <motion.div
-                    key={work._id}
-                    id={24}
-                    variants={textReveal.boxRevealToTop()}
-                    transition={{ duration: 2 }}
-                >
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[24]]}
-                        onClick={handleImageClick}
-                    />
-                </motion.div>
-            </motion.div>
-
-            <motion.div
-                className={`contentWrapper ${styles.container} mt-1 mb-10`}
-                initial={"initial"}
-                whileInView="animate"
-                viewport={{ once: true }}
-                variants={textReveal.parentVariantsWithStaggerChildren(1)}
             >
                 <motion.div
                     key={work._id}
@@ -809,6 +710,126 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
                         zoomedSize={zoomedSize}
                         zoomed={false}
                         images={[work.images[25]]}
+                        onClick={handleImageClick}
+                    />
+                </motion.div>
+
+                <motion.div
+                    key={work._id}
+                    id={26}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    <ImageCarousel
+                        style={{
+                            width: "auto",
+                            height: "auto"
+                        }}
+                        clickPosition={clickPosition}
+                        zoomedSize={zoomedSize}
+                        zoomed={false}
+                        images={[work.images[26]]}
+                        onClick={handleImageClick}
+                    />
+                </motion.div>
+
+                <motion.div
+                    key={work._id}
+                    id={27}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    <ImageCarousel
+                        style={{
+                            width: "auto",
+                            height: "auto"
+                        }}
+                        clickPosition={clickPosition}
+                        zoomedSize={zoomedSize}
+                        zoomed={false}
+                        images={[work.images[27]]}
+                        onClick={handleImageClick}
+                    />
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                className={`contentWrapper ${styles.container} ${styles.centeredContainer} mt-1`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    id={28}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    <ImageCarousel
+                        style={{
+                            width: "auto",
+                            height: "auto"
+                        }}
+                        clickPosition={clickPosition}
+                        zoomedSize={zoomedSize}
+                        zoomed={false}
+                        images={work.images.slice(28, 34)}
+                        hasThumbnail={true}
+                        onClick={handleImageClick}
+                    />
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                className={`contentWrapper ${styles.container} ${styles.centeredContainer} my-10`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    id={34}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    <ImageCarousel
+                        style={{
+                            width: "auto",
+                            height: "auto"
+                        }}
+                        clickPosition={clickPosition}
+                        zoomedSize={zoomedSize}
+                        zoomed={false}
+                        images={[work.images[34]]}
+                        onClick={handleImageClick}
+                    />
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                className={`contentWrapper ${styles.container} mt-1 mb-10`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    id={35}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    <ImageCarousel
+                        style={{
+                            width: "auto",
+                            height: "auto"
+                        }}
+                        clickPosition={clickPosition}
+                        zoomedSize={zoomedSize}
+                        zoomed={false}
+                        images={[work.images[35]]}
                         onClick={handleImageClick}
                     />
                 </motion.div>

@@ -15,6 +15,10 @@
     @apply w-full text-center tracking-wider mt-9 mb-8;
 }
 
+.subTitle_label {
+    @apply text-sm mt-4 mb-1 italic;
+}
+
 .subTitle {
     @apply w-full italic text-center text-xl;
 }

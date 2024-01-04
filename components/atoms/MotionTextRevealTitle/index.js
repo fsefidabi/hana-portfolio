@@ -37,7 +37,7 @@ export default function MotionTextRevealTitle({ text, wrapperClass, elementClass
                         })}
                         {showArrowSvg && childIndex === item.children.length - 1 && itemIndex === text.length - 1 && <motion.div
                             variants={textReveal.letterVariantsWithFixedPosition()}
-                            className={`inline-block ${styles.arrowContainer}`}
+                            className={`inline-block ${styles.arrowContainer} svgWrapper`}
                         >
                             <ArrowSvg/>
                         </motion.div>}

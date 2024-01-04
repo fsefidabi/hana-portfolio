@@ -14,7 +14,7 @@ function MiistaWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             />
 
             <MotionTextRevealTitle
-                text={work.projectSubTitle}
+                text={work.projectSubTitle1}
                 wrapperClass={styles.subTitle}
             />
 

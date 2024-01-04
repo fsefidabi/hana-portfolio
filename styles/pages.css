@@ -35,7 +35,7 @@
     @apply max-w-screen-xl mx-auto flex;
 }
 
-.contentWrapper svg {
+.contentWrapper .svgWrapper svg {
     @apply fill-secondary rotate-45 w-9;
 }
 

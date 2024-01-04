@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react"
 import { getMouseSegment, switchClassesForElement } from "utils"
 import { ALIGNMENT } from "constants/index"
+import useEventListener from "hooks/useEventListener"
 import SlideshowButtons from "./SlideshowButtons"
 import SlideshowDots from "./SlideshowDots"
+import SlideShowThumbnail from "./SlideShowThumbnail"
 import styles from "./imageCarousel.module.css"
-import useEventListener from "../../../hooks/useEventListener"
 
 function SlideshowSlider(props) {
     const {
@@ -13,6 +14,7 @@ function SlideshowSlider(props) {
         style,
         shouldApplyTransition,
         isZoomed,
+        hasThumbnail,
         onClick
     } = props
 
@@ -117,11 +119,15 @@ function SlideshowSlider(props) {
                 handleShowPrevSlide={handleShowPrevSlide}
             />
 
-            <SlideshowDots
+            {hasThumbnail ? <SlideShowThumbnail
+                images={images}
+                currentSlideIndex={currentSlideIndex}
+                handleShowTargetSlide={handleShowTargetSlide}
+            /> : <SlideshowDots
                 imagesCount={images.length}
                 currentSlideIndex={currentSlideIndex}
                 handleShowTargetSlide={handleShowTargetSlide}
-            />
+            />}
         </div>
     )
 }

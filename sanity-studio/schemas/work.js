@@ -43,8 +43,14 @@ const work = {
             of: [{ type: "block" }]
         },
         {
-            name: "projectSubTitle",
-            title: "Project Sub Title",
+            name: "projectSubTitle1",
+            title: "Project Sub Title 1",
+            type: "array",
+            of: [{ type: "block" }]
+        },
+        {
+            name: "projectSubTitle2",
+            title: "Project Sub Title 2",
             type: "array",
             of: [{ type: "block" }]
         },

@@ -3,7 +3,7 @@ import ZoomedImage from "./ZoomedImage"
 import SlideshowSlider from "./SlideshowSlider"
 
 function ImageCarousel(props) {
-    const { images, defaultSlideIndex = 0, zoomed, parent = true, style, clickPosition, zoomedSize, onClick } = props
+    const { images, defaultSlideIndex = 0, zoomed, parent = true, style, clickPosition, zoomedSize, hasThumbnail = false, onClick } = props
 
     const [shouldApplyTransition, setShouldApplyTransition] = useState(false)
 
@@ -26,6 +26,7 @@ function ImageCarousel(props) {
             style={style}
             shouldApplyTransition={shouldApplyTransition}
             isZoomed={zoomed}
+            hasThumbnail={hasThumbnail}
             onClick={onClick}
         />
     )

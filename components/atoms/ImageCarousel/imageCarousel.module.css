@@ -63,6 +63,22 @@
     @apply bg-tertiary;
 }
 
+.slideshowThumbnails {
+    @apply w-full h-[4rem] absolute bottom-[8px] flex justify-center;
+}
+
+.slideshowThumbnail {
+    @apply w-[4rem] bg-lightGray mx-1 object-cover brightness-[0.35] transition duration-300;
+}
+
+.slideshowThumbnail:hover {
+    @apply brightness-50;
+}
+
+.slideshowThumbnail.active {
+    @apply brightness-100;
+}
+
 .zoomedImageBackground {
     @apply w-full h-full bg-black fixed top-0 left-0 flex justify-center items-center overflow-hidden z-[1000];
 }
