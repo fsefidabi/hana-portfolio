@@ -93,14 +93,6 @@ function MiistaWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
                     transition={{ duration: 2 }}
                 >
                     [
-                    <div className={"flex mr-2 font-semibold"}>
-                        {work.title2.length > 0 ? work.title2?.map(item => (
-                            item?.children?.map(child => (
-                                <p>{child.text}</p>
-                            ))
-                        )) : null}
-                        <p>:</p>
-                    </div>
                     {work.description2.length > 0 ? work.description2?.map(item => (
                         item?.children?.map(child => (
                             <p>{child.text}</p>

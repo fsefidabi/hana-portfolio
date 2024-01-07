@@ -61,6 +61,12 @@ const work = {
             of: [{ type: "block" }]
         },
         {
+            name: "projectMainDescription2",
+            title: "Project Main Description2",
+            type: "array",
+            of: [{ type: "block" }]
+        },
+        {
             name: "projectDetail",
             title: "Project Detail",
             type: "array",
@@ -99,6 +105,30 @@ const work = {
         {
             name: "description3",
             title: "Description 3",
+            type: "array",
+            of: [{ type: "block" }]
+        },
+        {
+            name: "title4",
+            title: "Title 4",
+            type: "array",
+            of: [{ type: "block" }]
+        },
+        {
+            name: "description4",
+            title: "Description 4",
+            type: "array",
+            of: [{ type: "block" }]
+        },
+        {
+            name: "title5",
+            title: "Title 5",
+            type: "array",
+            of: [{ type: "block" }]
+        },
+        {
+            name: "description5",
+            title: "Description 5",
             type: "array",
             of: [{ type: "block" }]
         },
