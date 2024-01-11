@@ -43,6 +43,10 @@
     @apply w-full flex items-center text-sm tracking-wider italic mb-10;
 }
 
+.link {
+    @apply w-full flex items-center text-sm tracking-wider mb-10;
+}
+
 .flexImageWrapper {
     @apply w-full flex gap-1 justify-center items-center;
 }
