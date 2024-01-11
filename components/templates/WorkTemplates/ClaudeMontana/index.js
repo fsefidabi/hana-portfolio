@@ -5,7 +5,7 @@ import ImageCarousel from "components/atoms/ImageCarousel"
 import MotionTextRevealTitle from "components/atoms/MotionTextRevealTitle"
 import styles from "../workTemplates.module.css"
 
-function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick }) {
+function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick }) {
     return (
         <div className={`contentWrapper mt-16 ${styles.container}`}>
             <MotionTextRevealTitle
@@ -85,31 +85,6 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
                 viewport={{ once: true }}
                 variants={textReveal.parentVariantsWithStaggerChildren(1)}
             >
-                <motion.a
-                    key={work._id}
-                    className={`${styles.link} __link`}
-                    href={work.links[0].link}
-                    target={"blank"}
-                    variants={textReveal.boxRevealToTop()}
-                    transition={{ duration: 2 }}
-                >
-                        [
-                        {work.description1.length > 0 ? work.description1?.map(item => (
-                            item?.children?.map(child => (
-                                <p>{child.text}</p>
-                            ))
-                        )) : null}
-                        ]
-                </motion.a>
-            </motion.div>
-
-            <motion.div
-                className={`contentWrapper ${styles.container}`}
-                initial={"initial"}
-                whileInView="animate"
-                viewport={{ once: true }}
-                variants={textReveal.parentVariantsWithStaggerChildren(1)}
-            >
                 <motion.div
                     key={work._id}
                     id={0}
@@ -127,6 +102,39 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
                         images={[work.images[0]]}
                         onClick={handleImageClick}
                     />
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                className={"w-screen h-1 border-t-[0.5px] border-white"}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+            </motion.div>
+
+            <motion.div
+                className={`contentWrapper ${styles.container} my-6`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    className={styles.description}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    {work.title2.length > 0 ? work.title2[0]?.children?.map((child, index) => (
+                        <p
+                            key={index}
+                            className={"whitespace-nowrap font-semibold"}
+                        >
+                            {child.text}
+                        </p>
+                    )) : null}
                 </motion.div>
             </motion.div>
 
@@ -158,6 +166,30 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
+                className={`contentWrapper ${styles.container} my-6`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    className={styles.description}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    {work.title2.length > 0 ? work.title2[1]?.children?.map((child, index) => (
+                        <p
+                            key={index}
+                            className={"whitespace-nowrap font-semibold"}
+                        >
+                            {child.text}
+                        </p>
+                    )) : null}
+                </motion.div>
+            </motion.div>
+
+            <motion.div
                 className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
                 initial={"initial"}
                 whileInView="animate"
@@ -185,49 +217,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mt-10`}
-                initial={"initial"}
-                whileInView="animate"
-                viewport={{ once: true }}
-                variants={textReveal.parentVariantsWithStaggerChildren(1)}
-            >
-                <motion.div
-                    key={work._id}
-                    className={styles.description}
-                    variants={textReveal.boxRevealToTop()}
-                    transition={{ duration: 2 }}
-                >
-                    {work.description2.length > 0 ? work.description2?.map(item => (
-                        item?.children?.map(child => (
-                            <p>{child.text}</p>
-                        ))
-                    )) : null}
-                </motion.div>
-            </motion.div>
-
-            <motion.div
-                className={`contentWrapper ${styles.container} mt-10`}
-                initial={"initial"}
-                whileInView="animate"
-                viewport={{ once: true }}
-                variants={textReveal.parentVariantsWithStaggerChildren(1)}
-            >
-                <motion.div
-                    key={work._id}
-                    className={styles.description}
-                    variants={textReveal.boxRevealToTop()}
-                    transition={{ duration: 2 }}
-                >
-                    {work.description3.length > 0 ? work.description3?.map(item => (
-                        item?.children?.map(child => (
-                            <p>{child.text}</p>
-                        ))
-                    )) : null}
-                </motion.div>
-            </motion.div>
-
-            <motion.div
-                className={`contentWrapper ${styles.container} mt-10`}
+                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -250,6 +240,30 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
                         images={[work.images[3]]}
                         onClick={handleImageClick}
                     />
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                className={`contentWrapper ${styles.container} my-6`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    className={styles.description}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    {work.title2.length > 0 ? work.title2[2]?.children?.map((child, index) => (
+                        <p
+                            key={index}
+                            className={"whitespace-nowrap font-semibold"}
+                        >
+                            {child.text}
+                        </p>
+                    )) : null}
                 </motion.div>
             </motion.div>
 
@@ -308,6 +322,30 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
+                className={`contentWrapper ${styles.container} my-6`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    className={styles.description}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    {work.title2.length > 0 ? work.title2[3]?.children?.map((child, index) => (
+                        <p
+                            key={index}
+                            className={"whitespace-nowrap font-semibold"}
+                        >
+                            {child.text}
+                        </p>
+                    )) : null}
+                </motion.div>
+            </motion.div>
+
+            <motion.div
                 className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
                 initial={"initial"}
                 whileInView="animate"
@@ -362,6 +400,30 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
+                className={`contentWrapper ${styles.container} my-6`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    className={styles.description}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    {work.title2.length > 0 ? work.title2[4]?.children?.map((child, index) => (
+                        <p
+                            key={index}
+                            className={"whitespace-nowrap font-semibold"}
+                        >
+                            {child.text}
+                        </p>
+                    )) : null}
+                </motion.div>
+            </motion.div>
+
+            <motion.div
                 className={`contentWrapper ${styles.container} mt-1`}
                 initial={"initial"}
                 whileInView="animate"
@@ -389,7 +451,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container}`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -416,7 +478,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mt-1 mb-10`}
+                className={`contentWrapper ${styles.container}`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -441,8 +503,62 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
                     />
                 </motion.div>
             </motion.div>
+
+            <motion.div
+                className={`contentWrapper ${styles.container}`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    id={11}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    <ImageCarousel
+                        style={{
+                            width: "auto",
+                            height: "auto"
+                        }}
+                        clickPosition={clickPosition}
+                        zoomedSize={zoomedSize}
+                        zoomed={false}
+                        images={[work.images[11]]}
+                        onClick={handleImageClick}
+                    />
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                className={`contentWrapper ${styles.container} mb-10 border-t-[1px] border-black`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    id={12}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    <ImageCarousel
+                        style={{
+                            width: "auto",
+                            height: "auto"
+                        }}
+                        clickPosition={clickPosition}
+                        zoomedSize={zoomedSize}
+                        zoomed={false}
+                        images={[work.images[12]]}
+                        onClick={handleImageClick}
+                    />
+                </motion.div>
+            </motion.div>
         </div>
     )
 }
 
-export default BarishamStudioWorkTemplate
+export default ClaudeMontanaWorkTemplate
