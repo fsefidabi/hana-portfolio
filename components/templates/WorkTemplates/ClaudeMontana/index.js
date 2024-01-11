@@ -532,7 +532,7 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mb-10 border-t-[1px] border-black`}
+                className={`contentWrapper ${styles.container} border-t-[1px] border-black`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -555,6 +555,48 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
                         images={[work.images[12]]}
                         onClick={handleImageClick}
                     />
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                className={`contentWrapper ${styles.container} mt-16`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    className={"text-base text-center leading-loose"}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    {work.title2.length > 0 ? work.title2[5]?.children?.map((child, index) => (
+                        <p key={index}>
+                            {child.text}
+                        </p>
+                    )) : null}
+                </motion.div>
+            </motion.div>
+
+            <motion.div
+                className={`contentWrapper ${styles.container} mb-10`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    className={"text-base text-center leading-loose"}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    {work.title2.length > 0 ? work.title2[6]?.children?.map((child, index) => (
+                        <p key={index}>
+                            {child.text}
+                        </p>
+                    )) : null}
                 </motion.div>
             </motion.div>
         </div>
