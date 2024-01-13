@@ -158,7 +158,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -254,7 +254,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -281,7 +281,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mt-1`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -308,7 +308,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -335,7 +335,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -362,7 +362,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mt-1`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -389,7 +389,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -416,7 +416,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mt-1 mb-10`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}

@@ -408,7 +408,7 @@ function MarniWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick }
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} my-10`}
+                className={`contentWrapper ${styles.container} mt-10`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}

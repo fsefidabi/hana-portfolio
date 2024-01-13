@@ -190,7 +190,7 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -217,7 +217,7 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -268,7 +268,7 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -295,7 +295,7 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mt-1`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -346,7 +346,7 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -373,7 +373,7 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-gray-600`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -424,7 +424,7 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mt-1`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -532,7 +532,7 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} border-t-[1px] border-black`}
+                className={`contentWrapper ${styles.container} mt-[1px]`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -580,7 +580,7 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mb-10`}
+                className={`contentWrapper ${styles.container}`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}

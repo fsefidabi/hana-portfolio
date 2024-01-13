@@ -520,7 +520,7 @@ function MiistaWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             </motion.div>
 
             <motion.div
-                className={`${styles.flexImageWrapper} my-10`}
+                className={`${styles.flexImageWrapper} mt-10`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -598,25 +598,6 @@ function MiistaWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
                         zoomedSize={zoomedSize}
                         zoomed={false}
                         images={[work.images[19]]}
-                        onClick={handleImageClick}
-                    />
-                </motion.div>
-
-                <motion.div
-                    key={work._id}
-                    className={"w-1/2"}
-                    variants={textReveal.boxRevealToTop()}
-                    transition={{ duration: 2 }}
-                >
-                    <ImageCarousel
-                        style={{
-                            width: "auto",
-                            height: "auto"
-                        }}
-                        clickPosition={clickPosition}
-                        zoomedSize={zoomedSize}
-                        zoomed={false}
-                        images={[work.images[20]]}
                         onClick={handleImageClick}
                     />
                 </motion.div>

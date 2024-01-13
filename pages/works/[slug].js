@@ -1,20 +1,57 @@
 import React, { useEffect, useState } from "react"
+import Link from "next/link"
 import dynamic from "next/dynamic"
+import { motion } from "framer-motion"
+import { textReveal } from "framerMotionAnimations"
 import { getWork, getWorks } from "sanityStudio/sanity-utils"
 import useEventListener from "hooks/useEventListener"
+import { getZoomedImageSize } from "utils"
 import ImageCarousel from "components/atoms/ImageCarousel"
-import { getZoomedImageSize } from "../../utils"
 
 const renderComponent = ({ pageContent, clickPosition, handleImageClick }) => {
-    const Component = dynamic(() => import(`components/templates/WorkTemplates/${pageContent.templateName}`))
-    return <Component
-        work={pageContent}
-        clickPosition={clickPosition}
-        handleImageClick={handleImageClick}
-    />
+    const Component = dynamic(() => import(`components/templates/WorkTemplates/${pageContent.work.templateName}`))
+
+    return <>
+        <Component
+            work={pageContent.work}
+            clickPosition={clickPosition}
+            handleImageClick={handleImageClick}
+        />
+
+        <motion.div
+            className={"my-20 __link uppercase"}
+            initial={"initial"}
+            whileInView="animate"
+            viewport={{ once: true }}
+            variants={textReveal.parentVariantsWithStaggerChildren(1)}
+        >
+            <motion.div
+                className={"flex justify-center flex-wrap gap-2 mx-10 text-base tracking-wide"}
+                variants={textReveal.boxRevealToTop()}
+                transition={{ duration: 2 }}
+            >
+                {pageContent.moreWorks.map((work, workIndex) => {
+                    return <>
+                        <Link className={"flex"} href={work.slug.current}>
+                            {work.projectCoverTitle.length > 0 ? work.projectCoverTitle?.map((item, itemIndex) => (
+                                item?.children?.map(child => {
+                                    return <p>
+                                        <span>{child.text}</span>
+                                        {itemIndex < work.projectCoverTitle.length - 1 ?
+                                            <span className={"mx-1"}>-</span> : null}
+                                    </p>
+                                })
+                            )) : null}
+                        </Link>
+                        {workIndex < pageContent.moreWorks.length - 1 ? "/" : ""}
+                    </>
+                })}
+            </motion.div>
+        </motion.div>
+    </>
 }
 
-function Work({ work }) {
+function Work({ work, moreWorks }) {
     const [zoomedImageSrc, setZoomedImageSrc] = useState("")
     const [zoomedImageIndex, setZoomedImageIndex] = useState(0)
     const [zoomedSize, setZoomedSize] = useState({ width: "0px", height: "0px" })
@@ -62,7 +99,10 @@ function Work({ work }) {
 
     return <>
         {renderComponent({
-            pageContent: work,
+            pageContent: {
+                work,
+                moreWorks
+            },
             clickPosition: clickPosition,
             handleImageClick: handleImageClick
         })}
@@ -101,6 +141,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
     const work = await getWork(params.slug)
+    const works = await getWorks()
 
     const images = work[0].images.filter(image => !!image)
 
@@ -115,7 +156,8 @@ export async function getStaticProps({ params }) {
             work: {
                 ...work[0],
                 images: images || work[0].images
-            }
+            },
+            moreWorks: works.filter(work => work.slug.current !== params.slug)
         },
         revalidate: 60
     }

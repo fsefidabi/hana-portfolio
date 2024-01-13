@@ -801,7 +801,7 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} mt-1 mb-10`}
+                className={`contentWrapper ${styles.container} mt-1`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}

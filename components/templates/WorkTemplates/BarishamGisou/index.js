@@ -637,7 +637,7 @@ function BarishamGisouWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`${styles.flexImageWrapper} mb-10`}
+                className={`${styles.flexImageWrapper}`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -725,7 +725,7 @@ function BarishamGisouWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`${styles.flexImageWrapper} mb-10`}
+                className={`${styles.flexImageWrapper}`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -864,7 +864,7 @@ function BarishamGisouWorkTemplate({ work, clickPosition, zoomedSize, handleImag
             </motion.div>
 
             <motion.div
-                className={`${styles.flexImageWrapper} mt-1 mb-10`}
+                className={`${styles.flexImageWrapper} mt-1`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
