@@ -30,7 +30,7 @@ const renderComponent = ({ pageContent, clickPosition, handleImageClick }) => {
                 variants={textReveal.boxRevealToTop()}
                 transition={{ duration: 2 }}
             >
-                <p>OTHER WORKS</p>
+                <p className={"mb-5"}>[OTHER WORKS]</p>
                 <div className={"flex justify-center flex-wrap gap-2 mx-10 __link"}>
                     {pageContent.moreWorks.map((work, workIndex) => {
                         return <>
