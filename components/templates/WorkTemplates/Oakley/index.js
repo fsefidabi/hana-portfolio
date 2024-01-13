@@ -653,7 +653,7 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} ${styles.centeredContainer} mt-1`}
+                className={`contentWrapper ${styles.container} mt-1`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -746,7 +746,7 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} ${styles.centeredContainer} mt-1`}
+                className={`contentWrapper ${styles.container} mt-1`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}
@@ -774,7 +774,7 @@ function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick 
             </motion.div>
 
             <motion.div
-                className={`contentWrapper ${styles.container} ${styles.centeredContainer} my-10`}
+                className={`contentWrapper ${styles.container} my-10`}
                 initial={"initial"}
                 whileInView="animate"
                 viewport={{ once: true }}

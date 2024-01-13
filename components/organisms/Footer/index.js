@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.copyrightSection}>
-          <p>© 2023 Hananeh Sefidabi</p>
+          <p>© 2024 Hananeh Sefidabi</p>
         </div>
       </div>
       <div className={`${styles.developerText} w-full`}>

@@ -2,11 +2,6 @@
     @apply flex-col justify-center items-center font-light;
 }
 
-.centeredContainer {
-    margin-left: 3rem !important;
-    margin-right: 3rem !important;
-}
-
 .mainTitle {
     @apply w-full font-semibold text-center tracking-wider;
 }
