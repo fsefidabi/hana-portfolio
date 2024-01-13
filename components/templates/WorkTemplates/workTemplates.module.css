@@ -16,7 +16,7 @@
 }
 
 .subTitle_label {
-    @apply text-sm mt-4 mb-1 italic;
+    @apply text-base mt-4 mb-1 italic;
 }
 
 .subTitle {
@@ -28,11 +28,11 @@
 }
 
 .description {
-    @apply w-9/12 text-base text-center leading-loose;
+    @apply w-9/12 text-lg text-center leading-loose;
 }
 
 .detail {
-    @apply w-full flex justify-center items-center text-base italic tracking-wider my-16;
+    @apply w-full flex justify-center items-center text-lg italic tracking-wider my-16;
 }
 
 .detail p:nth-child(2) {
@@ -40,11 +40,11 @@
 }
 
 .disclaimer {
-    @apply w-full flex items-center text-sm tracking-wider italic mb-10;
+    @apply w-full flex items-center text-base tracking-wider italic mb-10;
 }
 
 .link {
-    @apply w-full flex items-center text-sm tracking-wider mb-10;
+    @apply w-full flex items-center text-base tracking-wider mb-10;
 }
 
 .flexImageWrapper {

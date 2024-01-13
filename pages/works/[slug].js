@@ -19,20 +19,20 @@ const renderComponent = ({ pageContent, clickPosition, handleImageClick }) => {
         />
 
         <motion.div
-            className={"my-20 __link uppercase"}
+            className={"mt-32 mb-20 __link uppercase"}
             initial={"initial"}
             whileInView="animate"
             viewport={{ once: true }}
             variants={textReveal.parentVariantsWithStaggerChildren(1)}
         >
             <motion.div
-                className={"flex justify-center flex-wrap gap-2 mx-10 text-base tracking-wide"}
+                className={"flex justify-center flex-wrap gap-2 mx-10 text-2xl tracking-wide"}
                 variants={textReveal.boxRevealToTop()}
                 transition={{ duration: 2 }}
             >
                 {pageContent.moreWorks.map((work, workIndex) => {
                     return <>
-                        <Link className={"flex"} href={work.slug.current}>
+                        <Link className={"flex hover:text-tertiary"} href={work.slug.current}>
                             {work.projectCoverTitle.length > 0 ? work.projectCoverTitle?.map((item, itemIndex) => (
                                 item?.children?.map(child => {
                                     return <p>
