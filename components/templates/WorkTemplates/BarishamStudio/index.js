@@ -87,7 +87,7 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
             >
                 <motion.a
                     key={work._id}
-                    className={`${styles.link} __link`}
+                    className={`${styles.link} hover:text-tertiary __link`}
                     href={work.links[0].link}
                     target={"blank"}
                     variants={textReveal.boxRevealToTop()}

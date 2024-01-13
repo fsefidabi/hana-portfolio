@@ -19,33 +19,37 @@ const renderComponent = ({ pageContent, clickPosition, handleImageClick }) => {
         />
 
         <motion.div
-            className={"mt-32 mb-20 __link uppercase"}
+            className={"mt-32 mb-20 uppercase text-2xl tracking-wide"}
             initial={"initial"}
             whileInView="animate"
             viewport={{ once: true }}
             variants={textReveal.parentVariantsWithStaggerChildren(1)}
         >
             <motion.div
-                className={"flex justify-center flex-wrap gap-2 mx-10 text-2xl tracking-wide"}
+                className={"flex flex-col items-center justify-center gap-4"}
                 variants={textReveal.boxRevealToTop()}
                 transition={{ duration: 2 }}
             >
-                {pageContent.moreWorks.map((work, workIndex) => {
-                    return <>
-                        <Link className={"flex hover:text-tertiary"} href={work.slug.current}>
-                            {work.projectCoverTitle.length > 0 ? work.projectCoverTitle?.map((item, itemIndex) => (
-                                item?.children?.map(child => {
-                                    return <p>
-                                        <span>{child.text}</span>
-                                        {itemIndex < work.projectCoverTitle.length - 1 ?
-                                            <span className={"mx-1"}>-</span> : null}
-                                    </p>
-                                })
-                            )) : null}
-                        </Link>
-                        {workIndex < pageContent.moreWorks.length - 1 ? "/" : ""}
-                    </>
-                })}
+                <p>OTHER WORKS</p>
+                <div className={"flex justify-center flex-wrap gap-2 mx-10 __link"}>
+                    {pageContent.moreWorks.map((work, workIndex) => {
+                        return <>
+                            <Link className={"flex hover:text-tertiary"} href={work.slug.current}>
+                                {work.projectCoverTitle.length > 0 ? work.projectCoverTitle?.map((item, itemIndex) => (
+                                    item?.children?.map(child => {
+                                        return <p>
+                                            <span>{child.text}</span>
+                                            {itemIndex < work.projectCoverTitle.length - 1 ?
+                                                <span className={"mx-1"}>-</span> : null}
+                                        </p>
+                                    })
+                                )) : null}
+                            </Link>
+                            {workIndex < pageContent.moreWorks.length - 1 ? "/" : ""}
+                        </>
+                    })}
+
+                </div>
             </motion.div>
         </motion.div>
     </>
@@ -157,7 +161,7 @@ export async function getStaticProps({ params }) {
                 ...work[0],
                 images: images || work[0].images
             },
-            moreWorks: works.filter(work => work.slug.current !== params.slug)
+            moreWorks: works.filter(work => work.slug.current !== params.slug).sort((a, b) => a.order - b.order)
         },
         revalidate: 60
     }
