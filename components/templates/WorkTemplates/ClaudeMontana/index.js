@@ -68,13 +68,11 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
                     variants={textReveal.boxRevealToTop()}
                     transition={{ duration: 2 }}
                 >
-                    [
                     {work.projectDetail.length > 0 ? work.projectDetail?.map(item => (
                         item?.children?.map(child => (
                             <p>{child.text}</p>
                         ))
                     )) : null}
-                    ]
                 </motion.div>
             </motion.div>
 
@@ -103,15 +101,6 @@ function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImag
                         onClick={handleImageClick}
                     />
                 </motion.div>
-            </motion.div>
-
-            <motion.div
-                className={"w-screen h-1 border-t-[0.5px] border-white"}
-                initial={"initial"}
-                whileInView="animate"
-                viewport={{ once: true }}
-                variants={textReveal.parentVariantsWithStaggerChildren(1)}
-            >
             </motion.div>
 
             <motion.div

@@ -1,5 +1,5 @@
 .container {
-    @apply flex-col justify-center items-center font-light;
+    @apply w-full flex-col justify-center items-center font-light;
 }
 
 .mainTitle {
@@ -27,19 +27,31 @@
 }
 
 .detail {
-    @apply w-full flex justify-center items-center text-lg italic tracking-wider my-16;
+    @apply w-9/12 flex justify-center gap-10 text-lg italic tracking-wider my-16;
+}
+
+.detail p:nth-child(1) {
+    @apply shrink-0;
 }
 
 .detail p:nth-child(2) {
-    @apply mx-10;
+    @apply shrink-0;
 }
 
 .disclaimer {
     @apply w-full flex items-center text-base tracking-wider italic mb-10;
 }
 
+.disclaimer p {
+    @apply w-full text-center;
+}
+
 .link {
     @apply w-full flex items-center text-base tracking-wider mb-10;
+}
+
+.link p {
+    @apply w-full text-center;
 }
 
 .flexImageWrapper {

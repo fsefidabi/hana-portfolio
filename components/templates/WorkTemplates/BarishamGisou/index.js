@@ -91,13 +91,11 @@ function BarishamGisouWorkTemplate({ work, clickPosition, zoomedSize, handleImag
                     variants={textReveal.boxRevealToTop()}
                     transition={{ duration: 2 }}
                 >
-                    [
                     {work.projectDetail.length > 0 ? work.projectDetail?.map(item => (
                         item?.children?.map(child => (
                             <p>{child.text}</p>
                         ))
                     )) : null}
-                    ]
                 </motion.div>
             </motion.div>
 

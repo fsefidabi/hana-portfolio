@@ -68,13 +68,11 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
                     variants={textReveal.boxRevealToTop()}
                     transition={{ duration: 2 }}
                 >
-                    [
                     {work.projectDetail.length > 0 ? work.projectDetail?.map(item => (
                         item?.children?.map(child => (
                             <p>{child.text}</p>
                         ))
                     )) : null}
-                    ]
                 </motion.div>
             </motion.div>
 
@@ -93,13 +91,11 @@ function BarishamStudioWorkTemplate({ work, clickPosition, zoomedSize, handleIma
                     variants={textReveal.boxRevealToTop()}
                     transition={{ duration: 2 }}
                 >
-                        [
-                        {work.description1.length > 0 ? work.description1?.map(item => (
-                            item?.children?.map(child => (
-                                <p>{child.text}</p>
-                            ))
-                        )) : null}
-                        ]
+                    {work.description1.length > 0 ? work.description1?.map(item => (
+                        item?.children?.map(child => (
+                            <p>[{child.text}]</p>
+                        ))
+                    )) : null}
                 </motion.a>
             </motion.div>
 
