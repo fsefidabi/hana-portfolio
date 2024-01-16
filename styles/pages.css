@@ -66,3 +66,11 @@
 .readMoreButton svg {
     @apply fill-secondary -rotate-45 w-5;
 }
+
+.readMoreButtonDark {
+    @apply flex gap-2;
+}
+
+.readMoreButtonDark svg {
+    @apply fill-primary -rotate-45 w-5;
+}

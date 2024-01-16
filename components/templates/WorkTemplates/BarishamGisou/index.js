@@ -70,7 +70,6 @@ function BarishamGisouWorkTemplate({ work, clickPosition, zoomedSize, handleImag
                 >
                     {work.projectMainDescription2.length > 0 ? work.projectMainDescription2?.map(item => {
                         return item?.children?.map(child => {
-                            console.log(child)
                             return <span className={child.marks[0]}>{child.text}</span>
                         })
 

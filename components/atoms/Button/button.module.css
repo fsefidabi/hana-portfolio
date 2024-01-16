@@ -1,5 +1,5 @@
 .button {
-    @apply flex items-center justify-center gap-2 rounded-full bg-tertiary text-secondary uppercase text-lg px-8 py-1.5 duration-500;
+    @apply flex items-center justify-center gap-2 rounded-full bg-tertiary uppercase text-lg px-8 py-1.5 duration-500;
     min-width: 12rem;
 }
 .button:not(:disabled):hover {
