@@ -4,6 +4,7 @@ import ArrowSvg from "svgIcons/arrowWithTail1.svg"
 import VideoPlayer from "components/atoms/VideoPlayer"
 import Button from "components/atoms/Button"
 import styles from "../styles/Home.module.css"
+import { useRouter } from "next/router"
 
 const portfolioButtonLabel = <div className={"readMoreButtonDark"}>
     <span>PORTFOLIO</span>
@@ -11,18 +12,20 @@ const portfolioButtonLabel = <div className={"readMoreButtonDark"}>
 </div>
 
 export default function Home({ pageContent }) {
+    const router = useRouter()
+
     function handleOpenPortfolio() {
-        window.open(pageContent.file1, "blank")
+        router.push("/works")
     }
 
     return (
         <div className={styles.main}>
-            <div className={"flex flex-col-reverse lg:flex-row items-center border-y-[1px] border-white"}>
+            <div className={"flex flex-col lg:flex-row items-center border-y-[1px] border-white"}>
                 <div className={"w-2/3 lg:w-7/12"}>
                     <VideoPlayer src={pageContent.file2} />
                 </div>
 
-                <div className={"flex flex-col gap-6 w-2/3 my-10 lg:my-0 lg:w-5/12 mx-10 xl:mx-20 text-center text-2xl font-NuetralFace"}>
+                <div className={"flex flex-col gap-6 w-2/3 my-10 lg:my-0 lg:w-5/12 mx-10 xl:mx-20 text-center text-xl font-NuetralFace tracking-widest"}>
                     <div className={"w-full"}>
                         {pageContent.title1.length > 0 ? pageContent.title1?.map(item => {
                             return item?.children?.map(child => {
