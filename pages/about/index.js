@@ -53,12 +53,12 @@ export default function About({ pageContent, journeyMilestones }) {
             </motion.div>
         </section>
 
-        {/*<JourneySection*/}
-        {/*    id={"about_journey"}*/}
-        {/*    title={pageContent?.title3}*/}
-        {/*    description={pageContent?.description3}*/}
-        {/*    journeyMilestones={journeyMilestones}*/}
-        {/*/>*/}
+        <JourneySection
+            id={"about_journey"}
+            title={pageContent?.title3}
+            description={pageContent?.description3}
+            journeyMilestones={journeyMilestones}
+        />
     </div>
 }
 
