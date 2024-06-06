@@ -341,6 +341,33 @@ function MarniWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick }
             </motion.div>
 
             <motion.div
+                className={`contentWrapper ${styles.container} mt-10`}
+                initial={"initial"}
+                whileInView="animate"
+                viewport={{ once: true }}
+                variants={textReveal.parentVariantsWithStaggerChildren(1)}
+            >
+                <motion.div
+                    key={work._id}
+                    id={16}
+                    variants={textReveal.boxRevealToTop()}
+                    transition={{ duration: 2 }}
+                >
+                    <ImageCarousel
+                        style={{
+                            width: "auto",
+                            height: "auto"
+                        }}
+                        clickPosition={clickPosition}
+                        zoomedSize={zoomedSize}
+                        zoomed={false}
+                        images={[work.images[16]]}
+                        onClick={handleImageClick}
+                    />
+                </motion.div>
+            </motion.div>
+
+            <motion.div
                 className={`${styles.flexImageWrapper} mt-10`}
                 initial={"initial"}
                 whileInView="animate"
