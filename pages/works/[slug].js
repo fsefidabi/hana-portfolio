@@ -147,7 +147,7 @@ export async function getStaticProps({ params }) {
     const work = await import(`/constants/data/works/${slug}.json`)
     const works = await import("/constants/data/works/index.json")
 
-    const images = work.images.filter(image => !!image)
+    const images = work.default.images.filter(image => !!image)
 
     if (!work) {
         return {
@@ -158,8 +158,8 @@ export async function getStaticProps({ params }) {
     return {
         props: {
             work: {
-                ...work,
-                images: images || work?.images
+                ...work.default,
+                images: images || work.default.images
             },
             moreWorks: works.default.filter(work => work.slug.current !== params.slug).sort((a, b) => a.order - b.order)
         },

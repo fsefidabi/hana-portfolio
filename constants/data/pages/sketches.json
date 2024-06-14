@@ -1,0 +1,91 @@
+{
+  "slug": "sketches",
+  "pageTitle": "SKETCHES",
+  "title1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "EXPLORATION OF IDEAS IN VARIOUS MODES",
+          "_key": "eebf6233aa000",
+          "_type": "span"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "467a12542da2"
+    }
+  ],
+  "title2": [
+    {
+      "_key": "785f1bf32dcc",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Crafting wonders... Exploring craftsmanship",
+          "_key": "0671c5133bdb0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "world at Barisham studio",
+          "_key": "00a1eb8929f4"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "054e7e5ba1f2"
+    }
+  ],
+  "title3": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "2f476cd19c68",
+      "markDefs": [],
+      "children": [
+        {
+          "text": "The way I paint on a canvas...",
+          "_key": "64aac22819d50",
+          "_type": "span",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "description1": [
+    {
+      "style": "normal",
+      "_key": "5177ca937ed1",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "from freehand sketching to digital, 3D, and hands-on prototyping",
+          "_key": "f65316e21934"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "description2": null,
+  "description3": null,
+  "fileTitle1": null,
+  "file1": null,
+  "file2": null,
+  "buttonLabel1": null,
+  "buttonLoadingLabel1": null,
+  "image1": null,
+  "links": null
+}

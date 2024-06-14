@@ -1,0 +1,113 @@
+{
+  "slug": "/",
+  "pageTitle": "Home",
+  "title1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "Hi! I'm Hananeh!",
+          "_key": "a1213ee986060"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "2c427256262a"
+    }
+  ],
+  "title2": null,
+  "title3": null,
+  "description1": [
+    {
+      "style": "normal",
+      "_key": "64f206570191",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "b6fed054fc8d0",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "A multidisciplinary fashion designer"
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": " & ",
+          "_key": "d797f557883e"
+        },
+        {
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "3D creator",
+          "_key": "27d7fef4c453"
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": " focusing on ",
+          "_key": "b016bae4e269"
+        },
+        {
+          "text": "footwear",
+          "_key": "6115a6388f74",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ]
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": " & ",
+          "_key": "ba49a445a4ca"
+        },
+        {
+          "text": "accessories",
+          "_key": "a5193153f50b",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ]
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": " who connects the dots between ",
+          "_key": "d5b32884c00d"
+        },
+        {
+          "text": "Fashion, Technology, Craftsmanship, and Culture",
+          "_key": "6e1001eee3ad",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ]
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": " ...",
+          "_key": "66f01a07211f"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "description2": null,
+  "description3": null,
+  "fileTitle1": null,
+  "file1": "https://cdn.sanity.io/files/qlaxvdwa/production/b573a7fef17bceba3aa38fb65afc93542d7a5b86.pdf",
+  "file2": "/assets/images/homepage/04f11a6c968d6498e2359060f446aff172dd9a76.mp4",
+  "buttonLabel1": null,
+  "buttonLoadingLabel1": null,
+  "image1": null,
+  "links": null
+}

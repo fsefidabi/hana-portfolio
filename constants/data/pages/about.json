@@ -1,0 +1,176 @@
+{
+  "slug": "about",
+  "pageTitle": "ABOUT",
+  "title1": [
+    {
+      "_key": "4ce084cc9510",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Hi! ",
+          "_key": "833b56c71c13"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "01aa5cb36d1f",
+      "markDefs": [],
+      "children": [
+        {
+          "text": "I'm a multidisciplinary fashion designer and 3D creator who connects the dots between Fashion, Technology, Craftsmanship, and Culture ...",
+          "_key": "1b5a835d0e3c",
+          "_type": "span",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "title2": [
+    {
+      "children": [
+        {
+          "text": "This is my Brain when I'm engaged in a creative project, spanning my thoughts over these concepts",
+          "_key": "37436ef8e3e60",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "8d606ca7f12f",
+      "markDefs": []
+    }
+  ],
+  "title3": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "My journey",
+          "_key": "da5a6f9fce520"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "f0dcfa46da9b"
+    }
+  ],
+  "description1": [
+    {
+      "style": "normal",
+      "_key": "b960e9167643",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "With a heart for footwear and accessories design and an impeccable vision for 3D and tech-oriented fashion, I always challenge myself to learn, experiment, and innovate. As a visionary creator, my work comes from a deep research process while maintaining design principles, ethics, responsibility, and style.",
+          "_key": "3004b1357dbc"
+        }
+      ],
+      "_type": "block"
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "32fd19559a58",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "My passion for creation and hands-on approach led me into the design world and I achieved a diverse range of professional experiences, from market research, creative concept creation, and design, to product development, prototyping, production, and technical know-how enabling me a holistic and profound understanding of the entire fashion system.",
+          "_key": "d618999f3e1d",
+          "_type": "span"
+        }
+      ]
+    },
+    {
+      "_key": "fb9eabcd103b",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "Fusing the traditions and cultural heritage with cutting-edge tech is my true passion. I love merging the past and future in my creations, especially paying homage to my Persian heritage.",
+          "_key": "7ab31531f0e4",
+          "_type": "span"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    },
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Since relocating to Milan, 3D creation and digital transformation have become my go-to for bringing my notions to life instead of having a physical studio and creating by hand. Lately, my creative playground has expanded to generative design, AI tools, Web3, and metaverse for experimenting and ideation.",
+          "_key": "cdd6e0647a3a"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "c897cd99e6eb",
+      "markDefs": []
+    },
+    {
+      "style": "normal",
+      "_key": "21209e7e4ff8",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "",
+          "_key": "d18b730d6e1a"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "description2": null,
+  "description3": [
+    {
+      "style": "normal",
+      "_key": "61cb401d2caa",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "A LITTLE BACKGROUND",
+          "_key": "25631becb92c0"
+        }
+      ],
+      "_type": "block"
+    },
+    {
+      "children": [
+        {
+          "_key": "0b2058328ebd",
+          "_type": "span",
+          "marks": [],
+          "text": "(Get to know me)"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "1e98833a7d91",
+      "markDefs": []
+    }
+  ],
+  "fileTitle1": null,
+  "file1": null,
+  "file2": null,
+  "buttonLabel1": null,
+  "buttonLoadingLabel1": null,
+  "image1": "/assets/images/about/fb53742fa274a8d4c97dc2c025a14f18614ed436-500x694.webp",
+  "links": null
+}

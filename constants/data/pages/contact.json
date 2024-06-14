@@ -1,0 +1,91 @@
+{
+  "slug": "contact",
+  "pageTitle": "CONTACT",
+  "title1": [
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "LET'S CONNECT!",
+          "_key": "f38779161a050"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "9e2123f6421b",
+      "markDefs": []
+    }
+  ],
+  "title2": null,
+  "title3": null,
+  "description1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "If you have any inquiries, projects to discuss, or simply want to connect and have a conversation, I’m here!",
+          "_key": "d1cd2c6118fa0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "98c8a5448371"
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "5abb5faf36a2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Feel free to DM me on:",
+          "_key": "3bfeb2aa158f0"
+        }
+      ]
+    }
+  ],
+  "description2": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "8e5537b78657",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "adaaefbb665d0",
+          "_type": "span",
+          "marks": [],
+          "text": "or simply drop me a line here. I'll be more than happy to respond"
+        }
+      ]
+    }
+  ],
+  "description3": null,
+  "fileTitle1": null,
+  "file1": null,
+  "file2": null,
+  "buttonLabel1": "Send",
+  "buttonLoadingLabel1": "Sending...",
+  "image1": null,
+  "links": [
+    {
+      "link": "https://www.linkedin.com/in/hananehsefidabi/",
+      "label": "LinkedIn",
+      "_key": "e8ae4f8163db",
+      "type": "soacial media",
+      "_type": "link"
+    },
+    {
+      "_type": "link",
+      "link": "https://www.instagram.com/hananehsefidabi/",
+      "label": "Instagram",
+      "_key": "a2374e1d1c9e",
+      "type": "social media"
+    }
+  ]
+}

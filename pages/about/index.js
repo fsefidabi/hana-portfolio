@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-import { getPage, getJourneyMilestones } from "sanityStudio/sanity-utils"
 import { fade } from "framerMotionAnimations"
 import JourneySection from "components/organisms/JourneySection"
 import PageSection from "components/organisms/PageSection"
@@ -63,14 +62,13 @@ export default function About({ pageContent, journeyMilestones }) {
 }
 
 export async function getStaticProps() {
-    const pageContent = await getPage("about")
-    const journeyMilestones = await getJourneyMilestones()
+    const pageContent = await import("/constants/data/pages/about.json")
+    const journeyMilestones = await import("/constants/data/journeyMilestone/index.json")
 
     return {
         props: {
-            pageContent: pageContent[0],
-            journeyMilestones: journeyMilestones.sort((a, b) => a.order - b.order)
-        },
-        revalidate: 60
+            pageContent: pageContent.default,
+            journeyMilestones: journeyMilestones.default.sort((a, b) => a.order - b.order)
+        }
     }
 }

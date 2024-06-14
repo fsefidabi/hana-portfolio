@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic"
 import { motion } from "framer-motion"
-import { getCommonContent, getPage } from "sanityStudio/sanity-utils"
 import { fade } from "framerMotionAnimations"
 import ArrowSvg from "svgIcons/arrowWithTail1.svg"
 import PageSection from "components/organisms/PageSection"
@@ -63,13 +62,13 @@ export default function Research({ pageContent, commonContent }) {
 }
 
 export async function getStaticProps() {
-    const pageContent = await getPage("research")
-    const commonContent = await getCommonContent()
+    const pageContent = await import("/constants/data/pages/research.json")
+    const commonContent = await import("/constants/data/common/index.json")
 
     return {
         props: {
-            pageContent: pageContent[0],
-            commonContent: commonContent[0]
+            pageContent: pageContent.default,
+            commonContent: commonContent.default
         },
         revalidate: 60
     }

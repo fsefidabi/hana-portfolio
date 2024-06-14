@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { useCopyToClipboard } from "hooks/useCopyToClipboard"
-import { getCommonContent, getPage } from "sanityStudio/sanity-utils"
 import ArrowSvg from "svgIcons/arrowWithTail1.svg"
 import { fade } from "framerMotionAnimations"
 import Input from "components/atoms/Input"
@@ -212,13 +211,13 @@ export default function Contact({ pageContent, commonContent }) {
 }
 
 export async function getStaticProps() {
-    const pageContent = await getPage("contact")
-    const commonContent = await getCommonContent()
+    const pageContent = await import("/constants/data/pages/contact.json")
+    const commonContent = await import("/constants/data/common/index.json")
 
     return {
         props: {
-            pageContent: pageContent[0],
-            commonContent: commonContent[0]
+            pageContent: pageContent.default,
+            commonContent: commonContent.default
         },
         revalidate: 60
     }

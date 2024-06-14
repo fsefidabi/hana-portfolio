@@ -1,5 +1,4 @@
 import React from "react"
-import { getPage } from "sanityStudio/sanity-utils"
 import ArrowSvg from "svgIcons/arrowWithTail1.svg"
 import VideoPlayer from "components/atoms/VideoPlayer"
 import Button from "components/atoms/Button"
@@ -56,11 +55,11 @@ export default function Home({ pageContent }) {
 }
 
 export async function getStaticProps() {
-    const pageContent = await getPage("/")
+    const pageContent = await import("/constants/data/pages/homepage.json")
 
     return {
         props: {
-            pageContent: pageContent[0]
+            pageContent: pageContent.default
         },
         revalidate: 60
     }

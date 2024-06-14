@@ -1,0 +1,118 @@
+{
+  "slug": "research",
+  "pageTitle": "RESEARCH",
+  "title1": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "8e33bed7e97d",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "DIGITAL FASHION:",
+          "_key": "bdf498dca2ae0",
+          "_type": "span"
+        }
+      ]
+    },
+    {
+      "style": "normal",
+      "_key": "0a7e009c0776",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "2ba3f72be4780",
+          "_type": "span",
+          "marks": [],
+          "text": "THE REDEMPTION OF DIVERSITY, EQUITY, & INCLUSION?"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "title2": null,
+  "title3": null,
+  "description1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "This was my master's degree thesis that merged my personal convictions with my professional quests. As a passionate advocate for inclusivity and digital transformation within the fashion sphere, I immersed myself in the domains of digital fashion and social issues such as diversity, equity, and inclusivity as two of the most widely debated topics in our contemporary world. I explored how emerging techs have the potential to foster social inclusion, diversity, and equity within the fashion system.",
+          "_key": "5249ac4121570",
+          "_type": "span"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "b30162c1cf47"
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "The study’s findings reveal that, despite some barriers to DEI in the domains of digital worlds and digital fashion, vast opportunities exist due to the more egalitarian nature of digital fashion and Web3, which can definitely nurture DEI in the fashion ecosystem.",
+          "_key": "194cfefeeb1a0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "921e6439c848"
+    },
+    {
+      "_key": "a9911a041421",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "If the topic piques your interest, explore the complete text via the link below, or take a glance at a concise overview of the study through the slides on this page.",
+          "_key": "464084bdf8c80"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "description2": null,
+  "description3": null,
+  "fileTitle1": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "4b2706d12a5d",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "323d98013476",
+          "_type": "span",
+          "marks": [],
+          "text": "READ A"
+        }
+      ]
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "SUMMARY",
+          "_key": "8f9c79160495",
+          "_type": "span"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "10e629139129"
+    }
+  ],
+  "file1": "/assets/documents/2022_04_SEFIDABI- Final-compressed for website portfolio.pdf",
+  "file2": "https://cdn.sanity.io/files/qlaxvdwa/production/053633d54db7fff9eddb5940d1c9d91388979b25.pdf",
+  "buttonLabel1": null,
+  "buttonLoadingLabel1": null,
+  "image1": "/assets/images/research/ee25f2f61a09700d95ed2909f05e3b998e38422b-400x568.webp",
+  "links": null
+}

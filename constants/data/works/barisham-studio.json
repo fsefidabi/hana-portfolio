@@ -221,17 +221,17 @@
     }
   ],
   "images": [
-    "https://cdn.sanity.io/images/qlaxvdwa/production/fd0c9c507e657f1afc1313f47994f3588eff6c55-4961x3000.jpg",
-    "https://cdn.sanity.io/images/qlaxvdwa/production/955789fe2ace7eaf2be6e83a70349fae148ea4dc-4961x3508.jpg",
-    "https://cdn.sanity.io/images/qlaxvdwa/production/983c4156aec22c889e24a7d0098ab17fed3810d1-4961x3508.jpg",
-    "https://cdn.sanity.io/images/qlaxvdwa/production/75707c51fcecf463153bdb8e53ebcf7350b33c3d-4961x3508.jpg",
-    "https://cdn.sanity.io/images/qlaxvdwa/production/4888f2f040e59070cf54b5a56ceab6e15e151eeb-4961x3508.jpg",
-    "https://cdn.sanity.io/images/qlaxvdwa/production/ce2a937cb15646bbbe314a100571e3b8f919d2df-4961x3508.jpg",
-    "https://cdn.sanity.io/images/qlaxvdwa/production/761281ef96b7ffd89bfb9d6a8040dd2a33fdcbac-4961x3508.jpg",
-    "https://cdn.sanity.io/images/qlaxvdwa/production/995d87c172a6d41ce616d455545e127050bdd8df-4961x3508.jpg",
-    "https://cdn.sanity.io/images/qlaxvdwa/production/62218f48e35a2a2cb1ee6f97a471b2bc820c315a-4961x3508.jpg",
-    "https://cdn.sanity.io/images/qlaxvdwa/production/94981eccf10fcdc7ab47236bda79202c66382831-4961x2400.jpg",
-    "https://cdn.sanity.io/images/qlaxvdwa/production/208a23a9d49e177d1eb87226b9848486f1f10a21-4961x3508.jpg"
+    "/assets/images/works/barisham-studio/fd0c9c507e657f1afc1313f47994f3588eff6c55-4961x3000.jpeg",
+    "/assets/images/works/barisham-studio/955789fe2ace7eaf2be6e83a70349fae148ea4dc-4961x3508.jpeg",
+    "/assets/images/works/barisham-studio/983c4156aec22c889e24a7d0098ab17fed3810d1-4961x3508.jpeg",
+    "/assets/images/works/barisham-studio/75707c51fcecf463153bdb8e53ebcf7350b33c3d-4961x3508.jpeg",
+    "/assets/images/works/barisham-studio/4888f2f040e59070cf54b5a56ceab6e15e151eeb-4961x3508.jpeg",
+    "/assets/images/works/barisham-studio/ce2a937cb15646bbbe314a100571e3b8f919d2df-4961x3508.jpeg",
+    "/assets/images/works/barisham-studio/761281ef96b7ffd89bfb9d6a8040dd2a33fdcbac-4961x3508.jpeg",
+    "/assets/images/works/barisham-studio/995d87c172a6d41ce616d455545e127050bdd8df-4961x3508.jpeg",
+    "/assets/images/works/barisham-studio/62218f48e35a2a2cb1ee6f97a471b2bc820c315a-4961x3508.jpeg",
+    "/assets/images/works/barisham-studio/94981eccf10fcdc7ab47236bda79202c66382831-4961x2400.jpeg",
+    "/assets/images/works/barisham-studio/208a23a9d49e177d1eb87226b9848486f1f10a21-4961x3508.jpeg"
   ],
   "footer": null
 }

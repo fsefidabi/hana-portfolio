@@ -1,4 +1,3 @@
-import { useRouter } from "next/router"
 import dynamic from "next/dynamic"
 import "styles/globals.css"
 import "styles/pages.css"
@@ -15,10 +14,6 @@ const DynamicCustomCursor = dynamic(() => import("../components/atoms/CustomCurs
 })
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
-
-  if (router.pathname.startsWith("/sanity-studio")) return <Component {...pageProps} />
-
   return <DynamicMainLayout>
     <Component {...pageProps} />
     <DynamicCustomCursor/>

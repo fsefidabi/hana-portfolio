@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { textReveal } from "framerMotionAnimations"
-import { getSketches, getPage } from "sanityStudio/sanity-utils"
 import { getZoomedImageSize } from "utils"
 import useEventListener from "hooks/useEventListener"
 import SketchesGallery from "components/templates/SketchesGallery"
@@ -113,10 +112,10 @@ function Sketches({ pageContent, sketches }) {
 export default Sketches
 
 export async function getStaticProps() {
-    const pageContent = await getPage("sketches")
-    const sketches = await getSketches()
+    const pageContent = await import("/constants/data/pages/sketches.json")
+    const sketches = await import("/constants/data/sketches/index.json")
 
-    const filteredSketched = sketches.map(sketch => {
+    const filteredSketched = sketches.default.map(sketch => {
         const images = sketch.images.filter(image => !!image)
         return {
             ...sketch,
@@ -126,7 +125,7 @@ export async function getStaticProps() {
 
     return {
         props: {
-            pageContent: pageContent[0],
+            pageContent: pageContent.default,
             sketches: filteredSketched.sort((a, b) => a.order - b.order)
         },
         revalidate: 60

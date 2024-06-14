@@ -1,0 +1,447 @@
+[
+  {
+    "order": 1,
+    "title": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "marks": [],
+            "text": "Started",
+            "_key": "dabff42336b90",
+            "_type": "span"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "3ea5477366c0"
+      },
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Bachelor's",
+            "_key": "810f416da591"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "148442a92a1a"
+      }
+    ],
+    "date": "Nov 2012",
+    "description": [
+      {
+        "style": "normal",
+        "_key": "dcd5dc5ebf04",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Started studying Design & Applied arts (featuring numerous courses about cultural heritage & handicrafts), which gave me a strong foundation and hands-on mindset in craftsmanship, material selection, and product design.",
+            "_key": "486765ddb0780"
+          }
+        ],
+        "_type": "block"
+      }
+    ],
+    "image1": "/assets/images/journeyMilestone/f14c0ba8b7c8ab3f5ef4f73e02db9baf20e7356b-500x542.jpeg"
+  },
+  {
+    "order": 2,
+    "title": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "_key": "d16e9b1839b4",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Founded",
+            "_key": "09e71869b2310"
+          }
+        ]
+      },
+      {
+        "_key": "2e90652ea175",
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "335fa462d73c",
+            "_type": "span",
+            "marks": [],
+            "text": "Barisham studio"
+          }
+        ],
+        "_type": "block",
+        "style": "normal"
+      }
+    ],
+    "date": "Nov 2014",
+    "description": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "marks": [],
+            "text": "Followed my passion for creation & entrepreneurship and started my own small business, Barisham™, focused on premium handmade leather accessories; where I self-learnt & undertook all facets of business development from market research & innovation to production & social media.",
+            "_key": "960058b0f1940",
+            "_type": "span"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "b30a9fe15845"
+      }
+    ],
+    "image1": "/assets/images/journeyMilestone/342e5cb21d0983a3dca1eef258482651ba4f8ea5-600x709.jpeg"
+  },
+  {
+    "order": 3,
+    "title": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "marks": [],
+            "text": "Moved to Italy",
+            "_key": "f3d325b474dd0",
+            "_type": "span"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "453bc32fb389"
+      },
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "19999179c591",
+            "_type": "span",
+            "marks": [],
+            "text": "for master's"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "1f1a7c3c15ec"
+      }
+    ],
+    "date": "Sep 2018",
+    "description": [
+      {
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Driven by an unending thirst for knowledge, I journeyed to Milan, Italy, to study Design for the Fashion System at Politecnico di Milano which provided me with a well-rounded understanding of sustainable fashion design, emerging technologies, & business management where I also immersed myself in the fashion-forward culture of this city.",
+            "_key": "8febc15acca20"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "36591ef527dc",
+        "markDefs": []
+      }
+    ],
+    "image1": "/assets/images/journeyMilestone/b73776c2a003907c2d191632fbe439024f935308-600x751.jpeg"
+  },
+  {
+    "order": 4,
+    "title": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Freelancing",
+            "_key": "ec51a3540e0a0"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "2db02a7e763f"
+      },
+      {
+        "style": "normal",
+        "_key": "4767e5f246f5",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "in my free time",
+            "_key": "2d840e61bb5d"
+          }
+        ],
+        "_type": "block"
+      }
+    ],
+    "date": "Dec 2018",
+    "description": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "_key": "58a5926c40dc",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Took advantage of any free slot in week to do freelance small projects to quickly implement what I was learning and save a couple of bucks. Mainly focused on accessories & footwear design, creative concepts, & graphics but sometimes even as a business coach for my entrepreneur friends :)",
+            "_key": "cbd0f81a71320"
+          }
+        ]
+      }
+    ],
+    "image1": "/assets/images/journeyMilestone/d50dad5b3b6245100a04322a72f3297a813090f3-3456x4300.jpeg"
+  },
+  {
+    "order": 5,
+    "title": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "_key": "ac6315ee55fe",
+        "markDefs": [],
+        "children": [
+          {
+            "text": "Internship",
+            "_key": "d05ff5ad73d40",
+            "_type": "span",
+            "marks": []
+          }
+        ]
+      },
+      {
+        "_key": "20df022cdcc9",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "at LensLab Polimi",
+            "_key": "9e339f96e8c5"
+          }
+        ],
+        "_type": "block",
+        "style": "normal"
+      }
+    ],
+    "date": "Sep 2020",
+    "description": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Following my dedication to sustainability, I undertook an internship at LensLab Polimi where I participated in research initiatives focused on designing sustainable Product-Service Systems (PSS).",
+            "_key": "0a34f73df2b10"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "5a803e83241c"
+      }
+    ],
+    "image1": "/assets/images/journeyMilestone/5d7c06be4fe4e77e1e8f98272832ee6f03bf00d5-2362x1653.jpeg"
+  },
+  {
+    "order": 6,
+    "title": [
+      {
+        "_key": "33518c798b24",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Collaborated with",
+            "_key": "4e0b4121981f0"
+          }
+        ],
+        "_type": "block",
+        "style": "normal"
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "_key": "a5b5aa825128",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Double A SRL",
+            "_key": "88d027d21bd4"
+          }
+        ]
+      }
+    ],
+    "date": "Apr 2021",
+    "description": [
+      {
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "I was approached by Double A to help them build their fashion brand AVEH from the ground up. I thoroughly enjoyed working with them spanning my expertise from brand strategy & identity to design & development of their debut collection.",
+            "_key": "4399e9b21e810"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "52f7f94177ea",
+        "markDefs": []
+      }
+    ],
+    "image1": "/assets/images/journeyMilestone/3270081e345eb730255bb29e2f8e74af281bd6f5-500x683.jpeg"
+  },
+  {
+    "order": 7,
+    "title": [
+      {
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Master's Thesis: Digital fashion & DEI practices",
+            "_key": "b260e10ebda2"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "5beb2a06c520",
+        "markDefs": []
+      }
+    ],
+    "date": "Apr 2022",
+    "description": [
+      {
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Achieved my master's degree with a thesis that merged my personal convictions with professional pursuits. As a passionate advocate for inclusivity within the fashion sphere, I immersed myself in the domain of digital fashion & explored how this emerging sector has the potential to revolutionize the fashion landscape in today's global society while nurturing DEI principles.",
+            "_key": "62463090cf600"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "9fbc753b5cc3",
+        "markDefs": []
+      }
+    ],
+    "image1": "/assets/images/journeyMilestone/efc95004fb7ac2361ea4118ae2455a718061bcad-700x556.jpeg"
+  },
+  {
+    "order": 8,
+    "title": [
+      {
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Took the jump",
+            "_key": "ecfa8a922a930"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "f5e6cc69ff15",
+        "markDefs": []
+      },
+      {
+        "_key": "61e32738bfaa",
+        "markDefs": [],
+        "children": [
+          {
+            "marks": [],
+            "text": "as a freelancer",
+            "_key": "1e077b2239ac",
+            "_type": "span"
+          }
+        ],
+        "_type": "block",
+        "style": "normal"
+      }
+    ],
+    "date": "Apr 2023",
+    "description": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Embarking on my freelancing journey professionally, I channeled my passion for digital fashion and unwavering belief in the transformative power of emerging technologies within the fashion industry. Through a series of projects intricately linked to digital fashion, I harnessed the opportunity to learn and evolve within this dynamic field and contribute to the forefront of the industry's evolution.",
+            "_key": "4fb957a387110"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "d54626b44a49"
+      }
+    ],
+    "image1": "/assets/images/journeyMilestone/31dcf5ca595deed18448247711be573e23b8da3e-2000x2000.jpeg"
+  },
+  {
+    "order": 9,
+    "title": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Embracing New",
+            "_key": "49e15fb45f4e0"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "d6ca5a0cdd88"
+      },
+      {
+        "style": "normal",
+        "_key": "e1888cf6c30e",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Horizons Ahead!",
+            "_key": "b5a1ebabaa39"
+          }
+        ],
+        "_type": "block"
+      }
+    ],
+    "date": "Today",
+    "description": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "on the lookout for my next big thing that intertwines conceptual design and 3D innovation through emerging technologies. With an open embrace for what lies ahead, eagerly anticipating the next remarkable chapter in my journey! :)",
+            "_key": "070a2a188cf00"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "3f5976b10db4"
+      }
+    ],
+    "image1": "/assets/images/journeyMilestone/077537b94c23137a10af5e142432afbb3508963d-600x833.jpeg"
+  }
+]
