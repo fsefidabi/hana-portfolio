@@ -1,0 +1,206 @@
+{
+  "templateName": "Aveh",
+  "slug": {
+    "current": "aveh",
+    "_type": "slug"
+  },
+  "title1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "About the Brand",
+          "_key": "68da3be99d150"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "44a40ca1cf14"
+    }
+  ],
+  "title2": [
+    {
+      "style": "normal",
+      "_key": "6ade9dd5bf51",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Collection Overview",
+          "_key": "100b21cf2b4c0"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "title3": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "3D Visualisation",
+          "_key": "c2d4c42667810"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "e3f12f1df2cc"
+    }
+  ],
+  "title4": [
+    {
+      "_key": "d9e65e284b71",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "Brand Identity & Business Model",
+          "_key": "36909b812b040",
+          "_type": "span"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "title5": null,
+  "projectMainTitle": [
+    {
+      "style": "normal",
+      "_key": "ec9f60092b43",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "AVEH - A WEARABLE JOURNEY...",
+          "_key": "8dcac89f250c0"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "projectSubTitle1": [
+    {
+      "_key": "696579275add",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[Launching an emerging Italian fashion brand]",
+          "_key": "1969efd9ec130"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "projectSubTitle2": null,
+  "description1": null,
+  "description2": null,
+  "description3": null,
+  "description4": null,
+  "description5": null,
+  "projectMainDescription": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "0450a3784f18",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "I was approached by Double A S.R.L.to develop a brand entirely from the ground up, aligning with their initial notion. After designing a brief, a thorough research of the market was undertaken in order to create the proper brand strategy. In alignment with the design brief,I conducted an extensive market analysis to formulate an effective brand strategy. This comprehensive project encompassed the creation and development branding, visual identity, and business model.",
+          "_key": "a8b6696721a90"
+        }
+      ]
+    }
+  ],
+  "projectMainDescription2": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Additionally,I was in charge of designing and developing the inaugural collection, centered around five bodysuits. The featured designs within this project page represent five unique designs that, while not selected for final production, have been brought to life in the digital realm through 3D visualization :)",
+          "_key": "1126476f49960"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "d54864197b89"
+    }
+  ],
+  "projectDetail": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "03201fcd2aa3",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "b5523d36c0540",
+          "_type": "span",
+          "marks": [],
+          "text": "[Year:2021"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Client: Double A S.R.L.",
+          "_key": "98b456715dce"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "c47b7641b942",
+      "markDefs": []
+    },
+    {
+      "style": "normal",
+      "_key": "461a4c72d41a",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "Branding & Strategy, Debut Collection Design, 2D&3D Product Development, Market Research & Trend Analysis]",
+          "_key": "03410fe70341",
+          "_type": "span"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "links": null,
+  "images": [
+    "/assets/images/works/aveh/28abe15b54d7374a1bd64fd88178a0a546fd8853-4961x3508.jpeg",
+    "/assets/images/works/aveh/440d9ddb37e547954e023380342946f5bd87e64f-4961x3508.jpeg",
+    "/assets/images/works/aveh/32470aa0e0bdde717cfb00818d5392429709894c-4961x3508.jpeg",
+    "/assets/images/works/aveh/da2cb69fd43357ae453ffc78fe0140a1d78313a3-4961x3508.jpeg",
+    "/assets/images/works/aveh/0b1a9f71d657680ab5520ea33fd6622dd26c511f-4961x3508.jpeg",
+    "/assets/images/works/aveh/3a7009d6ac9a3d36250dd1966cca76d7d3aa2266-4961x3508.jpeg",
+    "/assets/images/works/aveh/e103483440d6f3214874c1f9b3988000493b8213-4961x3508.jpeg",
+    "/assets/images/works/aveh/d1eeffd4ce313956c1efec0fc4edf79a14a42596-4961x3508.jpeg",
+    "/assets/images/works/aveh/e3b9167f408199f522bb2e040c37fcbed449079e-4961x3508.jpeg",
+    "/assets/images/works/aveh/fb3dc27970648932a71be8be3fadb49f2386230b-4961x3508.jpeg",
+    "/assets/images/works/aveh/3dbd1d45e6d6960b2a6340ee97c68e8fc1644687-4961x3508.jpeg",
+    "/assets/images/works/aveh/6f187ed2978e47e97204786e9792fdc2f1f6b174-4961x3508.jpeg",
+    "/assets/images/works/aveh/c24bc1ed4f5a798975ec748b313e7c26d547f150-4961x3508.jpeg",
+    "/assets/images/works/aveh/1173500679b824fccb5d31dd77cc1301450cea8e-4961x3508.jpeg",
+    "/assets/images/works/aveh/b2a92c6f28a88694d28776d15cda122f43b893ee-4961x3508.jpeg",
+    "/assets/images/works/aveh/035d85c7b2f5ec5f0a8f47cabb5b4ace14d8e8e9-4600x800.gif"
+  ],
+  "footer": null
+}
