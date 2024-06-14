@@ -1,0 +1,219 @@
+{
+  "templateName": "Miista",
+  "slug": {
+    "current": "miista-mules",
+    "_type": "slug"
+  },
+  "title1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "WORKFLOW",
+          "_key": "584fe32e7e9f0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "bea9abb32a02"
+    }
+  ],
+  "title2": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "6a94b84bce29",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "DISCLAIMER",
+          "_key": "443181c395ba"
+        }
+      ]
+    }
+  ],
+  "title3": null,
+  "title4": null,
+  "title5": null,
+  "projectMainTitle": [
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "BRIETTA MULES",
+          "_key": "1d9b962dc8810"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "78f4b293d5a0",
+      "markDefs": []
+    }
+  ],
+  "projectSubTitle1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[M I I S T A]",
+          "_key": "f459d1d0e4510"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "a8600030cb61"
+    }
+  ],
+  "projectSubTitle2": null,
+  "description1": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "5d4cbbf49644",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Footwear 3D design, for me, goes beyond creating stunning renders and hyperrealistic details. I actively engage my technical knowledge to carefully analyze the technical development process and structural intricacies of shoes. When modeling pre-designed footwear, the design flow transforms into a form of reverse engineering—a thoughtful process of unraveling and reconstructing to capture the essence of the original design.",
+          "_key": "2a88f1dbe04e0"
+        }
+      ]
+    }
+  ],
+  "description2": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[This creative project is for personal R&D use only, and is not endorsed or affiliated with any mentioned brand.]",
+          "_key": "53e60bf4668d0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "c6d92b286f09"
+    }
+  ],
+  "description3": null,
+  "description4": null,
+  "description5": null,
+  "projectMainDescription": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "This project captures one of my early experiments in 3D footwear design.",
+          "_key": "727e55ac6cf20"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "11062575cadf"
+    },
+    {
+      "style": "normal",
+      "_key": "786cde9ba9ec",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "As I embarked on a journey to capture the craftsmanship inherent in the footwear industry and closely replicate it through 3D design, the fashion-forward Miista mules marked my first step in this venture. I tried to not only create high details to reach the boundaries of reality, but also create an ethereal ambiance using gradients and metalic iredecent material.",
+          "_key": "d0b25530fad20"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "projectMainDescription2": null,
+  "projectDetail": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "d473ee88bda8",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [
+            "em"
+          ],
+          "text": "[Year: 2023",
+          "_key": "cb3c0bed15600"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "_key": "8e1a4f079424",
+          "_type": "span",
+          "marks": [
+            "em"
+          ],
+          "text": "Personal project"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "08022c291276",
+      "markDefs": []
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [
+            "em"
+          ],
+          "text": "Software: Blender]",
+          "_key": "a30783c27dc0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "849cd5b70dcf"
+    }
+  ],
+  "links": null,
+  "images": [
+    "/assets/images/works/miista/b2736f49f50d00dd55d5ed86b1742cd37ae96eb4-1700x2000.jpeg",
+    "/assets/images/works/miista/56990ab0b1b276b7208a1de4edf11d81f7f44c8c-1700x2000.jpeg",
+    "/assets/images/works/miista/ab2763fc0284e95d05eae117215c24945036f9f7-1700x2000.jpeg",
+    "/assets/images/works/miista/e8c27e29836b387a2af10d9b985d6e7b2d8dc8a1-1700x2000.jpeg",
+    "/assets/images/works/miista/d8447f0d7fd8d5d8a1e33b9a1afc089de397ad54-1700x2000.jpeg",
+    "/assets/images/works/miista/15c015d4d99ef38605a059ab8e1e8c69c69e7e60-1398x1646.jpeg",
+    "/assets/images/works/miista/0ff7984b4794b784f2c090019c957b0994c029d1-1700x2000.jpeg",
+    "/assets/images/works/miista/52c5a0bee74ee751847205accf1bd28f012f20e1-1700x2000.jpeg",
+    "/assets/images/works/miista/baf11f9b639ca60040ed8b912960900490c509dc-1700x2000.jpeg",
+    "/assets/images/works/miista/6ec1cb5ff7dd9f8a67b6c726776acbe4aeb0282c-1400x1647.jpeg",
+    "/assets/images/works/miista/d361144622da7b34fdeaf601ee32072f38e1c0bb-1200x1412.jpeg",
+    "/assets/images/works/miista/9b7cfd3d097c5fdd56f5164db06610a5fe11e477-1400x1647.jpeg",
+    "/assets/images/works/miista/4ef91c5ce1603767e3ceedb98b003b20f81254a2-1920x992.png",
+    "/assets/images/works/miista/0709ca9072e2f94f068e75d5bb1daf0a7c6e3e9b-1920x992.png",
+    "/assets/images/works/miista/958654dd50a76072c3ef7f3e318824d2c2f38bcc-1920x992.png",
+    "/assets/images/works/miista/4152be64aff67978b404e513b7bab7f1c3d6dd75-1920x992.png",
+    "/assets/images/works/miista/f1a184680fb833db0c55d179095e3918d01c3b0f-1700x2000.png",
+    "/assets/images/works/miista/67a3c7fbb9a34b127daaab76b14f2af63eedf3c0-1700x2000.png",
+    "/assets/images/works/miista/2cf02b20561eb6f1eae17c6d551fa89bb4e5a4db-1700x2000.png",
+    "/assets/images/works/miista/3f7a8a34af52d24ae895f1a276656e2005c815b7-1700x2000.png",
+    "/assets/images/works/miista/57284c1504dc6d778b87fde29978aa0a556e389a-1700x2000.png",
+    "/assets/images/works/miista/d9510dd367095e0eb5acd71800b629d8c849cc00-1700x2000.png"
+  ],
+  "footer": null
+}
