@@ -1,0 +1,319 @@
+{
+  "templateName": "BarishamGisou",
+  "slug": {
+    "current": "barisham-gisou",
+    "_type": "slug"
+  },
+  "title1": null,
+  "title2": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "PROCESS",
+          "_key": "6bef3074d3810"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "267418617e4c"
+    }
+  ],
+  "title3": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Pattern making & 3D modeling in Clo3D:",
+          "_key": "a4c6706f08a30"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "7df54416d77a"
+    }
+  ],
+  "title4": [
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Adding extra touch of details in Blender, texturing, shading, & rendering:",
+          "_key": "72e4958fb2800"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "a6294327ec41",
+      "markDefs": []
+    }
+  ],
+  "title5": [
+    {
+      "style": "normal",
+      "_key": "fdd6fb4c55af",
+      "markDefs": [],
+      "children": [
+        {
+          "text": "Original Gisou leather handbag created at Barisham studio in 2017",
+          "_key": "ed5053aa43720",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "projectMainTitle": [
+    {
+      "_key": "5bdc7ed00d44",
+      "markDefs": [],
+      "children": [
+        {
+          "text": "GISOU REIMAGINED - BARISHAM",
+          "_key": "e2a9f5c1ba9e0",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "projectSubTitle1": [
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[Revitalizing an old bag I designed & created at Barisham studio into a new 3D concept]",
+          "_key": "77ef8bda7323"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "c322e6440f95",
+      "markDefs": []
+    }
+  ],
+  "projectSubTitle2": null,
+  "description1": [
+    {
+      "style": "normal",
+      "_key": "30b4160404b8",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "7def746f29700",
+          "_type": "span",
+          "marks": [],
+          "text": "(Explore images featuring the original Gisou bag at the end of this project page)"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "description2": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "2eb99d2554c80",
+          "_type": "span",
+          "marks": [],
+          "text": "I started off by drafting the bag patterns in clo3D and carefully modeling the base making sure to replicate the physical piece accurately. Next, I added trims and meticulously crafted a digital replica of braided stripes through hundreds of digital stitches and thread pieces. Finally, I brought the bag to Blender to enhance it with an extra touch of modelling refinement like colored edges and a new futuristic texturing and rendered the final visuals."
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "764b0faf90b8"
+    }
+  ],
+  "description3": [
+    {
+      "_key": "a04de99eec8a",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "...seamlessly merging the PAST and FUTURE...",
+          "_key": "2d32dcf163730"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "description4": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "dd01eed96d1c",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "A brief video of how the braided stripes are created in Clo3D:",
+          "_key": "75e53e95b3370",
+          "_type": "span"
+        }
+      ]
+    }
+  ],
+  "description5": null,
+  "projectMainDescription": [
+    {
+      "_key": "ccd58593ec86",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "The original Gisou leather bag came to life in my small leathercraft studio - Barisham - back in 2017. It served as a tribute to the rich heritage and artistry intrinsic in the world of leather goods, with its intricate hand-braided accents. Inspired by the Persian word 'gisou,' meaning the allure of beautiful and flowing hair, the bag's name reflects the essence of these woven details.",
+          "_key": "693adad020810",
+          "_type": "span"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "projectMainDescription2": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "GISOU REIMAGINED is a transformative recreation of the original design in 3D with a futuristic twist of materials. The outcome speaks of my profound passion for connecting heritage with innovation. It's a fusion of traditional craftsmanship with cutting-edge technology, brought together through ",
+          "_key": "662a210551c9"
+        },
+        {
+          "_type": "span",
+          "marks": [
+            "underline"
+          ],
+          "text": "456 digital stitches",
+          "_key": "16089e66abac"
+        },
+        {
+          "marks": [],
+          "text": " to replicate braiding and ",
+          "_key": "a3ac04438330",
+          "_type": "span"
+        },
+        {
+          "text": "240 thread pieces",
+          "_key": "d198068167d9",
+          "_type": "span",
+          "marks": [
+            "underline"
+          ]
+        },
+        {
+          "marks": [],
+          "text": " exactly as in the physical process where the waxed threads were ",
+          "_key": "8ef4501c8600",
+          "_type": "span"
+        },
+        {
+          "_type": "span",
+          "marks": [
+            "underline"
+          ],
+          "text": "manually passed through punched holes 456 times",
+          "_key": "a33564e9bb45"
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": ".",
+          "_key": "21ce8527a835"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "fecf0da73304"
+    }
+  ],
+  "projectDetail": [
+    {
+      "_key": "43f6c7d4acb2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[Year: 2023",
+          "_key": "7ea06773f6c40"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    },
+    {
+      "style": "normal",
+      "_key": "e90dba4fde4a",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "3D concept - Old Design Recreated",
+          "_key": "4c3fc05da5a9"
+        }
+      ],
+      "_type": "block"
+    },
+    {
+      "style": "normal",
+      "_key": "9863520b4dfe",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "Software: Clo3D, Blender, Photoshop]",
+          "_key": "cc487869d6fb",
+          "_type": "span"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "links": null,
+  "images": [
+    "/assets/images/works/barisham-gisou/445de455f4ccda7f52408b2dacad301ddc379100-1600x2000.jpeg",
+    "/assets/images/works/barisham-gisou/98fac1592ada1d852cca997bc86ec1a44d04980e-2000x2000.jpeg",
+    "/assets/images/works/barisham-gisou/86ef7a02a0beebbf39ae2a6be45d52937777819e-1500x1800.jpeg",
+    "/assets/images/works/barisham-gisou/74ede009e5abc935e86b5ae050e738bf7e18a398-1500x1800.jpeg",
+    "/assets/images/works/barisham-gisou/caa4440ed0dc338b06f1456ea93971e62b8e58cf-2000x2000.jpeg",
+    "/assets/images/works/barisham-gisou/bca36069a5e91c4974243f28f1c3f0a89106c522-2000x2000.jpeg",
+    "/assets/images/works/barisham-gisou/d3c01a91474410603b9492694ecb6852ea03e958-2000x2000.jpeg",
+    "/assets/images/works/barisham-gisou/529637a05825af0efec64034ac2787b1b63a9624-2000x1500.jpeg",
+    "/assets/images/works/barisham-gisou/25432d47d0fe5fbc385416be31b2dc7a0878134a-1600x2000.jpeg",
+    "/assets/images/works/barisham-gisou/c846d25652e5399e1a7ace32e2564a8a611122e2-1600x2000.jpeg",
+    "/assets/images/works/barisham-gisou/dbccc6a7c4a877a0fe04ab1d64d10f6282810164-2000x1600.jpeg",
+    "/assets/images/works/barisham-gisou/94eddf44782e624567ad1ee4d30620fd79e2c0db-1600x2000.jpeg",
+    "/assets/images/works/barisham-gisou/3d0363d47fdd13a210684febf641a92fe1277168-1600x2000.jpeg",
+    "/assets/images/works/barisham-gisou/44d448a28581c0994d5f74c1328f64d4c865a371-1600x2000.jpeg",
+    "/assets/images/works/barisham-gisou/ba5ce28b37f4877bb759470d8a3a6de2e48e3938-762x1080.png",
+    "/assets/images/works/barisham-gisou/adc84c29253824ed752668d7a04eef20035792af-762x1080.png",
+    "/assets/images/works/barisham-gisou/b9412d5c33f156e54c80a8a4808fd5aa29982a6b-900x1080.png",
+    "/assets/images/works/barisham-gisou/ec1293185653ac1b1574809af5fe6e476013e3dc-900x1080.png",
+    "/assets/images/works/barisham-gisou/2d592332b2910daf1f112a385576f11d4a7d73e4-1080x1080.png",
+    "/assets/images/works/barisham-gisou/196bbebac10dd091996745272d237492e1de9be1-600x600.gif",
+    "/assets/images/works/barisham-gisou/24600728dc8422be79c9391797486194c8c2de1e-1080x1080.png",
+    "/assets/images/works/barisham-gisou/610266c74c1993dba043a2c05da993f686910810-2000x1200.jpeg",
+    "/assets/images/works/barisham-gisou/7959c0756644a314659b1899283bc4c2d59f7ba2-2000x1200.jpeg",
+    "/assets/images/works/barisham-gisou/07b1690fba27c88261d4288cc1c27c9a7e41ca5d-2500x1665.jpeg",
+    "/assets/images/works/barisham-gisou/1bbcf7e712eadf4e497b70562a33de1c451a23ba-2500x1667.jpeg",
+    "/assets/images/works/barisham-gisou/fc43333e345a4f62f6c7f3f3c501dddbde3fdaa1-2500x1667.jpeg",
+    "/assets/images/works/barisham-gisou/9203d4fe4dd89bcae55fd4ea6e2fd7e723d63086-2500x1665.jpeg"
+  ],
+  "footer": null
+}

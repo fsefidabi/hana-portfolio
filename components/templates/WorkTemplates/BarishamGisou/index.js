@@ -4,8 +4,9 @@ import { textReveal } from "framerMotionAnimations"
 import ImageCarousel from "components/atoms/ImageCarousel"
 import MotionTextRevealTitle from "components/atoms/MotionTextRevealTitle"
 import styles from "../workTemplates.module.css"
+import work from "constants/data/works/barisham-gisou.json"
 
-function BarishamGisouWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick }) {
+function BarishamGisouWorkTemplate({ clickPosition, zoomedSize, handleImageClick }) {
     return (
         <div className={`contentWrapper mt-16 ${styles.container}`}>
             <MotionTextRevealTitle
