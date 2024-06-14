@@ -1,0 +1,161 @@
+{
+  "templateName": "Marni",
+  "slug": {
+    "current": "marni",
+    "_type": "slug"
+  },
+  "title1": null,
+  "title2": null,
+  "title3": null,
+  "title4": null,
+  "title5": null,
+  "projectMainTitle": [
+    {
+      "_key": "67a13a3b9fb9",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "7683ed2412eb0",
+          "_type": "span",
+          "marks": [],
+          "text": "SUPRE.M A R N I"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "projectSubTitle1": [
+    {
+      "_key": "a9149949f985",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "[KAZEMIR MALEVICH x M A R N I ]",
+          "_key": "27a691f236410",
+          "_type": "span"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "projectSubTitle2": null,
+  "description1": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "022ea5d57a1f",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[This creative project was an academic project, and is not endorsed or affiliated with any mentioned brand.]",
+          "_key": "4c64464c63a00"
+        }
+      ]
+    }
+  ],
+  "description2": null,
+  "description3": null,
+  "description4": null,
+  "description5": null,
+  "projectMainDescription": [
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "The aim of the project was to draw inspiration from a contemporary art movement, artist, or group of artists and propose a collection of accessories or fashion products based on the related artworks.",
+          "_key": "b7596cae93010"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "f9cd801bcfb1",
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "6d343ac7deb2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "The artist of my choice, with whom I resonated the most, was KAZIMIR MALEVICH from the SUPREMATISM movement. I went one step further and decided to envision this project as a potential collaboration between Malevich's artworks and the fashion brand MARNI. I created an accessories and footwear capsule collection that represents a blend of the artist's vision for the supremacy of pure feeling and the brand's playful avant-garde spirit.",
+          "_key": "5bd3e5afd4190"
+        }
+      ]
+    }
+  ],
+  "projectMainDescription2": null,
+  "projectDetail": [
+    {
+      "children": [
+        {
+          "text": "[Year: 2019",
+          "_key": "c918dc2d45080",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "38d261032c50",
+      "markDefs": []
+    },
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Solo Academic project (Concept)",
+          "_key": "aa9715c64d42"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "dab3eb05ad9d",
+      "markDefs": []
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "7709b891ba99",
+          "_type": "span",
+          "marks": [],
+          "text": "Software: Rhino, Illustrator, InDesign]"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "75556f8aa4a8"
+    }
+  ],
+  "links": null,
+  "images": [
+    "/assets/images/works/marni/e9921f6604443e8f2b7b622b1a5bfd3b0cfe4864-4961x3508.jpeg",
+    "/assets/images/works/marni/78e5a7a6d52d1dc5a989704cccd58377d63b65a7-4961x3508.jpeg",
+    "/assets/images/works/marni/e095454dfa2d7918a11c3c1836973cb3e5e4e6cd-4961x3508.jpeg",
+    "/assets/images/works/marni/06ee4b689ded4dba598715872a4bd9e036ccc326-4961x3508.jpeg",
+    "/assets/images/works/marni/742b6a6a6b8223289f02a69f0a15f7ec8e686f91-4961x3508.jpeg",
+    "/assets/images/works/marni/63fcbe1ed886a846f36a70cf885a7dc64315f7b1-4961x3508.jpeg",
+    "/assets/images/works/marni/e32b86606b5fd20c91ef2ddeb33ff50b57cae335-2100x2500.jpeg",
+    "/assets/images/works/marni/2a5dd3c3c3b497087991f3c052a5e2ea5f94b008-2100x2500.jpeg",
+    "/assets/images/works/marni/e9b5746585525212b29db61ead14e5f65ea825fb-2100x2500.jpeg",
+    "/assets/images/works/marni/5a3a024fce9842e5f5f8ead32258ab381fa01712-2100x2500.jpeg",
+    "/assets/images/works/marni/3048f18a86d06295fa9460f63f84899c6a45a77c-2100x2500.jpeg",
+    "/assets/images/works/marni/0a4079f1a7f66080e67bd6d946497e8b55113d38-2100x2500.jpeg",
+    "/assets/images/works/marni/0f60f244ba5672332e188ef3e488064af544533e-4961x2600.jpeg",
+    "/assets/images/works/marni/661539ade7068736e547647357f8d5d6d8150799-1920x907.jpeg",
+    "/assets/images/works/marni/386daa22f9f76debb582751c8b98b69874ec01c8-1920x908.jpeg",
+    "/assets/images/works/marni/4d9b5eaaccab5b9e3a0051244dbd5acb6758f43e-1920x907.jpeg",
+    "/assets/images/works/marni/84e163fd0367896aa1c1ec6204e15c583c093ceb-1920x907.jpeg"
+  ],
+  "footer": null
+}
