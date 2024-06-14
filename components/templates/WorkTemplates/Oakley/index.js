@@ -4,8 +4,9 @@ import { textReveal } from "framerMotionAnimations"
 import ImageCarousel from "components/atoms/ImageCarousel"
 import MotionTextRevealTitle from "components/atoms/MotionTextRevealTitle"
 import styles from "../workTemplates.module.css"
+import work from "constants/data/works/oakley.json"
 
-function OakleyWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick }) {
+function OakleyWorkTemplate({ clickPosition, zoomedSize, handleImageClick }) {
     return (
         <div className={`contentWrapper mt-16 ${styles.container}`}>
             <MotionTextRevealTitle

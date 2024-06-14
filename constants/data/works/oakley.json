@@ -1,0 +1,242 @@
+{
+  "templateName": "Oakley",
+  "slug": {
+    "current": "oakley",
+    "_type": "slug"
+  },
+  "title1": null,
+  "title2": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "text": "PROCESS",
+          "_key": "f573cb2d33dc0",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "afe21dfdf980"
+    }
+  ],
+  "title3": [
+    {
+      "children": [
+        {
+          "text": "DISCLAIMER",
+          "_key": "58a86df544c0",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "6db00a9d2c0b",
+      "markDefs": []
+    }
+  ],
+  "title4": null,
+  "title5": null,
+  "projectMainTitle": [
+    {
+      "children": [
+        {
+          "text": "OAKLEY FACTORY TEAM FLESH x BRAIN DEAD",
+          "_key": "735a9cc095af0",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "315892bd2338",
+      "markDefs": []
+    }
+  ],
+  "projectSubTitle1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "New color play imagined (Concept):",
+          "_key": "3c06b22fa05f0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "0f7bc33c65a3"
+    }
+  ],
+  "projectSubTitle2": [
+    {
+      "_key": "7fbfba2910b2",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[DUNES OF MARS]",
+          "_key": "7cea903ff37e0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "description1": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "0bac18d9c067",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "a51c306a80d10",
+          "_type": "span",
+          "marks": [],
+          "text": "Continuing the exploration, I took the project a step further by crafting a complete 3D scene featuring an avatar wearing the Oakley slip-ons. The scene is created using both softwares for clothing pattern creation and sewing, avatar posing, as well as texturing and rendering."
+        }
+      ]
+    }
+  ],
+  "description2": [
+    {
+      "style": "normal",
+      "_key": "b06a120b8548",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "To capture the technical intricacies, I analyzed the physical Oakley Flesh, dissecting its various components for accurate 3D modeling and realistic collision. From conceptualizing the color mood to the 3D development, these behind-the-scenes images offer a glimpse of the entire project.",
+          "_key": "5a21fc0405c90"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "description3": [
+    {
+      "_key": "505568268c2b",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[This creative project is for personal R&D use only and is not endorsed or affiliated with any mentioned brand.]",
+          "_key": "2c7c0062a3570"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "description4": null,
+  "description5": null,
+  "projectMainDescription": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "text": "This project started as a personal exploration to find an efficient workflow for my 3D footwear creations. It led me to experiment with a combination of Clo3D for upper parts pattern drafting and iteration and Blender for the shoe's last, sole design, detailed modeling refinement, texturing, and rendering. Captivated by the collaboration between OAKLEY FACTORY TEAM FLESH and BRAIN DEAD in reimagining the original Flesh, and in love with its running lines and wavy curves, I opted to recreate it digitally envisioning it with a new color play in a Mars-inspired ambiance.",
+          "_key": "09f0a9653ec20",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "5b445f0464b8"
+    }
+  ],
+  "projectMainDescription2": null,
+  "projectDetail": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "bfd3755521f5",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "8c5b2365fba20",
+          "_type": "span",
+          "marks": [],
+          "text": "[Year:2023"
+        }
+      ]
+    },
+    {
+      "style": "normal",
+      "_key": "d3872292adb5",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Personal R&D Project- Concept",
+          "_key": "3ed3f2ee781e"
+        }
+      ],
+      "_type": "block"
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "d44240392066",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "Software:Clo3D, Blender, Photoshop]",
+          "_key": "23763fa2921b",
+          "_type": "span"
+        }
+      ]
+    }
+  ],
+  "links": null,
+  "images": [
+    "/assets/images/works/oakley/4ab93351b2560248e45a7fcd0c15cf3ef8bdb19d-2300x2000.jpeg",
+    "/assets/images/works/oakley/9de7e73810190c95bd8af1982d500133f817415e-2040x2400.jpeg",
+    "/assets/images/works/oakley/f710a67c56d27a2a9c04793c7049e40ce6a0cb05-2040x2400.jpeg",
+    "/assets/images/works/oakley/3877b4449fbd0476e1298c928b141c38da10a550-2040x2400.jpeg",
+    "/assets/images/works/oakley/e2d286912893956c3690a3f04fe5562402c37c7a-2040x2400.jpeg",
+    "/assets/images/works/oakley/bcb9805ae3b54e5c491fa02e816d615e09e2e600-2400x2400.jpeg",
+    "/assets/images/works/oakley/44689a75ebc24e30d38e712e7914b42937422972-2400x2400.jpeg",
+    "/assets/images/works/oakley/2833937efb31dcf1a249bc02c8527de81d96d50d-3000x1700.jpeg",
+    "/assets/images/works/oakley/b5ae57cbb5632ab3a6b47bc1a74f27fbc85cfd1b-2400x2400.jpeg",
+    "/assets/images/works/oakley/94223fedce22d65fbaca1ab7f996910c58af7e73-2400x2400.jpeg",
+    "/assets/images/works/oakley/61bb653677539248d4dcbfb72baa1ddd887036da-3000x1700.jpeg",
+    "/assets/images/works/oakley/483b19ca6ad4518059d0ca38d832f727b7b0735f-2400x2400.jpeg",
+    "/assets/images/works/oakley/caebdc6dc0317c3eae367cc98de223694b88c075-2400x2400.jpeg",
+    "/assets/images/works/oakley/5c6481f77c2a072ea88c743996ecb0053e691cf4-3508x2480.jpeg",
+    "/assets/images/works/oakley/87b127f62e022ab9f796ca1da672dfdfc7ab10fe-1383x938.png",
+    "/assets/images/works/oakley/806fa53de065b31099d6237ab792f9cfaf6be571-820x937.png",
+    "/assets/images/works/oakley/b80c723c4325d08b5b3a9d1829e8ba037cac233d-1105x971.png",
+    "/assets/images/works/oakley/4613f92d68f2c1e9fd096ae0f4f92bbc8c1973d6-1103x969.png",
+    "/assets/images/works/oakley/f103ebc171fa1ea8cb471da1d81ab6f45daaf625-1103x970.png",
+    "/assets/images/works/oakley/e033140fa6e9ac79160678f9a5aedf1663a0fa48-1430x930.png",
+    "/assets/images/works/oakley/5f6eee2fcd9cf6e81ed5b4e233c0f718f1ba051c-1430x930.png",
+    "/assets/images/works/oakley/527d0e0aa91054ed4ed633e7b4d581cf73bda725-1430x930.png",
+    "/assets/images/works/oakley/940d101b95442ae62edc5a2303dbc2c474bd524d-1430x930.png",
+    "/assets/images/works/oakley/3d464fa0ba0f8c4313f1692261f18ea5c50fcf1d-1430x930.png",
+    "/assets/images/works/oakley/3ce80830b003d85c0bf48719c76d1072a448c21e-1430x930.png",
+    "/assets/images/works/oakley/36686a79480f3c4f4d8a854de07d5a345b9fe569-728x969.png",
+    "/assets/images/works/oakley/36a962bde1834ac2436ebc711ac1632a08431099-728x969.png",
+    "/assets/images/works/oakley/def1870d1e43dd276196d3133ea66370d148c3e0-1384x969.png",
+    "/assets/images/works/oakley/4da7e802f3bda187062b0fdeddbee2c79f7b9dba-1510x880.png",
+    "/assets/images/works/oakley/fd6289962c39685344e8aba8f9a77dc4086f1d98-1510x880.jpeg",
+    "/assets/images/works/oakley/060cdaba99714af40ae58d87d69ef5075e0e8e7f-1510x880.jpeg",
+    "/assets/images/works/oakley/4e881916e2a9ae4427bf145e33cc421883eca88c-1510x880.jpeg",
+    "/assets/images/works/oakley/5a17c3d8a07651414137e3540fafff23a8529727-1510x880.jpeg",
+    "/assets/images/works/oakley/095a1b592e5ebe88bb6aa3bc598b60267f1d6796-1510x880.jpeg",
+    "/assets/images/works/oakley/7309cfb34be301a02af311d237d40fa77dfa9f3f-1526x907.png",
+    "/assets/images/works/oakley/ac89b4eff0448e93733e0a293b12a7d6c87292cb-2800x1736.jpeg",
+    "/assets/images/works/oakley/e08e04002d8f44a3938605fe8717e00e66a0e2b5-1400x250.png"
+  ],
+  "footer": null
+}
