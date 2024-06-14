@@ -1,0 +1,242 @@
+{
+  "templateName": "FYC",
+  "slug": {
+    "_type": "slug",
+    "current": "far-yet"
+  },
+  "title1": null,
+  "title2": null,
+  "title3": null,
+  "title4": null,
+  "title5": null,
+  "projectMainTitle": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "FAR, YET CONVERGENT",
+          "_key": "55b9a328fe500"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "6503b12a8d3c"
+    }
+  ],
+  "projectSubTitle1": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "9bf255347c37",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[A Tapestry of Contemporary Life, Culture Heritage, and Identity]",
+          "_key": "a5008e9f2ca60"
+        }
+      ]
+    }
+  ],
+  "projectSubTitle2": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "*Shortlisted for “Creative design in contemporary Persian artefacts” competition, exhibited in Iranian",
+          "_key": "fe1f6145214e0",
+          "_type": "span"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "a2babdbe8771"
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Artists Forum, Tehran, Iran, 2017",
+          "_key": "c3fb11a4e48d0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "134106356b05"
+    }
+  ],
+  "description1": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "c592e0c46d42",
+      "markDefs": [],
+      "children": [
+        {
+          "text": "The concept for this design was inspired by my daily life in an industrial city with a rich history and cultural heritage. Although the combination of metal and fiber may appear conflicting, they have been properly integrated in this design to reflect the overall concept.",
+          "_key": "e98911bd40670",
+          "_type": "span",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "description2": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Metal symbolizes perseverance and modern industrial life. Fiber, on the other hand, brings to mind images of handwoven fabrics and traditional crafts.The entire ensemble demonstrates a new and distinct method of accessory design that integrates both traditional craftsmanship and modern technologies.",
+          "_key": "03b3eee99c900"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "15f277d0c4be"
+    }
+  ],
+  "description3": [
+    {
+      "children": [
+        {
+          "text": "The body of these bags are made out of stained steel sheets and picked simple basic geometrical silhouettes to allow the details reveal their versatility and strike a balance between delicacy and simplicity.",
+          "_key": "84661704354e0",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "14b8ab9b2cf0",
+      "markDefs": []
+    }
+  ],
+  "description4": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "45071657a1580",
+          "_type": "span",
+          "marks": [],
+          "text": "All pieces and holes were laser cut and then the loom was constructed on the body of the bags using a needle and waxed thread passed through small holes located on the steel pieces and allowed me to weave motifs to complete the look."
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "0776ba0c2f90"
+    }
+  ],
+  "description5": null,
+  "projectMainDescription": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "d75b3dd5aa3d",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "The project's objective was to display a capsule collection that was inspired by contemporary daily life. Persian cultural heritage served as one of my main sources of inspiration for this project. In addition, the fact that I lived in a large, modern city like Tehran back then was another inspiration for me to show how these two worlds can coexist in a design concept, just as they do in our everyday lives.",
+          "_key": "c68f487f69a20"
+        }
+      ]
+    }
+  ],
+  "projectMainDescription2": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "7a86b7000be2",
+      "markDefs": [],
+      "children": [
+        {
+          "text": "This capsule collection was made around my obsession with a philosophy that provides us with a new lens through which we can view and understand the world around us:",
+          "_key": "e369e6c80ba90",
+          "_type": "span",
+          "marks": []
+        }
+      ]
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "POST-MODERNISM",
+          "_key": "9d709da9ea570"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "29544b0d5665"
+    }
+  ],
+  "projectDetail": [
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[Year:2014-2018",
+          "_key": "ea80d19c103e0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "b227de9dbdb6",
+      "markDefs": []
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "66c5222af898",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Bachelor's degree final project",
+          "_key": "490432b8fbf7"
+        }
+      ]
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Software/tools: Illustrator, CAD, Laser cutting machine]",
+          "_key": "ddff22b71e9f"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "175f0140e733"
+    }
+  ],
+  "links": null,
+  "images": [
+    "/assets/images/works/far-yet/d887d1d115fea158e5508771b2b5fc486fe92b60-4961x3508.jpeg",
+    "/assets/images/works/far-yet/d9c69566afb554c3526b5e3f0dec0eeb97b9797b-4961x3508.jpeg",
+    "/assets/images/works/far-yet/c40ca587b932b1e80011c99ee71319bed1db819f-4961x3200.jpeg",
+    "/assets/images/works/far-yet/c8fa48fcb5146de86729eb35a47d06a7629efc54-4961x3508.jpeg",
+    "/assets/images/works/far-yet/4d1fb554000431e9bab1ec7e715839b98cc2283a-4961x3508.jpeg",
+    "/assets/images/works/far-yet/f7a430591879e08998776d20d95afe1a4d3bf83c-4961x3508.jpeg",
+    "/assets/images/works/far-yet/c693af25077adef97806d44d331706569110e222-4961x3508.jpeg",
+    "/assets/images/works/far-yet/7b29dcc70b36edcbd332d29d89f5fd3fac449c04-4961x3508.jpeg",
+    "/assets/images/works/far-yet/956709747feda036c80469e260d71258385d2951-4961x200.png"
+  ],
+  "footer": null
+}
