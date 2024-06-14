@@ -1,0 +1,237 @@
+{
+  "templateName": "BarishamStudio",
+  "slug": {
+    "current": "barisham",
+    "_type": "slug"
+  },
+  "title1": null,
+  "title2": null,
+  "title3": null,
+  "title4": null,
+  "title5": null,
+  "projectMainTitle": [
+    {
+      "style": "normal",
+      "_key": "5d9e37946586",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "BARISHAM™ STUDIO",
+          "_key": "433f5274ae840"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "projectSubTitle1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[Exploring the World of Leathercrafts]",
+          "_key": "05eea69e207f0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "ee232d95f937"
+    }
+  ],
+  "projectSubTitle2": null,
+  "description1": [
+    {
+      "style": "normal",
+      "_key": "39b68994937e",
+      "markDefs": [],
+      "children": [
+        {
+          "text": "Barisham Instagram Account",
+          "_key": "965b52220b070",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "description2": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "During 4 years of activity, I undertook all aspects of the business development from market research, design, & hand/machine production of the products to operations, marketing, and social media management ensuring the brand’s vision was maintained.",
+          "_key": "da3d82a3ede00"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "9e63bc17e1c7"
+    }
+  ],
+  "description3": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Each product was born from a research based design and sketches followed by meticulous pattern making and finally cut and sew all by myself in my studio. Chosen materials were a thoughtful blend of design and practicality, resulting in products that are both stylish and functional.",
+          "_key": "3607817a45e60"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "92182e13a51c"
+    }
+  ],
+  "description4": null,
+  "description5": null,
+  "projectMainDescription": [
+    {
+      "style": "normal",
+      "_key": "f19e26f281de",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "A peek into my entrepreneurial journey in my own bag & accessories small business...",
+          "_key": "991bac7050600",
+          "_type": "span"
+        }
+      ],
+      "_type": "block"
+    },
+    {
+      "style": "normal",
+      "_key": "299ba5cf1d06",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [
+            "underline"
+          ],
+          "text": "A celebration of curiosity, creativity, and individuality.",
+          "_key": "a95089617cd40"
+        }
+      ],
+      "_type": "block"
+    },
+    {
+      "style": "normal",
+      "_key": "3781b0585edc",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "It all started with a personal passion for creation & a quest for mastery in the art of crafting premium-quality handmade bags and accessories. Months of relentless self-study in the intricate world of pattern making laid the foundation for what would become a labor of love.",
+          "_key": "2a3f98e005f00"
+        }
+      ],
+      "_type": "block"
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "ff2f1509a8ae",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Following my passion for creation, I founded Barisham™ e-commerce focused on premium-quality handmade leather bags & accessories; a harmonious blend of hands-on execution skills, creative thinking, and excellent managerial skills.",
+          "_key": "d34327e3593d0"
+        }
+      ]
+    },
+    {
+      "style": "normal",
+      "_key": "76362eebe261",
+      "markDefs": [],
+      "children": [
+        {
+          "text": "Sadly, in 2018, I had to discontinue the brand activity due to my relocation to Italy.",
+          "_key": "4dc123a9eb660",
+          "_type": "span",
+          "marks": []
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "projectMainDescription2": null,
+  "projectDetail": [
+    {
+      "_key": "482e303fa09a",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[Year:2014-2018",
+          "_key": "4b4573fa13c90"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "23ff5e93b093",
+          "_type": "span",
+          "marks": [],
+          "text": "Creative Direction, Design, Production & Management"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "2818ac26c89a"
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "All products were handmade in Barisham Studio]",
+          "_key": "1e9fd90faac7"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "786cbb7a1e37"
+    }
+  ],
+  "links": [
+    {
+      "link": "https://www.instagram.com/_barisham_/",
+      "label": "Instagram",
+      "_key": "f2dad5459071",
+      "type": "link",
+      "_type": "link"
+    }
+  ],
+  "images": [
+    "https://cdn.sanity.io/images/qlaxvdwa/production/fd0c9c507e657f1afc1313f47994f3588eff6c55-4961x3000.jpg",
+    "https://cdn.sanity.io/images/qlaxvdwa/production/955789fe2ace7eaf2be6e83a70349fae148ea4dc-4961x3508.jpg",
+    "https://cdn.sanity.io/images/qlaxvdwa/production/983c4156aec22c889e24a7d0098ab17fed3810d1-4961x3508.jpg",
+    "https://cdn.sanity.io/images/qlaxvdwa/production/75707c51fcecf463153bdb8e53ebcf7350b33c3d-4961x3508.jpg",
+    "https://cdn.sanity.io/images/qlaxvdwa/production/4888f2f040e59070cf54b5a56ceab6e15e151eeb-4961x3508.jpg",
+    "https://cdn.sanity.io/images/qlaxvdwa/production/ce2a937cb15646bbbe314a100571e3b8f919d2df-4961x3508.jpg",
+    "https://cdn.sanity.io/images/qlaxvdwa/production/761281ef96b7ffd89bfb9d6a8040dd2a33fdcbac-4961x3508.jpg",
+    "https://cdn.sanity.io/images/qlaxvdwa/production/995d87c172a6d41ce616d455545e127050bdd8df-4961x3508.jpg",
+    "https://cdn.sanity.io/images/qlaxvdwa/production/62218f48e35a2a2cb1ee6f97a471b2bc820c315a-4961x3508.jpg",
+    "https://cdn.sanity.io/images/qlaxvdwa/production/94981eccf10fcdc7ab47236bda79202c66382831-4961x2400.jpg",
+    "https://cdn.sanity.io/images/qlaxvdwa/production/208a23a9d49e177d1eb87226b9848486f1f10a21-4961x3508.jpg"
+  ],
+  "footer": null
+}
