@@ -4,11 +4,11 @@
 }
 
 .slideshowSlider {
-    @apply w-full h-full whitespace-nowrap;
+    @apply w-full h-full flex items-center whitespace-nowrap;
 }
 
 .slide {
-    @apply w-full h-full inline-block relative m-0 p-0;
+    @apply w-full h-full inline-block relative m-0 p-0 shrink-0;
 }
 
 .slide img {

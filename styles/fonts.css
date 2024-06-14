@@ -46,3 +46,15 @@
     font-weight: 200;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter/Inter-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter/Inter-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}

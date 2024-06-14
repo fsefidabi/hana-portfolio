@@ -53,7 +53,8 @@ module.exports = {
     },
     fontFamily: {
       "NuetralFace": ["NuetralFace", "sans-serif"],
-      "ClashGrotesk": ["ClashGrotesk", "sans-serif"]
+      "ClashGrotesk": ["ClashGrotesk", "sans-serif"],
+      "Inter": ["Inter", "sans-serif"]
     }
   },
   plugins: []

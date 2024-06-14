@@ -66,6 +66,32 @@
   {
     "order": 3,
     "slug": {
+      "current": "spin",
+      "_type": "slug"
+    },
+    "projectCoverTitle": [
+      {
+        "children": [
+          {
+            "_type": "span",
+            "marks": [
+              "em"
+            ],
+            "text": "RENAISSANCE 2.0 x PETER YEE",
+            "_key": "ecc0b9bf80930"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "0b68974f7e6f",
+        "markDefs": []
+      }
+    ],
+    "coverImageUrl": "/assets/images/works/spin/1.jpg"
+  },
+  {
+    "order": 4,
+    "slug": {
       "current": "miista-mules",
       "_type": "slug"
     },
@@ -88,7 +114,7 @@
     ]
   },
   {
-    "order": 4,
+    "order": 5,
     "slug": {
       "current": "marni",
       "_type": "slug"
@@ -112,7 +138,7 @@
     ]
   },
   {
-    "order": 5,
+    "order": 6,
     "slug": {
       "current": "aveh",
       "_type": "slug"
@@ -136,7 +162,7 @@
     ]
   },
   {
-    "order": 6,
+    "order": 7,
     "slug": {
       "current": "claude-montana",
       "_type": "slug"
@@ -160,7 +186,7 @@
     ]
   },
   {
-    "order": 7,
+    "order": 8,
     "slug": {
       "current": "barisham-studio",
       "_type": "slug"
@@ -184,7 +210,7 @@
     ]
   },
   {
-    "order": 8,
+    "order": 9,
     "slug": {
       "current": "far-yet",
       "_type": "slug"

@@ -1,0 +1,330 @@
+{
+  "templateName": "Spin",
+  "slug": {
+    "current": "spin",
+    "_type": "slug"
+  },
+  "title1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Read the Hypebeast Article",
+          "_key": "68da3be99d150"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "44a40ca1cf14"
+    }
+  ],
+  "title2": [
+    {
+      "style": "normal",
+      "_key": "6ade9dd5bf51",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "View the items on SPIN platform",
+          "_key": "100b21cf2b4c0"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "title3": null,
+  "title4": null,
+  "title5": null,
+  "projectMainTitle": [
+    {
+      "style": "normal",
+      "_key": "ec9f60092b43",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "RENAISSANCE 2.0 x PETER YEE",
+          "_key": "8dcac89f250c0"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "projectSubTitle1": [
+    {
+      "_key": "696579275add",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[Reviving Iconic Moments in 3D]",
+          "_key": "1969efd9ec130"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "projectSubTitle2": [
+    {
+      "_key": "696579275add",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "A fusion of iconic design and cultural legacy revitalized through Web3 technologies",
+          "_key": "1969efd9ec130"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "description1": [
+    {
+      "style": "normal",
+      "_key": "30b4160404b8",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "7def746f29700",
+          "_type": "span",
+          "marks": [],
+          "text": "All Images & Videos Courtesy of SPIN.FASHION by Lablaco"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "description2": [
+    {
+      "style": "normal",
+      "_key": "30b4160404b8",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "7def746f29700",
+          "_type": "span",
+          "marks": [],
+          "text": "As a 3D designer with a background rooted in craftsmanship, immersing myself in the intricacies of Peter Yee's iconic designs was both impressive and inspiring. During the creation of digital twins of the eyewear and accessories, studying every single curve and flow of motion in his designs, replicating them in the 3D world, while trying to maintain the balance between design intricacies and technical demands necessary for AR and XR was a true test of skill and creativity for me that helped me push my boundaries."
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "description3": [
+    {
+      "style": "normal",
+      "_key": "30b4160404b8",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "7def746f29700",
+          "_type": "span",
+          "marks": [],
+          "text": "I modelled all the 3D assets in Blender software based on few product images provided by the designer as references. My aim was to replicate the items hyperrealistically while overcoming the challenges in optimizing the models for Web3 usage. After the creation of 3D models and video and image renders in blender, all the exports were then adapted for a variety of cutting-edge applications, including AR, VR, XR, and even Snapchat filters, ensuring a versatile and immersive user experience across platforms."
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "description4": [
+    {
+      "style": "normal",
+      "_key": "30b4160404b8",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "7def746f29700",
+          "_type": "span",
+          "marks": [],
+          "text": "Additionally I was responsible for developing two physical shirts through DPC and virtual prototyping, The project was an incredible opportunity for me to show my technical know-how and garment construction as well. The shirts were available to purchase both in physical version and as digital collectibles and virtual try-ons. "
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "description5": [
+    {
+      "style": "normal",
+      "_key": "30b4160404b8",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "7def746f29700",
+          "_type": "span",
+          "marks": [],
+          "text": "A glimpse into the immersive Exhibition in Hong Kong"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "projectMainDescription": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "As Head of 3D Wearables & Artefacts at SPIN.FASHION, I had the opportunity to lead the 3D team for creation of 3D assets and hyper-realistic digital twins of 22 ",
+          "_key": "662a210551c9"
+        },
+        {
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "exclusive OAKLEY artefacts",
+          "_key": "16089e66abac"
+        },
+        {
+          "marks": [],
+          "text": " designed by Peter Yee for a one-month-long exhibition at K11 Musea during Art Basel Hong Kong. This historic moment was brought to life through SPIN’s pioneering ",
+          "_key": "a3ac04438330",
+          "_type": "span"
+        },
+        {
+          "text": "on-chain smart labels, immersive Augmented Reality",
+          "_key": "d198068167d9",
+          "_type": "span",
+          "marks": [
+            "strong"
+          ]
+        },
+        {
+          "marks": [],
+          "text": " exhibition, and ",
+          "_key": "8ef4501c8600",
+          "_type": "span"
+        },
+        {
+          "_type": "span",
+          "marks": [
+            "strong"
+          ],
+          "text": "XR experiences",
+          "_key": "a33564e9bb45"
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": " powered by Apple Vision Pro.",
+          "_key": "21ce8527a835"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "fecf0da73304"
+    }
+  ],
+  "projectMainDescription2": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Credits:",
+          "_key": "662a210551c9"
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Creative direction: Lor Albrighi, Eliana Kuo",
+          "_key": "662a210551c9"
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Lead 3D artist, 3D Wearables & Artefacts: Hananeh Sefidabi",
+          "_key": "662a210551c9"
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "3D Artists: Fatma Süleymanoğlu, Süreyya Süleymanoğlu",
+          "_key": "662a210551c9"
+        },
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Digital Human, virtual editorial: Mahir Özbayir",
+          "_key": "662a210551c9"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "fecf0da73304"
+    }
+  ],
+  "projectDetail": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "03201fcd2aa3",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "b5523d36c0540",
+          "_type": "span",
+          "marks": [],
+          "text": "[Year:2024"
+        }
+      ]
+    },
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Client: SPIN.FASHION",
+          "_key": "98b456715dce"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "c47b7641b942",
+      "markDefs": []
+    },
+    {
+      "style": "normal",
+      "_key": "461a4c72d41a",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "Role: Lead 3D Artist | Head of 3D Wearables & Artefacts]",
+          "_key": "03410fe70341",
+          "_type": "span"
+        }
+      ],
+      "_type": "block"
+    }
+  ],
+  "links": {
+    "article": "https://hypebeast.com/2024/3/spin-fashion-x-peter-yee-oakley-archive-exhibition-art-basel-hong-kong-2024-info",
+    "spin": "https://www.spin.fashion/exhibitions/peter-yee"
+  },
+  "images": [
+    "/assets/images/works/spin/1.jpg",
+    "/assets/images/works/spin/2.png",
+    "/assets/images/works/spin/3.png",
+    "/assets/images/works/spin/4.png",
+    "/assets/images/works/spin/5.png",
+    "/assets/images/works/spin/6.png",
+    "/assets/images/works/spin/7.png",
+    "/assets/images/works/spin/8.jpg",
+    "/assets/images/works/spin/9.jpg",
+    "/assets/images/works/spin/10.png",
+    "/assets/images/works/spin/11.jpg"
+  ],
+  "footer": null
+}
