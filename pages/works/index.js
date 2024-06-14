@@ -1,6 +1,5 @@
 import React from "react"
 import { motion } from "framer-motion"
-import { getWorks } from "sanityStudio/sanity-utils"
 import { textReveal } from "framerMotionAnimations"
 import WorkCard from "components/molecules/WorkCard"
 import styles from "./works.module.css"
@@ -23,11 +22,11 @@ export default function Works({ works }) {
 }
 
 export async function getStaticProps() {
-    const works = await getWorks()
+    const works = await import("/constants/data/works/index.json")
 
     return {
         props: {
-            works: works.sort((a, b) => a.order - b.order)
+            works: works.default.sort((a, b) => a.order - b.order)
         },
         revalidate: 60
     }

@@ -4,9 +4,8 @@ import { textReveal } from "framerMotionAnimations"
 import ImageCarousel from "components/atoms/ImageCarousel"
 import MotionTextRevealTitle from "components/atoms/MotionTextRevealTitle"
 import styles from "../workTemplates.module.css"
-import work from "constants/data/works/claude-montana.json"
 
-function ClaudeMontanaWorkTemplate({ clickPosition, zoomedSize, handleImageClick }) {
+function ClaudeMontanaWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick }) {
     return (
         <div className={`contentWrapper mt-16 ${styles.container}`}>
             <MotionTextRevealTitle

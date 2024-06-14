@@ -3,7 +3,6 @@ import Link from "next/link"
 import dynamic from "next/dynamic"
 import { motion } from "framer-motion"
 import { textReveal } from "framerMotionAnimations"
-import { getWork, getWorks } from "sanityStudio/sanity-utils"
 import useEventListener from "hooks/useEventListener"
 import { getZoomedImageSize } from "utils"
 import ImageCarousel from "components/atoms/ImageCarousel"
@@ -131,9 +130,9 @@ function Work({ work, moreWorks }) {
 export default Work
 
 export async function getStaticPaths() {
-    const works = await getWorks()
+    const works = await import("/constants/data/works/index.json")
 
-    const paths = works.map(work => ({
+    const paths = works.default.map(work => ({
         params: { slug: work?.slug?.current }
     }))
 
@@ -144,10 +143,11 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    const work = await getWork(params.slug)
-    const works = await getWorks()
+    const slug = params.slug
+    const work = await import(`/constants/data/works/${slug}.json`)
+    const works = await import("/constants/data/works/index.json")
 
-    const images = work[0].images.filter(image => !!image)
+    const images = work.images.filter(image => !!image)
 
     if (!work) {
         return {
@@ -158,10 +158,10 @@ export async function getStaticProps({ params }) {
     return {
         props: {
             work: {
-                ...work[0],
-                images: images || work[0].images
+                ...work,
+                images: images || work?.images
             },
-            moreWorks: works.filter(work => work.slug.current !== params.slug).sort((a, b) => a.order - b.order)
+            moreWorks: works.default.filter(work => work.slug.current !== params.slug).sort((a, b) => a.order - b.order)
         },
         revalidate: 60
     }

@@ -1,0 +1,210 @@
+[
+  {
+    "order": 1,
+    "slug": {
+      "current": "barisham-gisou",
+      "_type": "slug"
+    },
+    "projectCoverTitle": [
+      {
+        "children": [
+          {
+            "_type": "span",
+            "marks": [
+              "em"
+            ],
+            "text": "GISOU REIMAGINED",
+            "_key": "ecc0b9bf80930"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "0b68974f7e6f",
+        "markDefs": []
+      }
+    ],
+    "coverImageUrl": "/assets/images/works/barisham-gisou/58d21e1fba2aa89ba71259969d7ef51b3c34d460-1400x1400.jpeg"
+  },
+  {
+    "order": 2,
+    "slug": {
+      "current": "oakley",
+      "_type": "slug"
+    },
+    "coverImageUrl": "/assets/images/works/oakley/81518ed2080d5a60c85bd3b0b8828fb22a40f32d-1190x1400.jpeg",
+    "projectCoverTitle": [
+      {
+        "style": "normal",
+        "_key": "0dbaef5b686c",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "OAKLEY",
+            "_key": "23fcbd0790850"
+          }
+        ],
+        "_type": "block"
+      },
+      {
+        "_type": "block",
+        "style": "normal",
+        "_key": "1b61ea93c708",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "DUNES OF MARS",
+            "_key": "d4c3b1337d6b0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "order": 3,
+    "slug": {
+      "current": "miista-mules",
+      "_type": "slug"
+    },
+    "coverImageUrl": "/assets/images/works/miista/b60621d125f3079bded4c28673aea9a94da88856-1190x1400.jpeg",
+    "projectCoverTitle": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "_key": "1ecbc45caca8",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Miista Brietta",
+            "_key": "affe8639ee940"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "order": 4,
+    "slug": {
+      "current": "marni",
+      "_type": "slug"
+    },
+    "coverImageUrl": "/assets/images/works/marni/def86e7cf04371e669d18fe9cd3a8c86be057373-1024x1280.jpeg",
+    "projectCoverTitle": [
+      {
+        "_key": "892f8da31177",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Supremarni",
+            "_key": "8ea0c7c7cdb4"
+          }
+        ],
+        "_type": "block",
+        "style": "normal"
+      }
+    ]
+  },
+  {
+    "order": 5,
+    "slug": {
+      "current": "aveh",
+      "_type": "slug"
+    },
+    "coverImageUrl": "/assets/images/works/aveh/3458b8a0779e6c894cf27df396a041cce722a24f-840x1147.jpeg",
+    "projectCoverTitle": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "_key": "7bb6e0c545e00",
+            "_type": "span",
+            "marks": [],
+            "text": "AVEH"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "f1ce1b41553e"
+      }
+    ]
+  },
+  {
+    "order": 6,
+    "slug": {
+      "current": "claude-montana",
+      "_type": "slug"
+    },
+    "coverImageUrl": "/assets/images/works/claude-montana/ad0e8d0d7cd9313bcbbc1d11e94d9144ca01dfef-5000x6260.jpeg",
+    "projectCoverTitle": [
+      {
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "the reborn",
+            "_key": "621d28660efe"
+          }
+        ],
+        "_type": "block",
+        "style": "normal",
+        "_key": "3670b875e273"
+      }
+    ]
+  },
+  {
+    "order": 7,
+    "slug": {
+      "current": "barisham-studio",
+      "_type": "slug"
+    },
+    "coverImageUrl": "/assets/images/works/barisham-studio/b212855d48659b4a2b96c225d38693b71ffe6272-500x709.jpeg",
+    "projectCoverTitle": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "_key": "1984d7659d8c",
+        "markDefs": [],
+        "children": [
+          {
+            "_type": "span",
+            "marks": [],
+            "text": "Barisham Studio",
+            "_key": "4f40f59a311c0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "order": 8,
+    "slug": {
+      "current": "far-yet",
+      "_type": "slug"
+    },
+    "coverImageUrl": "/assets/images/works/far-yet/853be5dcec91be926603cfc6145fd08e96d34e7e-2835x1890.jpeg",
+    "projectCoverTitle": [
+      {
+        "style": "normal",
+        "_key": "174c3e9c578a",
+        "markDefs": [],
+        "children": [
+          {
+            "marks": [],
+            "text": "Far, yet convergent",
+            "_key": "197e753d3fc60",
+            "_type": "span"
+          }
+        ],
+        "_type": "block"
+      }
+    ]
+  }
+]

@@ -4,9 +4,8 @@ import { textReveal } from "framerMotionAnimations"
 import ImageCarousel from "components/atoms/ImageCarousel"
 import MotionTextRevealTitle from "components/atoms/MotionTextRevealTitle"
 import styles from "../workTemplates.module.css"
-import work from "constants/data/works/miista-mules.json"
 
-function MiistaWorkTemplate({ clickPosition, zoomedSize, handleImageClick }) {
+function MiistaWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick }) {
     return (
         <div className={`contentWrapper mt-16 ${styles.container}`}>
             <MotionTextRevealTitle

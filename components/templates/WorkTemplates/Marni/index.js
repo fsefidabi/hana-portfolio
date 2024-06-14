@@ -4,9 +4,8 @@ import { textReveal } from "framerMotionAnimations"
 import ImageCarousel from "components/atoms/ImageCarousel"
 import MotionTextRevealTitle from "components/atoms/MotionTextRevealTitle"
 import styles from "../workTemplates.module.css"
-import work from "constants/data/works/marni.json"
 
-function MarniWorkTemplate({ clickPosition, zoomedSize, handleImageClick }) {
+function MarniWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick }) {
     return (
         <div className={`contentWrapper mt-16 ${styles.container}`}>
             <MotionTextRevealTitle
