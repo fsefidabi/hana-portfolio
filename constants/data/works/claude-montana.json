@@ -1,0 +1,272 @@
+{
+  "templateName": "ClaudeMontana",
+  "slug": {
+    "current": "claude-montana",
+    "_type": "slug"
+  },
+  "title1": [
+    {
+      "_key": "2868e99e11c4",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Role",
+          "_key": "d55dec9134bd"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "title2": [
+    {
+      "style": "normal",
+      "_key": "2d2c4f8c2c1c",
+      "markDefs": [],
+      "children": [
+        {
+          "marks": [],
+          "text": "Concept Development",
+          "_key": "aa9670e8f9920",
+          "_type": "span"
+        }
+      ],
+      "_type": "block"
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "872096784744",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "e85c62c8122c0",
+          "_type": "span",
+          "marks": [],
+          "text": "Collection Overview"
+        }
+      ]
+    },
+    {
+      "style": "normal",
+      "_key": "d9405275a359",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Accessories Collection",
+          "_key": "c9a66957bbe80"
+        }
+      ],
+      "_type": "block"
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Branding & Communication",
+          "_key": "3b07c0e37bca0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "c9e274ef374b"
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Photo Shoot",
+          "_key": "2baeef29faa40"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "888af35caa70"
+    },
+    {
+      "_key": "4bc1829d30de",
+      "markDefs": [],
+      "children": [
+        {
+          "_key": "fb3e40cb7e6e0",
+          "_type": "span",
+          "marks": [],
+          "text": "[Other group members: Carlotta Grilli, Chiara Gronchi, Ethan Liu, Lauriane Verhille]"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "fa321e8c15be",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Sep-Dec 2018",
+          "_key": "9b73239196670"
+        }
+      ]
+    }
+  ],
+  "title4": null,
+  "title5": null,
+  "title3": null,
+  "projectMainTitle": [
+    {
+      "_key": "5ef5416bdd78",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "THE REBORN-CLAUDE MONTANA",
+          "_key": "975f99d224ba0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "projectSubTitle1": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "337d348f6ad3",
+      "markDefs": [],
+      "children": [
+        {
+          "text": "[Rebranding a sleeping brand - f/w 19-20]",
+          "_key": "fe3db88d551d0",
+          "_type": "span",
+          "marks": []
+        }
+      ]
+    }
+  ],
+  "projectSubTitle2": null,
+  "description1": [
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "contributed effectively in all aspects from concept development to product tdevelopment and communication.",
+          "_key": "871c664bc77b0"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "d8fe5d58d2dd"
+    }
+  ],
+  "description2": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "_key": "bbb886863d7b",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Individually designed and developed the accessories collection and made the look number 14",
+          "_key": "b49d1f88261a0"
+        }
+      ]
+    }
+  ],
+  "description3": null,
+  "description4": null,
+  "description5": null,
+  "projectMainDescription": [
+    {
+      "_key": "443627157dec",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "The project was aimed to envision th erevival of a well known fashion brand which - at the time being - is not present in the market. We were asked to do a detailed analysis of the brand, then we designed a collection as a fresh new interpretation of the brand as a group work and tailor one garment as an individual work. The choice of the brand for our group was “Claude Montana”.",
+          "_key": "d7acec7800e80"
+        }
+      ],
+      "_type": "block",
+      "style": "normal"
+    }
+  ],
+  "projectMainDescription2": null,
+  "projectDetail": [
+    {
+      "style": "normal",
+      "_key": "e0cf4c7bcfc0",
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "[Year: 2018",
+          "_key": "f7dfd1aaabc80"
+        }
+      ],
+      "_type": "block"
+    },
+    {
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Group Academic Project",
+          "_key": "b6fafc807f14"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "e182afdb978b",
+      "markDefs": []
+    },
+    {
+      "markDefs": [],
+      "children": [
+        {
+          "_type": "span",
+          "marks": [],
+          "text": "Branding, Concept, Product Development, Sewing, 2D/3D Pattern Making, Communication & Art Direction]",
+          "_key": "ce2ae5ba6184"
+        }
+      ],
+      "_type": "block",
+      "style": "normal",
+      "_key": "c71dbac42cb7"
+    }
+  ],
+  "links": null,
+  "images": [
+    "/assets/works/claude-montana/e82c58ae273e85a4c95f3885632f015aa703e8cd-4961x3800.jpeg",
+    "/assets/works/claude-montana/923231786759ac6e18c7100fca695f6f7ca72680-4961x3508.jpeg",
+    "/assets/works/claude-montana/c2d37536a5f7bdd885c28e316f75915945f1f31a-4961x3508.jpeg",
+    "/assets/works/claude-montana/3c3feb4526b46cf90893646a03a215b03b1f05f5-4961x3508.jpeg",
+    "/assets/works/claude-montana/ce9d64408ad146989c99ca94f87798d2ab225400-4961x3508.jpeg",
+    "/assets/works/claude-montana/03c928d1d2d5b6b9dd8b05c70e1f7939dfbf79e0-4961x3508.jpeg",
+    "/assets/works/claude-montana/e7ec324d281926b9b05256af3a4de80b20c6ff8c-4961x3508.jpeg",
+    "/assets/works/claude-montana/e383280a2ea7ead00e0b80b284f2f40e032dcacb-4961x3508.jpeg",
+    "/assets/works/claude-montana/6ee58309604c5959f7fbca295e27e03e833c334d-4961x3508.jpeg",
+    "/assets/works/claude-montana/fb825671914648531b2659b5c11c6c94227c4fc2-4961x3508.jpeg",
+    "/assets/works/claude-montana/084f25982b5a6a5c236b66b5e1562f989b4a8109-4961x3508.jpeg",
+    "/assets/works/claude-montana/f9abc38767dd4ae97e28351ecca552423f4abed8-4961x3508.jpeg",
+    "/assets/works/claude-montana/8700a52fdfbdcdc16f276a3cd2aca015d8760712-4961x3508.jpeg"
+  ],
+  "footer": null
+}
