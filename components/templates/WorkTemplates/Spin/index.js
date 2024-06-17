@@ -138,7 +138,7 @@ function SpinWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick })
                 variants={textReveal.parentVariantsWithStaggerChildren(0.5)}
             >
                 <iframe
-                    src="https://drive.google.com/file/d/1c8Ye3jLNAyDQM88lXepdi6fB7CrH6nGp/preview?autoplay=1"
+                    src="https://drive.google.com/file/d/1c8Ye3jLNAyDQM88lXepdi6fB7CrH6nGp/preview"
                     width="380"
                     height="680"
                     allow="autoplay; fullscreen; picture-in-picture"
@@ -155,7 +155,7 @@ function SpinWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick })
                 >
                     <motion.div
                         key={work._id}
-                        className={styles.link}
+                        className={styles.description}
                         style={{ width: "70%" }}
                         variants={textReveal.boxRevealToTop()}
                         transition={{ duration: 2 }}
@@ -482,7 +482,7 @@ function SpinWorkTemplate({ work, clickPosition, zoomedSize, handleImageClick })
                     transition={{ duration: 2 }}
                 >
                     <iframe
-                        src="https://drive.google.com/file/d/1OZRlKjkwr8CJAoONEZtxEYeVMd5kTelb/preview?autoplay=1"
+                        src="https://drive.google.com/file/d/1OZRlKjkwr8CJAoONEZtxEYeVMd5kTelb/preview"
                         width="100%"
                         height="503"
                         allow="autoplay">
